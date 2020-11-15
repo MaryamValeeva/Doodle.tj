@@ -1,0 +1,581 @@
+{% load static %}
+{% load i18n %}
+
+<link rel="stylesheet" href="{% static 'css/style_2.css' %}">
+
+<link rel="stylesheet" href="{% static 'css/dop_style.css' %}">
+<link rel="stylesheet" href="{% static 'js/bootstrap/css/bootstrap.css' %}">
+
+<script type="text/javascript">
+  function getBodyScrollTop(){
+        return self.pageYOffset;
+      }
+
+  if (getBodyScrollTop()>=80) {
+    $('#__header').addClass('fixed');
+    $('#__header').addClass('down');
+    $('#__header').addClass('headerMod');
+    $('#logo_pl').addClass('black');
+    $('#logo_pl').removeClass('white_logo');
+  }
+</script>
+
+
+
+
+<!DOCTYPE html>	
+	<html lang="en" data-n-head="%7B%22lang%22:%7B%22ssr%22:%22en%22%7D,%22style%22:%7B%22ssr%22:%22--h:100vh;%20--w:100vw%22%7D%7D" class=" no-touchevents fullscreen objectfit object-fit no-touchevents fullscreen objectfit object-fit">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>{% block title %}{% endblock %}</title>
+
+	</head>
+
+	<body class="font-loaded" id="_body">
+    <noscript data-n-head="ssr" data-hid="gtm-noscript" data-pbody="true">
+   
+    </noscript>
+<div id="__nuxt">
+    <div></div>
+	    <div id="__layout">
+		    <div style="max-width:100vw;">
+			    <div class="process-bar" style="width: 19.5991%;"></div>
+
+			    	<header id="__header" class="header">
+	<div class="wrap header__wrap">
+		<a href="" class="logo__link nuxt-link-active">
+
+      <div class="logo-place col-2 p-0 white_logo" id="logo_pl">
+        <a href="main" (click)="this.openMenu = ''; this.selectedMenu = ''" routerLink="">
+
+        <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" version="1.0" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd"
+               viewBox="0 0 7671.58 2582.26" id="svg_logo">
+           <g id="Слой_x0020_1">
+            <metadata id="CorelCorpID_0Corel-Layer"/>
+             <g id="_2110903462144">
+             <g>
+               <path d="M923.31 159.68l323.33 -159.68 0 173.05 -323.33 161.01 0 -174.37 0 0.03 0 -0.03zm-214.47 1107.68c78.84,0 152.32,20.05 214.47,54.11l0 605.29c-62.16,34.75 -135.63,54.12 -214.47,54.12 -223.81,0 -405.51,-159.69 -405.51,-356.76 0,-197.08 181.73,-356.76 405.51,-356.76l0 0.02 0 -0.02zm214.47 -140.97l0 -456.29 323.33 -161.01 0 685.45c-86.17,116.26 -138.29,266.57 -138.29,430.92 0,164.36 52.11,314.68 138.29,430.25l0 152.33 -323.33 0 0 -106.23c-94.88,62.13 -209.1,98.19 -332.05,98.19 -326.04,0 -591.26,-253.87 -591.26,-565.86 0,-434.91 567.89,-738.9 923.28,-507.73l0.03 -0.03 0 0.03zm323.33 -861.17l0 151.01 -323.33 160.98 0 -150.97 323.33 -161.01z"/>
+               <path d="M1861.95 1042.21c354.76,0 643.37,258.52 643.37,577.23 0,318.67 -288.61,577.2 -643.37,577.2 -355.41,0 -643.37,-258.53 -643.37,-577.2 0,-318.68 287.96,-577.23 643.37,-577.23zm0 213.79c177.71,0 321.33,163.02 321.33,363.44 0,201.07 -143.65,363.43 -321.33,363.43 -177.71,0 -321.33,-162.34 -321.33,-363.43 0,-200.44 143.65,-363.44 321.33,-363.44z"/>
+               <path d="M3198.78 1042.21c161.01,0 307.99,56.13 418.9,146.98l-116.26 169.03c-114.22,-82.84 -165.7,-100.22 -302.65,-102.21 -136.95,-1.32 -314.65,163.02 -314.65,363.44 0,201.07 145.65,363.43 314.65,363.43 169.03,0 314,-128.28 328.03,-314l0 0c18.71,-128.93 22.05,-278.59 144.97,-417.52 115.57,-122.92 287.27,-199.11 430.91,-194.4 202.45,-4.03 247.2,8.04 342.07,69.49l0 -456.29 323.34 -161.01 0 685.45c0,861.16 -0.66,253.21 0,861.16l0 152.33 -323.34 0 0 -104.24c-94.87,62.14 -203.09,84.18 -333.39,84.18 -129.62,0 -253.87,-43.42 -350.06,-122.26l122.92 -193.06 0 0c74.16,86.17 239.84,108.22 345.41,108.22 105.54,0 152.98,-19.37 215.12,-54.11l0 -605.29c-62.13,-34.06 -136.31,-54.12 -215.12,-54.12 -199.76,0 -401.52,138.94 -401.52,352.08 0,13.37 -0.66,26.07 -1.34,38.77 -10.04,123.61 -70.82,237.83 -160.34,347.39 -114.93,116.92 -281.92,191.07 -467.67,191.07 -347.4,0 -629.34,-258.53 -629.34,-577.23 0,-318.68 281.92,-577.2 629.34,-577.2l0.02 -0.08 0 0.03z"/>
+               <path d="M5841.05 1042.21c378.81,1.99 585.25,366.79 563.19,577.23 -3.34,32.06 -6.01,54.78 -7.36,71.48 -53.45,0 0,0 -53.45,0l-199.11 0 -525.79 0 0 -176.38 518.46 0c-38.09,-149.65 -156.33,-258.53 -295.98,-258.53 -171.01,0 -309.31,163.02 -309.31,363.44 0,201.07 146.3,358.75 309.31,363.43 162.34,4.65 239.84,-36.09 302.67,-96.87l137.61 187.74c-114.9,78.84 -167.67,115.58 -440.25,122.92 -299.28,4.69 -629.98,-226.48 -619.31,-577.2 0,-318.68 240.5,-578.56 619.31,-577.23l0.02 0 0 -0.02z"/>
+               <path d="M5158.23 509.08l-323.33 161.01c0,451.6 0,903.91 0,1355.54 8.04,194.4 288.61,221.8 469.66,61.47 -70.14,-19.37 -145.63,-62.13 -146.3,-156.32l0 -1421.67 -0.03 -0.03z"/>
+             </g>
+            </g>
+           </g>
+          </svg>
+        </a>
+        </a>
+      </div>
+
+
+			<!-- <svg viewport="0 0 100 100" class="logo logo__pic">
+				<circle r="8" cx="10" cy="50" class="eye eye--left"></circle> 
+				<circle r="10" cx="40" cy="50" fill="transparent" stroke-dasharray="400" class="eye eye--right" style="stroke-dashoffset:725;"></circle> 
+				<text x="65" y="57" class="logo__text">222</text>
+			</svg> -->
+		</a> 
+		<nav id="main-nav" class="main-nav activated">
+			<ul class="main-nav__list" id="_ul">
+        <span id="_span">
+				<li class="main-nav__item" id="top_menu1_1">
+          
+              
+					<div class="main-nav__sub-list-box psevdoAnimate" >
+						<svg preserveAspectRatio="none" viewBox="0 0 800 300" width="100%" height="100%" class="main-nav__sub-svg">
+							<path x="0" y="0" d="M 0 0 L 0 0 L 800 0 L 800 0 " vector-effect="non-scaling-stroke" class="main-nav__sub-path"></path>
+						</svg> 
+						<div class="wrap">
+							<ul class="main-nav__sub-list">
+								<li class="main-nav__sub-item" >
+									<a href="#" class="main-nav__sub-link">
+										<span class="link-divider">Web Development</span>
+									</a>
+								</li>
+								<li class="main-nav__sub-item">
+									<a href="#" class="main-nav__sub-link">
+										<span class="link-divider">Mobile Development</span>
+									</a>
+								</li>
+								<li class="main-nav__sub-item">
+									<a href="#" class="main-nav__sub-link">
+										<span class="link-divider">UI/UX Design</span>
+									</a>
+								</li>
+								<li class="main-nav__sub-item">
+									<a href="#" class="main-nav__sub-link">
+										<span class="link-divider">chatbots</span>
+									</a>
+								</li> <!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!---->
+							</ul>
+						</div>
+					</div> 
+          <a href="s" class="main-nav__link nuxt-link-exact-active nuxt-link-active" id="top_menu1">
+         
+                <span class="main-nav__link--goal">
+                    Services
+                   <img class="main-nav__link--circ arrow-down" src="{% static 'css/assets/arrow-down.svg' %}">
+                </span>
+                
+              </a> 
+              <span class="main-nav__toggler" id="_toggler1">
+                  <img class="arrow-down-white" src="{% static 'css/assets/arrow-down-2.svg' %}" alt="">
+              </span>
+      	</li>
+
+      			<li class="main-nav__item" id="top_menu2_2">
+                
+
+      				<div class="main-nav__sub-list-box psevdoAnimate">
+      					<svg preserveAspectRatio="none" viewBox="0 0 800 300" width="100%" height="100%" class="main-nav__sub-svg">
+      						<path x="0" y="0" d="M 0 0 L 0 0 L 800 0 L 800 0 " vector-effect="non-scaling-stroke" class="main-nav__sub-path"></path>
+      					</svg> 
+      					<div class="wrap">
+      						<ul class="main-nav__sub-list">
+      							<li class="main-nav__sub-item">
+      								<a href="#" class="main-nav__sub-link">
+      									<span class="link-divider">Outsourcing</span>
+      								</a>
+      							</li>
+      							<li class="main-nav__sub-item">
+      								<a href="#" class="main-nav__sub-link">
+      									<span class="link-divider">Dedicated team</span>
+      								</a>
+      							</li>
+      							<li class="main-nav__sub-item">
+      								<a href="#" class="main-nav__sub-link">
+      									<span class="link-divider">MVP</span>
+      								</a>
+      							</li> <!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!---->
+      						</ul>
+      					</div>
+      				</div> 
+      				
+               <a href="sol" class="main-nav__link " id="top_menu2">
+         
+                <span class="main-nav__link--goal">
+                    Solutions
+                   <img class="main-nav__link--circ arrow-down" src="{% static 'css/assets/arrow-down.svg' %}">
+                </span>
+                
+              </a> 
+              <span class="main-nav__toggler" id="_toggler2">
+                  <img class="arrow-down-white" src="{% static 'css/assets/arrow-down-2.svg' %}" alt="">
+              </span>
+
+          		</li>
+
+          		<li class="main-nav__item" id="top_menu3_3">
+
+                  
+                <!-- <span class="main-nav__toggler">
+                  <img src="./Solutions_files/toggler.svg" alt="">
+                </span> -->
+
+          			<div class="main-nav__sub-list-box psevdoAnimate">
+          				<svg preserveAspectRatio="none" viewBox="0 0 800 300" width="100%" height="100%" class="main-nav__sub-svg">
+          					<path x="0" y="0" d="M 0 0 L 0 0 L 800 0 L 800 0 " vector-effect="non-scaling-stroke" class="main-nav__sub-path"></path>
+          				</svg> 
+          				<div class="wrap">
+          					<ul class="main-nav__sub-list subChild">
+                      
+          						<li class="main-nav__sub-item">
+
+          							<a href="#">
+          								<span class="link-divider">Frontend</span>
+          							</a>
+          						</li>
+          						<li class="main-nav__sub-item">
+          							<a href="#">
+          								<span class="link-divider">Backend</span>
+          							</a>
+          						</li>
+          						<li class="main-nav__sub-item">
+          							<a href="#">
+          								<span class="link-divider">Databases</span>
+          							</a>
+          						</li>
+          						<li class="main-nav__sub-item">
+          							<a href="#">
+          								<span class="link-divider">Mobile</span>
+          							</a>
+          						</li>
+          						<li class="main-nav__sub-item">
+          							<a href="#" class="main-nav__sub-link">
+          								<span class="link-divider">Services</span>
+                        </a>
+                      </li> 
+
+                      {% for tech in technologies %}
+                      {% if forloop.counter <= 14 %}
+                      <li class="subChild__item">
+                        <a href="#" class="subChild__item-link">
+
+                            {% autoescape off %} 
+
+                              {{ tech.svg }} 
+
+                            {% endautoescape %}
+                          <!-- <svg viewBox="0 0 600 600" fill="#61DAFB" xmlns="http://www.w3.org/2000/svg" class="s-tech__img">
+                            <circle cx="299.5" cy="299.6" r="50.2" class="svg-brand"></circle>
+                            <path d="M299.5 414.6c-70.5 0-132.1-8.3-178.2-24.1-29.9-10.2-55.3-23.8-73.4-39.3-19.2-16.4-29.4-34.3-29.4-51.6 0-33.2 36.4-65.7 97.5-86.9 50-17.4 115.2-27.1 183.4-27.1 67 0 131.3 9.4 181 26.6 29.1 10 53.6 23 71 37.4 18.9 15.8 28.9 33.1 28.9 50 0 34.5-40.7 69.4-106.3 91.1-46.4 15.4-108.4 23.9-174.5 23.9zm0-205c-64.7 0-128.7 9.4-175.5 25.7-56.2 19.6-81.4 46.4-81.4 64.3 0 18.6 27.1 47.9 86.5 68.2 43.6 14.9 102.6 22.8 170.4 22.8 63.6 0 122.9-8 167-22.7 61.7-20.5 89.9-49.8 89.9-68.3 0-9.5-7.2-20.7-20.3-31.6-15.1-12.6-37.1-24.1-63.4-33.2-47.3-16.2-108.8-25.2-173.2-25.2z" class="svg-brand">
+                            </path>
+                            <path d="M185.6 549.8c-10.2 0-19.2-2.2-26.8-6.6-28.7-16.6-38.7-64.4-26.6-127.9 9.9-52.1 34.1-113.3 68.2-172.4 33.5-58 73.7-109 113.4-143.5 23.2-20.2 46.7-35 67.9-42.8 23.1-8.5 43.1-8.5 57.7-.1 29.9 17.2 39.8 70 25.8 137.6-9.9 48-33.5 105.9-66.5 163.2-35.2 61-73.2 110.2-109.9 142.3-23.8 20.8-48.3 36-70.7 43.9-11.7 4.2-22.7 6.3-32.5 6.3zm25.1-300.9l10.4 6c-32.3 56-56.2 116.1-65.4 164.9-11.1 58.5-.4 93.7 15 102.6 3.8 2.2 8.8 3.4 14.9 3.4 19.9 0 51.2-12.6 87.4-44.2 34.7-30.3 71-77.5 104.9-136.2 31.8-55.1 54.4-110.5 63.8-156 13.1-63.7 1.8-102.7-14.3-112-8.2-4.7-21.5-4.1-37.5 1.8-18.5 6.8-39.4 20.1-60.4 38.4-37.7 32.8-76.2 81.6-108.4 137.4l-10.4-6.1z" class="svg-brand"></path>
+                            <path d="M413.4 550.1c-27.2 0-61.7-16.4-97.7-47.4-40.2-34.6-81.1-86.1-115.3-145.2-33.6-58-57.6-118.3-67.7-170-5.9-30.2-7-57.9-3.2-80.2 4.2-24.3 14.1-41.6 28.8-50.1 29.8-17.3 80.5.5 132.1 46.4 36.6 32.5 75 81.9 108.1 139.1 35.3 61 59 118.5 68.4 166.3 6.1 31 7.1 59.8 2.8 83.2-4.6 24.9-15 42.6-30 51.3-7.5 4.4-16.4 6.6-26.3 6.6zM221.2 345.5c32.4 56 72.6 106.7 110.2 139 45.1 38.8 80.9 47.2 96.4 38.2 16.1-9.3 27.9-47.4 15.7-109-9-45.2-31.7-100.2-65.7-158.9-31.9-55.1-68.6-102.4-103.3-133.2-48.6-43.2-88-52.9-104.1-43.6-8.2 4.7-14.3 16.6-17.2 33.4-3.3 19.4-2.3 44.2 3.1 71.5 9.6 49.1 32.6 106.8 64.9 162.6z" class="svg-brand"></path>
+                          </svg>  -->
+                          <span class="subChild__item-name h3">{{ tech.name }}</span>
+                        </a>
+                      </li>
+                      {% endif %}
+                      {% endfor %}
+                      
+                    </ul>
+                  </div>
+                </div> 
+                <a href="t" class="main-nav__link" id="top_menu3">
+                    <span class="main-nav__link--goal">
+                    Technologies
+                     <img class="main-nav__link--circ arrow-down" src="{% static 'css/assets/arrow-down.svg' %}">
+
+                    </span> <!---->
+                </a> 
+                <span class="main-nav__toggler" id="_toggler3">
+                  <img class="arrow-down-white" src="{% static 'css/assets/arrow-down-2.svg' %}" alt="">
+              </span>
+
+      </li>
+    </span>
+      <li class="main-nav__item">
+        <div class="main-nav__sub-list-box psevdoAnimate">
+          <svg preserveAspectRatio="none" viewBox="0 0 800 300" width="100%" height="100%" class="main-nav__sub-svg">
+            <path x="0" y="0" d="M 0 0 L 0 0 L 800 0 L 800 0 " vector-effect="non-scaling-stroke" class="main-nav__sub-path"></path>
+          </svg> 
+          <div class="wrap">
+            <ul class="main-nav__sub-list"> <!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!---->
+              
+            </ul>
+          </div>
+        </div> 
+        <a href="ca" class="main-nav__link" id="top_menu4">
+          <span class="main-nav__link--goal">
+          Cases
+          </span> <!---->
+        </a> <!---->
+      </li>
+      <li class="main-nav__item">
+        <div class="main-nav__sub-list-box psevdoAnimate">
+          <svg preserveAspectRatio="none" viewBox="0 0 800 300" width="100%" height="100%" class="main-nav__sub-svg">
+            <path x="0" y="0" d="M 0 0 L 0 0 L 800 0 L 800 0 " vector-effect="non-scaling-stroke" class="main-nav__sub-path"></path>
+          </svg> 
+          <div class="wrap">
+            <ul class="main-nav__sub-list"> <!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!---->
+              
+            </ul>
+          </div>
+        </div> 
+        <a href="b" class="main-nav__link" id="top_menu5">
+          <span class="main-nav__link--goal">
+          Blog
+          </span> <!---->
+        </a> <!---->
+      </li>
+      <li class="main-nav__item">
+        <div class="main-nav__sub-list-box psevdoAnimate">
+          <svg preserveAspectRatio="none" viewBox="0 0 800 300" width="100%" height="100%" class="main-nav__sub-svg">
+            <path x="0" y="0" d="M 0 0 L 0 0 L 800 0 L 800 0 " vector-effect="non-scaling-stroke" class="main-nav__sub-path"></path>
+          </svg> 
+          <div class="wrap">
+            <ul class="main-nav__sub-list"> <!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!---->
+              
+            </ul>
+          </div>
+        </div> 
+        <a href="a" class="main-nav__link" id="top_menu6">
+          <span class="main-nav__link--goal">
+          About us
+          </span> <!---->
+        </a> <!---->
+      </li>
+      <li class="main-nav__item contact"><!----> 
+        <a href="co" class="main-nav__link" id="top_menu7">
+          <span class="main-nav__link--goal">
+          Contact us
+          </span> 
+          <span class="b-more__circle"></span>
+        </a> <!---->
+      </li>
+    </ul>
+  </nav> 
+  <button class="header__burger" id="burger"></button>
+</div>
+          </header>
+     
+				</div>
+
+			</div>
+      
+		</div> 
+    <div>
+      {% block content %}
+      {% endblock %}
+    </div>
+
+</body>
+<script type="text/javascript" id="">!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","");fbq("init","548131962240056");fbq("set","agent","tmgoogletagmanager","548131962240056");fbq("track","PageView");</script>
+<noscript><img height="1" width="1" style="display:none" src=""></noscript>
+<meta name="google-site-verification" content="wIfz23hiW6DzX3abM4PoFDQM9SXuMGg42NF7YOp1br0">
+
+
+  <script src="{% static 'js/jquery/jquery-2.1.4.min.js' %}"></script>
+  <script src="{% static 'js/bootstrap/js/bootstrap.min.js' %}"></script>
+
+  <script src="{% static 'js/bootstrap/js/common.js' %}"></script>
+
+
+  <script type="text/javascript">
+     
+      $('#top_menu1').hover(function(){
+        $('#top_menu2_2').removeClass('active');
+        $('#top_menu3_3').removeClass('active');
+        $('#top_menu1_1').addClass('active');
+        $('#__header').addClass('headerMod');
+        //$('#logo_pl').addClass('black');
+        //$('#logo_pl').removeClass('white_logo');
+
+          if ($('#__header').hasClass('headerMod')) {
+            $('#logo_pl').addClass('black');
+            $('#logo_pl').removeClass('white_logo');
+          }
+
+
+
+      }, function() {        
+        $('#main-nav').removeClass('activated');
+        
+      });
+
+      $('#logo_pl').hover(function(){
+        $('#top_menu1_1').removeClass('active');
+        //$('#__header').removeClass('headerMod');
+        //$('#logo_pl').addClass('white_logo');
+        //$('#logo_pl').removeClass('black');
+
+        if ($('#__header').hasClass('headerMod')) {
+            $('#logo_pl').addClass('black');
+            $('#logo_pl').removeClass('white_logo');
+          }
+
+        if (!$('#__header').hasClass('headerMod')) {
+            $('#logo_pl').removeClass('black');
+            $('#logo_pl').addClass('white_logo');
+          }
+
+        if ($('#__header').hasClass('fixed')) {
+            $('#logo_pl').addClass('black');
+            $('#logo_pl').removeClass('white_logo');
+        }
+
+      }, function() {
+          //$('#top_menu1_1').removeClass('active');
+          //$('#__header').removeClass('headerMod');
+          //$('#logo_pl').addClass('white_logo');
+          //$('#logo_pl').removeClass('black');
+        $()
+      });
+
+
+      $('#top_menu2').hover(function(){
+        $('#top_menu1_1').removeClass('active'); // --
+        $('#top_menu3_3').removeClass('active');
+        $('#top_menu2_2').addClass('active');
+        $('#__header').addClass('headerMod');
+        //$('#logo_pl').addClass('black');
+        //$('#logo_pl').removeClass('white_logo');
+
+        if ($('#__header').hasClass('headerMod')) {
+            $('#logo_pl').addClass('black');
+            $('#logo_pl').removeClass('white_logo');
+          }
+
+      }, function() {        
+        $('#main-nav').removeClass('activated');
+
+        
+      });
+
+      $('#top_menu2_2').hover(function(){
+
+      }, function() {
+          //$('#top_menu2_2').removeClass('active');
+          //$('#__header').removeClass('headerMod');
+          //$('#logo_pl').addClass('white_logo');
+          //$('#logo_pl').removeClass('black');
+        $()
+      });
+
+
+      $('#top_menu3').hover(function(){
+        $('#top_menu1_1').removeClass('active'); // --
+        $('#top_menu2_2').removeClass('active');
+        $('#top_menu3_3').addClass('active');
+        $('#__header').addClass('headerMod');
+        //$('#logo_pl').addClass('black');
+        //$('#logo_pl').removeClass('white_logo');
+
+        if ($('#__header').hasClass('headerMod')) {
+            $('#logo_pl').addClass('black');
+            $('#logo_pl').removeClass('white_logo');
+          }
+
+      }, function() {        
+        $('#main-nav').removeClass('activated');
+        
+      });
+
+      $('#_ul').hover(function(){
+
+      }, function() {
+          $('#top_menu3_3').removeClass('active');
+          $('#top_menu1_1').removeClass('active'); // --
+          $('#top_menu2_2').removeClass('active');
+          $('#__header').removeClass('headerMod');
+          //$('#logo_pl').addClass('white_logo');
+          //$('#logo_pl').removeClass('black');
+
+          if (!$('#__header').hasClass('headerMod')) {
+            $('#logo_pl').removeClass('black');
+            $('#logo_pl').addClass('white_logo');
+          }
+
+          if ($('#__header').hasClass('fixed')) {
+            $('#logo_pl').addClass('black');
+            $('#logo_pl').removeClass('white_logo');
+        }
+
+        $()
+      });
+
+      $('#top_menu4, #top_menu5, #top_menu6, #top_menu7').hover(function(){
+        $('#top_menu3_3').removeClass('active');
+        $('#top_menu1_1').removeClass('active'); // --
+        $('#top_menu2_2').removeClass('active');
+        $('#__header').removeClass('headerMod');
+        //$('#logo_pl').addClass('white_logo');
+        //$('#logo_pl').removeClass('black');
+
+        if (!$('#__header').hasClass('headerMod')) {
+            $('#logo_pl').removeClass('black');
+            $('#logo_pl').addClass('white_logo');
+          }
+
+        if ($('#__header').hasClass('fixed')) {
+          $('#logo_pl').addClass('black');
+          $('#logo_pl').removeClass('white_logo');
+      }
+
+      });
+
+      if ($('#__header').hasClass('headerMod')) {
+        $('#logo_pl').addClass('black');
+        $('#logo_pl').removeClass('white_logo');
+      }
+
+
+  </script>
+
+
+
+  <script type="text/javascript">
+
+    $(document).scroll(function() {
+
+  var scrollTop = $(window).scrollTop();
+        if (scrollTop >= 70 ) {
+            $('#__header').addClass('fixed');
+            $('#__header').addClass('down');
+            $('#__header').addClass('headerMod');
+            $('#logo_pl').addClass('black');
+            $('#logo_pl').removeClass('white_logo');
+        }
+        else{
+            $('#__header').removeClass('down');
+            $('#__header').removeClass('fixed');
+            $('#__header').removeClass('headerMod');
+            $('#logo_pl').removeClass('black');
+            $('#logo_pl').addClass('white_logo');
+        }
+  });
+
+
+      
+
+
+
+
+
+
+</script>
+
+<script type="text/javascript">
+
+  $(document).ready(function(){
+  $('#burger').click(function () {
+   // $('#_body').toggleClass('overflow');
+    $('#__header').toggleClass('mobileMenu');
+    $('#_ul').toggleClass('open');
+    $('#burger').toggleClass('open');
+    });
+  });
+
+  $(document).ready(function(){
+  $('#_toggler1').click(function () {
+    $('#top_menu1_1').toggleClass('toggleOpen');
+    });
+  });
+
+  $(document).ready(function(){
+  $('#_toggler2').click(function () {
+    $('#top_menu2_2').toggleClass('toggleOpen');
+    });
+  });
+
+  $(document).ready(function(){
+  $('#_toggler3').click(function () {
+    $('#top_menu3_3').toggleClass('toggleOpen');
+    });
+  });
+
+ 
+
+</script>
+
+<!-- <script src="{% static 'js/0.js' %}" defer=""></script>
+<script src="{% static 'js/105.js' %}" defer=""></script>
+<script src="{% static 'js/30.js' %}" defer=""></script>
+<script src="{% static 'js/33.js' %}" defer=""></script>
+<script src="{% static 'js/37.js' %}" defer=""></script>
+<script src="{% static 'js/43.js' %}" defer=""></script>
+<script src="{% static 'js/48.js' %}" defer=""></script>
+<script src="{% static 'js/49.js' %}" defer=""></script>
+<script src="{% static 'js/50.js' %}" defer=""></script>
+<script src="{% static 'js/55.js' %}" defer=""></script>
+<script src="{% static 'js/56.js' %}" defer=""></script>
+<script src="{% static 'js/57.js' %}" defer=""></script>
+<script src="{% static 'js/58.js' %}" defer=""></script>
+<script src="{% static 'js/6.js' %}" defer=""></script>
+<script src="{% static 'js/60.js' %}" defer=""></script>
+<script src="{% static 'js/62.js' %}" defer=""></script>
+<script src="{% static 'js/7.js' %}" defer=""></script>
+<script src="{% static 'js/78.js' %}" defer=""></script>
+<script src="{% static 'js/94.js' %}" defer=""></script>
+<script src="{% static 'js/96.js' %}" defer=""></script> 
+<script src="{% static 'js/analytics.js' %}" defer=""></script>
+<script src="{% static 'js/app.js' %}" defer=""></script> 
+<script src="{% static 'js/fbevents.js' %}" defer=""></script>
+<script src="{% static 'js/gtm.js' %}" defer=""></script>-->
+	
+
+</html>
+
+
+
+

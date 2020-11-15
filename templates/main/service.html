@@ -1,0 +1,212 @@
+{% extends 'main/menu.html' %}
+{% load static %}
+{% load i18n %}
+
+{% block title %}Services{% endblock %}
+{% block content %}
+<link rel="stylesheet" href="{% static 'css/main.css' %}">
+<link rel="stylesheet" href="{% static 'css/service.component.css' %}">
+
+
+<section class="service-banner-section header-section">
+  <div class="container h-100">
+    <div class="row align-items-center h-100">
+      <div class="col-12 bunner-title p-0">
+        <h1 class="mt-1 mr-0">SERVICES</h1>
+        <p class="text-p ">Doodle is your reliable partner for any business-changing solutions.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="service-sol-section bow p-calc">
+  <div class="container">
+    <div class="row">
+      <div class="title h2 col-12">WE CAN HELP YOU WITH</div>
+      <p class="title-p">Creative designs and user-friendly interfaces can contribute to your business success in web and mobile
+      </p>
+      <ul class="service-list ">
+        <li class="list-item_d col-lg-4">
+
+          <a routerLink="Service/web-development">
+            <div class="social-z social-img">
+              <svg viewBox="0 0 75 62" fill="none" xmlns="http://www.w3.org/2000/svg" class="sols-img"><path d="M13.3 54.4h54.4v2.5c0 2.5-2 4.5-4.5 4.5H4.8c-2.5 0-4.5-2-4.5-4.5V11.8c0-2.5 2-4.5 4.5-4.5h2.5v41.1c.1 3.3 2.7 6 6 6z" class="fin"></path><path d="M71.8.3H13.4c-1.6 0-3 1.3-3 3v8.8h64.4V3.3c-.1-1.7-1.4-3-3-3zM16.9 9.8c-1.6 0-2.9-1-3.3-2.5-.1-.3-.2-.6-.2-1 0-1.9 1.6-3.4 3.5-3.4s3.4 1.5 3.4 3.4c0 .4-.1.7-.1 1-.4 1.4-1.8 2.5-3.3 2.5zm9.3 0c-1.5 0-2.9-1-3.3-2.5-.1-.3-.2-.6-.2-1 0-1.9 1.6-3.4 3.4-3.4 1.9 0 3.5 1.5 3.5 3.4 0 .4-.1.7-.2 1-.3 1.4-1.6 2.5-3.2 2.5zm9.3 0c-1.6 0-2.9-1-3.3-2.5-.1-.3-.1-.6-.1-1 0-1.9 1.5-3.4 3.4-3.4s3.4 1.5 3.4 3.4c0 .4 0 .7-.1 1-.4 1.4-1.7 2.5-3.3 2.5zM74.7 15.1v33.4c0 1.6-1.3 3-3 3H13.3c-1.6 0-3-1.3-3-3V15.1h64.4z" fill="#000"></path><path d="M18.3 6.3c0 .4-.1.7-.4 1-.3.3-.6.5-1 .5s-.8-.2-1.1-.5c-.2-.3-.4-.6-.4-1 0-.8.7-1.4 1.5-1.4s1.4.6 1.4 1.4zM27.7 6.3c0 .4-.2.7-.4 1-.3.3-.6.5-1.1.5-.4 0-.8-.2-1-.5-.2-.3-.4-.6-.4-1 0-.8.7-1.4 1.4-1.4.8 0 1.5.6 1.5 1.4zM37 6.3c0 .4-.1.7-.4 1-.3.3-.6.5-1.1.5-.4 0-.8-.2-1.1-.5-.2-.3-.4-.6-.4-1 0-.8.6-1.4 1.4-1.4.8 0 1.6.6 1.6 1.4z" fill="#000"></path></svg>
+            </div>
+            <div class="link-title">
+              Web Development
+            </div>
+            <p>Cutting-edge technologies and reliable battle-tested solutions are used for web development at DOODLE.</p>
+          </a>
+        </li>
+        <li class="list-item_d col-lg-4">
+          <a routerLink="Service/mobile-development">
+            <div class="social-z social-img">
+              <svg viewBox="0 0 39 62" fill="none" xmlns="http://www.w3.org/2000/svg" class="sols-img"><path d="M31.6 54.4v1c0 3.3-2.7 6-6 6H6c-3.3 0-6-2.7-6-6V13.3c0-3.3 2.7-6 6-6h1v39.6c0 4.1 3.4 7.5 7.5 7.5h17.1z" class="fin"></path><path d="M30.1 1.6c0 .8-.6 1.4-1.4 1.4h-8.8c-.8 0-1.4-.6-1.4-1.4 0-.6.4-1.1.9-1.3.1-.1.3-.1.5-.1h8.8c.2 0 .3 0 .5.1.5.2.9.7.9 1.3z" fill="#000"></path><path d="M38.6 4.8v42.1c0 2.5-2 4.5-4.5 4.5H14.5c-2.5 0-4.5-2-4.5-4.5V4.8c0-2.5 2-4.5 4.5-4.5h2.3c-.2.4-.3.8-.3 1.3C16.5 3.5 18 5 19.9 5h8.8c1.9 0 3.4-1.5 3.4-3.4 0-.5-.1-.9-.3-1.3h2.3c2.5 0 4.5 2 4.5 4.5z" fill="#000"></path><path d="M28.7.2h-8.8c-.2 0-.3 0-.5.1h9.7c-.1-.1-.2-.1-.4-.1z" fill="#fff"></path><path d="M30.1 1.6c0 .8-.6 1.4-1.4 1.4h-8.8c-.8 0-1.4-.6-1.4-1.4 0-.6.4-1.1.9-1.3.1-.1.3-.1.5-.1h8.8c.2 0 .3 0 .5.1.5.2.9.7.9 1.3z" fill="#000"></path></svg>
+            </div>
+            <div class="link-title">
+              Mobile Development
+            </div>
+            <p>We use practical solutions for mobile application development to facilitate your business growth and brand recognition.</p>
+          </a>
+        </li>
+        <li class="list-item_d col-lg-4">
+          <a routerLink="Service/ui-ux">
+            <div class="social-z social-img">
+              <svg viewBox="0 0 63 62" fill="none" xmlns="http://www.w3.org/2000/svg" class="sols-img"><path d="M47 54.3v2.6c0 2.4-2 4.4-4.4 4.4H4.4c-2.4 0-4.4-2-4.4-4.4V18.7c0-2.4 2-4.4 4.4-4.4H7v34.1c0 3.3 2.7 5.9 5.9 5.9H47z" class="fin"></path><path d="M54 33.3v15.1c0 1.6-1.3 2.9-2.9 2.9H12.9c-1.6 0-2.9-1.3-2.9-2.9V10.2c0-1.6 1.3-2.9 2.9-2.9h17.6c-1.1 2.1-1.8 4.5-2 7 0 .5-.1 1.1-.1 1.6 0 10.3 8.3 18.6 18.5 18.7h.2c2.5 0 4.8-.4 6.9-1.3z" fill="#000"></path><path d="M62.8 15.9c0 4.9-2.3 9.3-5.9 12.2-.5.4-1 .8-1.5 1.1-.5.3-1 .6-1.5.8-2.1 1-4.4 1.6-6.8 1.6H47c-8.6-.1-15.5-7.1-15.5-15.7 0-.5 0-1.1.1-1.6.3-2.6 1.1-5 2.5-7 .4-.5.7-1 1.1-1.5.4-.5.9-1 1.4-1.5C39.4 1.8 43.1.2 47.2.2c8.6 0 15.6 7.1 15.6 15.7z" fill="#000"></path></svg>
+            </div>
+            <div class="link-title">
+              UI / UX
+            </div>
+            <p>Creative designs and user-friendly interfaces can contribute to your business success.</p>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="service-tech-section header-section">
+  <div class="container">
+    <div class="row">
+      <h2 class="title heading-t">WE CAN ALSO ASSIST YOU WITH</h2> <!---->
+      <ul class="ob__scoped red-list-d"><!----><!----><!----><!---->
+        <li class="red-item-d d4 ob is-visible">
+          <div class="red-link-d">
+            <div class="heading-m">
+              <div class="red-title-d">QA &amp; Testing</div>
+            </div>
+            <p class="red-intro-d text-s">This crucial step ensures the quality of a developed product before delivering it to end-users. Security and longevity of your product is our primary responsibility.</p> <!---->
+          </div>
+        </li>
+        <li class="red-item-d d5 ob is-visible">
+          <div class="red-link-d"><div class="heading-m">
+            <div class="red-title-d">Support </div>
+          </div>
+            <p class="red-intro-d text-s">Flexible ongoing technical support and general maintenance are the key elements in a long-term cooperation with our clients. That’s how we work!</p> <!---->
+          </div>
+        </li>
+        <li class="red-item-d d6 ob is-visible">
+          <div class="red-link-d">
+            <div class="heading-m">
+              <div class="red-title-d">Saas</div>
+            </div>
+            <p class="red-intro-d text-s">Saas as the delivery business app software has a range of benefits for your modern business model and we can be of help to you with its implementation.</p> <!---->
+          </div>
+        </li>
+        <li class="red-item-d d7 ob is-visible">
+          <div class="red-link-d">
+            <div class="heading-m">
+              <div class="red-title-d">API development</div>
+            </div>
+            <p class="red-intro-d text-s">A strong API approach helps companies integrate communications into business processes. The best channel to accelerate your business and remain competitive.</p> <!---->
+          </div>
+        </li>
+        <li class="red-item-d d8 ob is-visible">
+          <div class="red-link-d">
+            <div class="heading-m">
+              <div class="red-title-d">eCommerce development</div>
+            </div>
+            <p class="red-intro-d text-s">It’s not only about selling and buying products. We are ready to offer you advanced e-commerce professional solutions for better business operations.</p> <!---->
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="service-progress-section bow">
+  <div class="container">
+      <div class="title h2 col-12">HOW IT WORKS</div>
+      <p class="title-p">You need three things to set up a successful startup: start with the right people, create a product that customers actually want, spend as little money as possible
+      </p>
+      <div class="circle-list-d">
+        <div class="circle-column-d circle-column-1-d">
+          <p>Budget</p>
+          <p>Backlog</p>
+          <p>Quality requests</p>
+          <p>Domain Knowledge</p>
+          <p>Business development</p>
+          <svg width="100%" height="100%" viewBox="0 0 120 120" preserveAspectRatio="none" class="circle-border-d">
+            <circle cx="60" cy="60" r="58" stroke-dasharray="0 2" stroke-linecap="round" fill="transparent" class="circle-path-d">
+            </circle>
+          </svg>
+        </div>
+        <div class="circle-column-d circle-column-2-d">
+          <p>Design</p>
+          <p>Architecture</p>
+          <p>Maintenance</p>
+          <p>Infrastucture</p>
+          <p>Development expertise</p>
+          <svg width="100%" height="100%" viewBox="0 0 120 120" preserveAspectRatio="none" class="circle-border-d">
+            <circle cx="60" cy="60" r="58" stroke-dasharray="0 2" stroke-linecap="round" fill="transparent" class="circle-path-d">
+            </circle>
+          </svg>
+        </div>
+        <div class="circle-round-d circle-round-1-d">
+        You
+      </div>
+        <div class="circle-round-d circle-round-2-d">
+        Product
+      </div>
+        <div class="circle-round-d circle-round-3-d">
+        Doodle.tj
+      </div>
+      </div>
+
+
+
+
+
+    </div>
+</section>
+<section class="service-mod-section bow">
+  <div class="container">
+    <div class="row">
+      <ul class="service-list ">
+        <li class="list-item_d list-item_b col-lg-6">
+          <a routerLink="/Solution">
+            <div class="link-title">
+              OTHER SOLUTION
+            </div>
+            <p>Our experienced engineers and top designers are at your service whenever you might need support with any types of projects!</p>
+          </a>
+        </li>
+        <li class="list-item_d list-item_b col-lg-6">
+          <a routerLink="/about">
+            <div class="link-title">
+              MORE ABOUT DOODLE
+            </div>
+            <p>We are professionals with our own story. Let's get acquainted before we start working together on your business idea.</p>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+<section class="action-section">
+  <div class="container">
+    <div class="row action-d footer">
+      <a class="action_b button-main mt-4" routerLink="contact">LET’S TALK</a>
+      <b class="action_title ">READY TO SHARE YOUR BUSINESS IDEA WITH US?</b>
+    </div>
+  </div>
+</section>
+
+<script src="{% static 'js/jquery/jquery-2.1.4.min.js' %}"></script>
+  <script src="{% static 'js/bootstrap/js/bootstrap.min.js' %}"></script>
+
+  <script src="{% static 'js/bootstrap/js/common.js' %}"></script>
+
+<script type="text/javascript">
+    $('#top_menu4').removeClass('nuxt-link-active');
+    $('#top_menu2').removeClass('nuxt-link-active');
+    $('#top_menu3').removeClass('nuxt-link-active');
+    $('#top_menu5').removeClass('nuxt-link-active');
+    $('#top_menu6').removeClass('nuxt-link-active');
+    $('#top_menu7').removeClass('nuxt-link-active');
+    $('#top_menu1').addClass('nuxt-link-active');
+
+</script>
+{% endblock %}
+
+
+

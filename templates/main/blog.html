@@ -1,0 +1,712 @@
+{% extends 'main/menu.html' %}
+{% load static %}
+{% load i18n %}
+
+
+{% block title %}Blog{% endblock %}
+{% block content %}
+<link rel="stylesheet" href="{% static 'css/main.css' %}">
+<link rel="stylesheet" href="{% static 'css/blog.component.css' %}">
+
+<style type="text/css">
+
+  .header svg{
+    fill:#000;
+    stroke:#000;
+    color:#000;
+  }
+  .header .main-nav__item{
+    fill:#000;
+    stroke:#000;
+    color:#000;
+  }
+  .main-nav__link--circ{
+    filter: invert(0);
+  }
+</style>
+
+
+<section class="blog-title-section bow">
+  <br> <br> <br> <br>
+  <div class="container">
+    <div class="row">
+      <h1 class="blog-title_heading">Thoughts &amp; Ideas</h1>
+    </div>
+  </div>
+</section>
+<section class="bow">
+  <div class="wrap blog-cat__wrap ">
+
+    <section class="blog-left-section">
+      <div class="blog-list-wrap">
+        <ul class="blog-list">
+          <li data-image-inside="loaded" class="blog-item-wrap ob is-visible" data-observe="" data-visible="">
+            <article class="blog-item"><a href="/blog/how-to-choose-a-web-design-company" class="blog-item-image-abs">
+              <div class="blog-item-thumb">
+                <img src="https://api.otakoyi.com/uploads/content/2020/06/16/thumb/how-to-choose-a-web-design-company-200x.png" alt="">
+              </div>
+              <div class="blog-item-image">
+                <picture>
+                  <source media="(max-width: 520px)" data-lazy="https://api.otakoyi.com/uploads/content/2020/06/16/520/how-to-choose-a-web-design-company-200x.png" srcset="https://api.otakoyi.com/uploads/content/2020/06/16/520/how-to-choose-a-web-design-company-200x.png">
+                  <img data-lazy="https://api.otakoyi.com/uploads/content/2020/06/16/1280/how-to-choose-a-web-design-company-200x.png" alt="" src="https://api.otakoyi.com/uploads/content/2020/06/16/1280/how-to-choose-a-web-design-company-200x.png" class="load">
+                </picture>
+              </div>
+            </a>
+              <div class="blog-item-control-wrap">
+                <ul class="blog-item-tags">
+                  <li class="blog-item-tag">
+                    <a href="/blog/tags/management" class="blog-item-link">Management</a>
+                  </li>
+                </ul>
+                <span class="blog-item-time">10 min read</span>
+              </div>
+              <a href="/blog/how-to-choose-a-web-design-company" class="blog-item-main-link heading-m">
+                <span>How to Choose a Web Design Company</span>
+              </a>
+            </article>
+          </li>
+          <li data-image-inside="loaded" class="blog-item-wrap ob is-visible" data-observe="" data-visible="">
+            <article class="blog-item">
+              <a href="/blog/what-is-it-outsourcing-best-practices-benefits-types" class="blog-item-image-abs">
+                <div class="blog-item-thumb">
+                  <img src="https://api.otakoyi.com/uploads/content/2020/06/04/thumb/what-is-it-outsourcing__01-199x.png" alt="">
+                </div>
+                <div class="blog-item-image">
+                  <picture>
+                    <source media="(max-width: 520px)" data-lazy="https://api.otakoyi.com/uploads/content/2020/06/04/520/what-is-it-outsourcing__01-199x.png" srcset="https://api.otakoyi.com/uploads/content/2020/06/04/520/what-is-it-outsourcing__01-199x.png">
+                    <img data-lazy="https://api.otakoyi.com/uploads/content/2020/06/04/1280/what-is-it-outsourcing__01-199x.png" alt="" src="https://api.otakoyi.com/uploads/content/2020/06/04/1280/what-is-it-outsourcing__01-199x.png" class="load">
+                  </picture>
+                </div>
+              </a>
+              <div class="blog-item-control-wrap">
+                <ul class="blog-item-tags">
+                  <li class="blog-item-tag">
+                    <a href="/blog/tags/management" class="blog-item-link">Management</a>
+                  </li>
+                </ul>
+                <span class="blog-item-time">18 min read</span>
+              </div>
+              <a href="/blog/what-is-it-outsourcing-best-practices-benefits-types" class="blog-item-main-link heading-m"><span>What is IT Outsourcing? Best Practices, Benefits, Types</span>
+              </a>
+            </article>
+          </li>
+          <li data-image-inside="loaded" class="blog-item-wrap ob is-visible" data-observe="" data-visible="">
+            <article class="blog-item">
+              <a href="/blog/dedicated-team-model-everything-you-need-to-know" class="blog-item-image-abs">
+                <div class="blog-item-thumb">
+                  <img src="https://api.otakoyi.com/uploads/content/2020/05/26/thumb/dedicated-team-modeljpg-198x.jpg" alt=""></div>
+                <div class="blog-item-image">
+                  <picture>
+                    <source media="(max-width: 520px)" data-lazy="https://api.otakoyi.com/uploads/content/2020/05/26/520/dedicated-team-modeljpg-198x.jpg" srcset="https://api.otakoyi.com/uploads/content/2020/05/26/520/dedicated-team-modeljpg-198x.jpg">
+                    <img data-lazy="https://api.otakoyi.com/uploads/content/2020/05/26/1280/dedicated-team-modeljpg-198x.jpg" alt="" src="https://api.otakoyi.com/uploads/content/2020/05/26/1280/dedicated-team-modeljpg-198x.jpg" class="load"></picture>
+                </div>
+              </a>
+              <div class="blog-item-control-wrap">
+                <ul class="blog-item-tags">
+                  <li class="blog-item-tag">
+                    <a href="/blog/tags/management" class="blog-item-link">Management</a>
+                  </li>
+                  <li class="blog-item-tag">
+                    <a href="/blog/tags/development" class="blog-item-link">Development</a>
+                  </li>
+                </ul>
+                <span class="blog-item-time">15 min read</span>
+              </div>
+              <a href="/blog/dedicated-team-model-everything-you-need-to-know" class="blog-item-main-link heading-m">
+                <span>Dedicated Team Model. Everything You Need to Know</span>
+              </a>
+            </article>
+          </li>
+          <li data-image-inside="loaded" class="blog-item-wrap ob is-visible" data-observe="" data-visible="">
+            <article class="blog-item">
+              <a href="/blog/ui-ux-design-trends-for-2020" class="blog-item-image-abs">
+                <div class="blog-item-thumb">
+                  <img src="https://api.otakoyi.com/uploads/content/2020/05/13/thumb/ui-ux_trends_2020-196x.jpg" alt=""></div>
+                <div class="blog-item-image">
+                  <picture>
+                    <source media="(max-width: 520px)" data-lazy="https://api.otakoyi.com/uploads/content/2020/05/13/520/ui-ux_trends_2020-196x.jpg" srcset="https://api.otakoyi.com/uploads/content/2020/05/13/520/ui-ux_trends_2020-196x.jpg">
+                    <img data-lazy="https://api.otakoyi.com/uploads/content/2020/05/13/1280/ui-ux_trends_2020-196x.jpg" alt="" src="https://api.otakoyi.com/uploads/content/2020/05/13/1280/ui-ux_trends_2020-196x.jpg" class="load"></picture>
+                </div>
+              </a>
+              <div class="blog-item-control-wrap">
+                <ul class="blog-item-tags">
+                  <li class="blog-item-tag">
+                    <a href="/blog/tags/design" class="blog-item-link">Design</a>
+                  </li>
+                </ul>
+                <span class="blog-item-time">15 min read</span>
+              </div>
+              <a href="/blog/ui-ux-design-trends-for-2020" class="blog-item-main-link heading-m">
+                <span>UI/UX Design Trends for 2020</span>
+              </a>
+            </article>
+          </li>
+          <li data-image-inside="loaded" class="blog-item-wrap ob is-visible" data-observe="" data-visible="">
+            <article class="blog-item">
+              <a href="/blog/how-does-pwa-implementation-can-benefit-your-business" class="blog-item-image-abs">
+                <div class="blog-item-thumb">
+                  <img src="https://api.otakoyi.com/uploads/content/2020/04/23/thumb/pwa-192x.png" alt=""></div>
+                <div class="blog-item-image"><picture>
+                  <source media="(max-width: 520px)" data-lazy="https://api.otakoyi.com/uploads/content/2020/04/23/520/pwa-192x.png" srcset="https://api.otakoyi.com/uploads/content/2020/04/23/520/pwa-192x.png">
+                  <img data-lazy="https://api.otakoyi.com/uploads/content/2020/04/23/1280/pwa-192x.png" alt="" src="https://api.otakoyi.com/uploads/content/2020/04/23/1280/pwa-192x.png" class="load"></picture>
+                </div>
+              </a>
+              <div class="blog-item-control-wrap">
+                <ul class="blog-item-tags">
+                  <li class="blog-item-tag">
+                    <a href="/blog/tags/development" class="blog-item-link">Development</a>
+                  </li>
+                  <li class="blog-item-tag">
+                    <a href="/blog/tags/management" class="blog-item-link">Management</a>
+                  </li>
+                </ul>
+                <span class="blog-item-time">12 min read</span>
+              </div>
+              <a href="/blog/how-does-pwa-implementation-can-benefit-your-business" class="blog-item-main-link heading-m">
+                <span>How Does PWA Implementation Can Benefit Your Business?</span>
+              </a>
+            </article>
+          </li>
+          <li data-image-inside="loaded" class="blog-item-wrap new ob is-visible" data-observe="" data-visible="">
+            <article class="blog-item">
+              <a href="/blog/fixed-price-vs-time-materials-when-you-should-choose-them" class="blog-item-image-abs">
+                <div class="blog-item-thumb">
+                  <img src="https://api.otakoyi.com/uploads/content/2020/06/11/thumb/fixed-price-vs-tm-187x.jpg" alt=""></div>
+                <div class="blog-item-image">
+                  <picture>
+                    <source media="(max-width: 520px)" data-lazy="https://api.otakoyi.com/uploads/content/2020/06/11/520/fixed-price-vs-tm-187x.jpg" srcset="https://api.otakoyi.com/uploads/content/2020/06/11/520/fixed-price-vs-tm-187x.jpg">
+                    <img data-lazy="https://api.otakoyi.com/uploads/content/2020/06/11/1280/fixed-price-vs-tm-187x.jpg" alt="" src="https://api.otakoyi.com/uploads/content/2020/06/11/1280/fixed-price-vs-tm-187x.jpg" class="load"></picture>
+                </div>
+              </a>
+              <div class="blog-item-control-wrap">
+                <ul class="blog-item-tags">
+                  <li class="blog-item-tag">
+                    <a href="/blog/tags/management" class="blog-item-link">Management</a>
+                  </li>
+                </ul>
+                <span class="blog-item-time">8 min read</span>
+              </div>
+              <a href="/blog/fixed-price-vs-time-materials-when-you-should-choose-them" class="blog-item-main-link heading-m">
+                <span>Fixed Price VS Time &amp; Materials — When You Should Choose Them?</span>
+              </a>
+            </article>
+          </li>
+          <li data-image-inside="loaded" class="blog-item-wrap new ob is-visible" data-observe="" data-visible="">
+            <article class="blog-item">
+              <a href="/blog/what-technologies-are-preferred-by-the-worlds-famous-organizations" class="blog-item-image-abs">
+                <div class="blog-item-thumb">
+                  <img src="https://api.otakoyi.com/uploads/content/2020/03/19/thumb/top-186x.jpg" alt=""></div>
+                <div class="blog-item-image">
+                  <picture>
+                    <source media="(max-width: 520px)" data-lazy="https://api.otakoyi.com/uploads/content/2020/03/19/520/top-186x.jpg" srcset="https://api.otakoyi.com/uploads/content/2020/03/19/520/top-186x.jpg">
+                    <img data-lazy="https://api.otakoyi.com/uploads/content/2020/03/19/1280/top-186x.jpg" alt="" src="https://api.otakoyi.com/uploads/content/2020/03/19/1280/top-186x.jpg" class="load"></picture>
+                </div>
+              </a>
+              <div class="blog-item-control-wrap">
+                <ul class="blog-item-tags">
+                  <li class="blog-item-tag">
+                    <a href="/blog/tags/development" class="blog-item-link">Development</a>
+                  </li>
+                </ul>
+                <span class="blog-item-time">6 min read</span>
+              </div>
+              <a href="/blog/what-technologies-are-preferred-by-the-worlds-famous-organizations" class="blog-item-main-link heading-m">
+                <span>What Technologies Are Preferred By the World’s Famous Organizations?</span>
+              </a>
+            </article>
+          </li>
+          <li data-image-inside="loaded" class="blog-item-wrap new ob is-visible" data-observe="" data-visible="">
+            <article class="blog-item">
+              <a href="/blog/how-to-setup-ssl-in-varnish-cache" class="blog-item-image-abs">
+                <div class="blog-item-thumb">
+                  <img src="https://api.otakoyi.com/uploads/content/2020/03/19/thumb/sll-in-varnish-184x.jpg" alt=""></div>
+                <div class="blog-item-image"><picture>
+                  <source media="(max-width: 520px)" data-lazy="https://api.otakoyi.com/uploads/content/2020/03/19/520/sll-in-varnish-184x.jpg" srcset="https://api.otakoyi.com/uploads/content/2020/03/19/520/sll-in-varnish-184x.jpg">
+                  <img data-lazy="https://api.otakoyi.com/uploads/content/2020/03/19/1280/sll-in-varnish-184x.jpg" alt="" src="https://api.otakoyi.com/uploads/content/2020/03/19/1280/sll-in-varnish-184x.jpg" class="load"></picture>
+                </div>
+              </a>
+              <div class="blog-item-control-wrap">
+                <ul class="blog-item-tags">
+                  <li class="blog-item-tag">
+                    <a href="/blog/tags/development" class="blog-item-link">Development</a>
+                  </li>
+                </ul>
+                <span class="blog-item-time">10 min read</span>
+              </div>
+              <a href="/blog/how-to-setup-ssl-in-varnish-cache" class="blog-item-main-link heading-m">
+                <span>How to Setup SSL in Varnish Cache</span>
+              </a>
+            </article>
+          </li>
+          <li data-image-inside="loaded" class="blog-item-wrap new ob is-visible" data-observe="" data-visible="">
+            <article class="blog-item"><a href="/blog/flutter-vs-react-native-in-2020" class="blog-item-image-abs">
+              <div class="blog-item-thumb">
+                <img src="https://api.otakoyi.com/uploads/content/2020/03/19/thumb/flutter-vs-react-native-166x.jpg" alt="">
+              </div>
+              <div class="blog-item-image">
+                <picture>
+                  <source media="(max-width: 520px)" data-lazy="https://api.otakoyi.com/uploads/content/2020/03/19/520/flutter-vs-react-native-166x.jpg" srcset="https://api.otakoyi.com/uploads/content/2020/03/19/520/flutter-vs-react-native-166x.jpg">
+                  <img data-lazy="https://api.otakoyi.com/uploads/content/2020/03/19/1280/flutter-vs-react-native-166x.jpg" alt="" src="https://api.otakoyi.com/uploads/content/2020/03/19/1280/flutter-vs-react-native-166x.jpg" class="load"></picture>
+              </div>
+            </a>
+              <div class="blog-item-control-wrap">
+                <ul class="blog-item-tags">
+                  <li class="blog-item-tag">
+                    <a href="/blog/tags/development" class="blog-item-link">Development</a>
+                  </li>
+                  <li class="blog-item-tag">
+                    <a href="/blog/tags/mobile" class="blog-item-link">Mobile</a>
+                  </li>
+                </ul>
+                <span class="blog-item-time">10 min read</span>
+              </div>
+              <a href="/blog/flutter-vs-react-native-in-2020" class="blog-item-main-link heading-m">
+                <span>Flutter vs React Native in 2020</span>
+              </a>
+            </article>
+          </li>
+          <li data-image-inside="loaded" class="blog-item-wrap new ob is-visible" data-observe="" data-visible="">
+            <article class="blog-item">
+              <a href="/blog/how-to-remove-idea-directory-from-git" class="blog-item-image-abs">
+                <div class="blog-item-thumb">
+                  <img src="https://api.otakoyi.com/uploads/content/2020/03/19/thumb/git-164x.jpg" alt="">
+                </div>
+                <div class="blog-item-image">
+                  <picture>
+                    <source media="(max-width: 520px)" data-lazy="https://api.otakoyi.com/uploads/content/2020/03/19/520/git-164x.jpg" srcset="https://api.otakoyi.com/uploads/content/2020/03/19/520/git-164x.jpg">
+                    <img data-lazy="https://api.otakoyi.com/uploads/content/2020/03/19/1280/git-164x.jpg" alt="" src="https://api.otakoyi.com/uploads/content/2020/03/19/1280/git-164x.jpg" class="load"></picture>
+                </div>
+              </a>
+              <div class="blog-item-control-wrap">
+                <ul class="blog-item-tags">
+                  <li class="blog-item-tag">
+                    <a href="/blog/tags/development" class="blog-item-link">Development</a>
+                  </li>
+                </ul>
+                <span class="blog-item-time">2 min read</span>
+              </div>
+              <a href="/blog/how-to-remove-idea-directory-from-git" class="blog-item-main-link heading-m">
+                <span>How to Remove .idea Directory from .git</span>
+              </a>
+            </article>
+          </li>
+          <li data-image-inside="loaded" class="blog-item-wrap new ob is-visible" data-observe="" data-visible="">
+            <article class="blog-item">
+              <a href="/blog/common-postgresql-sonsole-psql-commands" class="blog-item-image-abs">
+                <div class="blog-item-thumb">
+                  <img src="https://api.otakoyi.com/uploads/content/2020/03/19/thumb/sql-162x.jpg" alt=""></div>
+                <div class="blog-item-image">
+                  <picture>
+                    <source media="(max-width: 520px)" data-lazy="https://api.otakoyi.com/uploads/content/2020/03/19/520/sql-162x.jpg" srcset="https://api.otakoyi.com/uploads/content/2020/03/19/520/sql-162x.jpg">
+                    <img data-lazy="https://api.otakoyi.com/uploads/content/2020/03/19/1280/sql-162x.jpg" alt="" src="https://api.otakoyi.com/uploads/content/2020/03/19/1280/sql-162x.jpg" class="load"></picture>
+                </div>
+              </a>
+              <div class="blog-item-control-wrap">
+                <ul class="blog-item-tags">
+                  <li class="blog-item-tag">
+                    <a href="/blog/tags/development" class="blog-item-link">Development</a>
+                  </li>
+                </ul>
+                <span class="blog-item-time">8 min read</span>
+              </div>
+              <a href="/blog/common-postgresql-sonsole-psql-commands" class="blog-item-main-link heading-m">
+                <span>Common Postgresql Сonsole (psql) Сommands</span>
+              </a>
+            </article>
+          </li>
+          <li data-image-inside="loaded" class="blog-item-wrap new ob is-visible" data-observe="" data-visible="">
+            <article class="blog-item">
+              <a href="/blog/custom-software-development-in-ukraine" class="blog-item-image-abs">
+                <div class="blog-item-thumb">
+                  <img src="https://api.otakoyi.com/uploads/content/2019/11/22/thumb/img_02-124x.png" alt=""></div>
+                <div class="blog-item-image">
+                  <picture>
+                    <source media="(max-width: 520px)" data-lazy="https://api.otakoyi.com/uploads/content/2019/11/22/520/img_02-124x.png" srcset="https://api.otakoyi.com/uploads/content/2019/11/22/520/img_02-124x.png">
+                    <img data-lazy="https://api.otakoyi.com/uploads/content/2019/11/22/1280/img_02-124x.png" alt="" src="https://api.otakoyi.com/uploads/content/2019/11/22/1280/img_02-124x.png" class="load"></picture>
+                </div>
+              </a>
+              <div class="blog-item-control-wrap">
+                <ul class="blog-item-tags">
+                  <li class="blog-item-tag">
+                    <a href="/blog/tags/development" class="blog-item-link">Development</a>
+                  </li>
+                </ul>
+                <span class="blog-item-time">8 min read</span>
+              </div>
+              <a href="/blog/custom-software-development-in-ukraine" class="blog-item-main-link heading-m">
+                <span>Custom Software Development in Ukraine</span>
+              </a>
+            </article>
+          </li>
+          <li data-image-inside="loaded" class="blog-item-wrap new ob is-visible" data-observe="" data-visible="">
+            <article class="blog-item">
+              <a href="/blog/what-should-a-client-do-to-make-the-project-development-process-more-efficient" class="blog-item-image-abs">
+                <div class="blog-item-thumb">
+                  <img src="https://api.otakoyi.com/uploads/content/2019/11/22/thumb/img_01-137x.png" alt=""></div>
+                <div class="blog-item-image">
+                  <picture>
+                    <source media="(max-width: 520px)" data-lazy="https://api.otakoyi.com/uploads/content/2019/11/22/520/img_01-137x.png" srcset="https://api.otakoyi.com/uploads/content/2019/11/22/520/img_01-137x.png">
+                    <img data-lazy="https://api.otakoyi.com/uploads/content/2019/11/22/1280/img_01-137x.png" alt="" src="https://api.otakoyi.com/uploads/content/2019/11/22/1280/img_01-137x.png" class="load"></picture>
+                </div>
+              </a>
+              <div class="blog-item-control-wrap">
+                <ul class="blog-item-tags">
+                  <li class="blog-item-tag">
+                    <a href="/blog/tags/management" class="blog-item-link">Management</a>
+                  </li>
+                </ul>
+                <span class="blog-item-time">8 min read</span>
+              </div>
+              <a href="/blog/what-should-a-client-do-to-make-the-project-development-process-more-efficient" class="blog-item-main-link heading-m">
+                <span>What Should a Client Do to Make the Project Development Process More Efficient</span>
+              </a>
+            </article>
+          </li>
+          <li data-image-inside="loaded" class="blog-item-wrap new ob is-visible" data-observe="" data-visible="">
+            <article class="blog-item">
+              <a href="/blog/road-to-success" class="blog-item-image-abs">
+                <div class="blog-item-thumb">
+                  <img src="https://api.otakoyi.com/uploads/content/2019/11/22/thumb/img_01-1-150x.png" alt=""></div>
+                <div class="blog-item-image">
+                  <picture>
+                    <source media="(max-width: 520px)" data-lazy="https://api.otakoyi.com/uploads/content/2019/11/22/520/img_01-1-150x.png" srcset="https://api.otakoyi.com/uploads/content/2019/11/22/520/img_01-1-150x.png">
+                    <img data-lazy="https://api.otakoyi.com/uploads/content/2019/11/22/1280/img_01-1-150x.png" alt="" src="https://api.otakoyi.com/uploads/content/2019/11/22/1280/img_01-1-150x.png" class="load"></picture>
+                </div>
+              </a>
+              <div class="blog-item-control-wrap">
+                <ul class="blog-item-tags">
+                  <li class="blog-item-tag">
+                    <a href="/blog/tags/management" class="blog-item-link">Management</a>
+                  </li>
+                </ul>
+                <span class="blog-item-time">4 min read</span>
+              </div>
+              <a href="/blog/road-to-success" class="blog-item-main-link heading-m">
+                <span>Road to Success</span>
+              </a>
+            </article>
+          </li>
+          <li data-image-inside="loaded" class="blog-item-wrap new ob is-visible" data-observe="" data-visible="">
+            <article class="blog-item">
+              <a href="/blog/installation-and-set-up-of-apache2-web-server-php-mysql-phpmyadmin-lamp-on-ubuntu-16-04" class="blog-item-image-abs">
+                <div class="blog-item-thumb">
+                  <img src="https://api.otakoyi.com/uploads/content/2019/11/22/thumb/img_01-13-127x.png" alt=""></div>
+                <div class="blog-item-image">
+                  <picture>
+                    <source media="(max-width: 520px)" data-lazy="https://api.otakoyi.com/uploads/content/2019/11/22/520/img_01-13-127x.png" srcset="https://api.otakoyi.com/uploads/content/2019/11/22/520/img_01-13-127x.png">
+                    <img data-lazy="https://api.otakoyi.com/uploads/content/2019/11/22/1280/img_01-13-127x.png" alt="" src="https://api.otakoyi.com/uploads/content/2019/11/22/1280/img_01-13-127x.png" class="load"></picture>
+                </div>
+              </a>
+              <div class="blog-item-control-wrap">
+                <ul class="blog-item-tags">
+                  <li class="blog-item-tag">
+                    <a href="/blog/tags/development" class="blog-item-link">Development</a>
+                  </li>
+                </ul>
+                <span class="blog-item-time">10 min read</span>
+              </div>
+              <a href="/blog/installation-and-set-up-of-apache2-web-server-php-mysql-phpmyadmin-lamp-on-ubuntu-16-04" class="blog-item-main-link heading-m">
+                <span>Installation and Set-up of Apache2 Web Server + PHP + MySQL + PHPMyAdmin (LAMP) on Ubuntu 16.04</span>
+              </a>
+            </article>
+          </li>
+          <li data-image-inside="loaded" class="blog-item-wrap new ob is-visible" data-observe="" data-visible="">
+            <article class="blog-item">
+              <a href="/blog/how-to-create-a-perfect-notification" class="blog-item-image-abs">
+                <div class="blog-item-thumb">
+                  <img src="https://api.otakoyi.com/uploads/content/2019/11/22/thumb/img_01-2-126x.png" alt=""></div>
+                <div class="blog-item-image">
+                  <picture>
+                    <source media="(max-width: 520px)" data-lazy="https://api.otakoyi.com/uploads/content/2019/11/22/520/img_01-2-126x.png" srcset="https://api.otakoyi.com/uploads/content/2019/11/22/520/img_01-2-126x.png">
+                    <img data-lazy="https://api.otakoyi.com/uploads/content/2019/11/22/1280/img_01-2-126x.png" alt="" src="https://api.otakoyi.com/uploads/content/2019/11/22/1280/img_01-2-126x.png" class="load"></picture>
+                </div>
+              </a>
+              <div class="blog-item-control-wrap">
+                <ul class="blog-item-tags">
+                  <li class="blog-item-tag">
+                    <a href="/blog/tags/design" class="blog-item-link">Design</a>
+                  </li>
+                  <li class="blog-item-tag">
+                    <a href="/blog/tags/mobile" class="blog-item-link">Mobile</a>
+                  </li>
+                </ul>
+                <span class="blog-item-time">8 min read</span>
+              </div>
+              <a href="/blog/how-to-create-a-perfect-notification" class="blog-item-main-link heading-m">
+                <span>How to Create a Perfect Notification</span>
+              </a>
+            </article>
+          </li>
+          <li data-image-inside="loaded" class="blog-item-wrap new ob is-visible" data-observe="" data-visible="">
+            <article class="blog-item">
+              <a href="/blog/6-practical-tips-for-designers-to-avoid-conflicts-with-clients" class="blog-item-image-abs">
+                <div class="blog-item-thumb">
+                  <img src="https://api.otakoyi.com/uploads/content/2019/11/22/thumb/img_01-3-131x.png" alt=""></div>
+                <div class="blog-item-image">
+                  <picture>
+                    <source media="(max-width: 520px)" data-lazy="https://api.otakoyi.com/uploads/content/2019/11/22/520/img_01-3-131x.png" srcset="https://api.otakoyi.com/uploads/content/2019/11/22/520/img_01-3-131x.png">
+                    <img data-lazy="https://api.otakoyi.com/uploads/content/2019/11/22/1280/img_01-3-131x.png" alt="" src="https://api.otakoyi.com/uploads/content/2019/11/22/1280/img_01-3-131x.png" class="load"></picture>
+                </div>
+              </a>
+              <div class="blog-item-control-wrap">
+                <ul class="blog-item-tags">
+                  <li class="blog-item-tag">
+                    <a href="/blog/tags/design" class="blog-item-link">Design</a>
+                  </li>
+                </ul>
+                <span class="blog-item-time">12 min read</span>
+              </div>
+              <a href="/blog/6-practical-tips-for-designers-to-avoid-conflicts-with-clients" class="blog-item-main-link heading-m">
+                <span>6 Practical Tips for Designers to Avoid Conflicts with Clients</span>
+              </a>
+            </article>
+          </li>
+          <li data-image-inside="loaded" class="blog-item-wrap new ob is-visible" data-observe="" data-visible="">
+            <article class="blog-item">
+              <a href="/blog/50-shades-of-the-logo-part-2" class="blog-item-image-abs">
+                <div class="blog-item-thumb">
+                  <img src="https://api.otakoyi.com/uploads/content/2019/11/22/thumb/img_01-4-129x.png" alt="">
+                </div>
+                <div class="blog-item-image">
+                  <picture>
+                    <source media="(max-width: 520px)" data-lazy="https://api.otakoyi.com/uploads/content/2019/11/22/520/img_01-4-129x.png" srcset="https://api.otakoyi.com/uploads/content/2019/11/22/520/img_01-4-129x.png">
+                    <img data-lazy="https://api.otakoyi.com/uploads/content/2019/11/22/1280/img_01-4-129x.png" alt="" src="https://api.otakoyi.com/uploads/content/2019/11/22/1280/img_01-4-129x.png" class="load">
+                  </picture>
+                </div>
+              </a>
+              <div class="blog-item-control-wrap">
+                <ul class="blog-item-tags">
+                  <li class="blog-item-tag">
+                    <a href="/blog/tags/design" class="blog-item-link">Design</a>
+                  </li>
+                </ul>
+                <span class="blog-item-time">10 min read</span>
+              </div>
+              <a href="/blog/50-shades-of-the-logo-part-2" class="blog-item-main-link heading-m">
+                <span>50 Shades of the Logo. Part 2</span>
+              </a>
+            </article>
+          </li>
+          <li data-image-inside="loaded" class="blog-item-wrap new ob is-visible" data-observe="" data-visible="">
+            <article class="blog-item">
+              <a href="/blog/50-shades-of-the-logo-part-1" class="blog-item-image-abs">
+                <div class="blog-item-thumb">
+                  <img src="https://api.otakoyi.com/uploads/content/2019/11/22/thumb/img_01-5-128x.png" alt=""></div>
+                <div class="blog-item-image">
+                  <picture>
+                    <source media="(max-width: 520px)" data-lazy="https://api.otakoyi.com/uploads/content/2019/11/22/520/img_01-5-128x.png" srcset="https://api.otakoyi.com/uploads/content/2019/11/22/520/img_01-5-128x.png">
+                    <img data-lazy="https://api.otakoyi.com/uploads/content/2019/11/22/1280/img_01-5-128x.png" alt="" src="https://api.otakoyi.com/uploads/content/2019/11/22/1280/img_01-5-128x.png" class="load">
+                  </picture>
+                </div>
+              </a>
+              <div class="blog-item-control-wrap">
+                <ul class="blog-item-tags">
+                  <li class="blog-item-tag">
+                    <a href="/blog/tags/design" class="blog-item-link">Design</a>
+                  </li>
+                </ul>
+                <span class="blog-item-time">10 min read</span>
+              </div>
+              <a href="/blog/50-shades-of-the-logo-part-1" class="blog-item-main-link heading-m">
+                <span>50 Shades of the Logo. Part 1</span>
+              </a>
+            </article>
+          </li>
+          <li data-image-inside="loaded" class="blog-item-wrap new ob is-visible" data-observe="" data-visible="">
+            <article class="blog-item">
+              <a href="/blog/find-and-remove-duplicates-in-mysql" class="blog-item-image-abs">
+                <div class="blog-item-thumb">
+                  <img src="https://api.otakoyi.com/uploads/content/2019/11/22/thumb/img_01-6-130x.png" alt=""></div>
+                <div class="blog-item-image">
+                  <picture>
+                    <source media="(max-width: 520px)" data-lazy="https://api.otakoyi.com/uploads/content/2019/11/22/520/img_01-6-130x.png" srcset="https://api.otakoyi.com/uploads/content/2019/11/22/520/img_01-6-130x.png">
+                    <img data-lazy="https://api.otakoyi.com/uploads/content/2019/11/22/1280/img_01-6-130x.png" alt="" src="https://api.otakoyi.com/uploads/content/2019/11/22/1280/img_01-6-130x.png" class="load">
+                  </picture>
+                </div>
+              </a>
+              <div class="blog-item-control-wrap">
+                <ul class="blog-item-tags">
+                  <li class="blog-item-tag">
+                    <a href="/blog/tags/development" class="blog-item-link">Development</a>
+                  </li>
+                </ul>
+                <span class="blog-item-time">5 min read</span>
+              </div>
+              <a href="/blog/find-and-remove-duplicates-in-mysql" class="blog-item-main-link heading-m">
+                <span>Find and Remove Duplicates in MySQL</span>
+              </a>
+            </article>
+          </li>
+          <li data-image-inside="loaded" class="blog-item-wrap new ob is-visible" data-observe="" data-visible="">
+            <article class="blog-item">
+              <a href="/blog/the-psychology-of-color-infographics" class="blog-item-image-abs">
+                <div class="blog-item-thumb">
+                  <img src="https://api.otakoyi.com/uploads/content/2019/11/22/thumb/img_01-7-133x.png" alt=""></div>
+                <div class="blog-item-image">
+                  <picture>
+                    <source media="(max-width: 520px)" data-lazy="https://api.otakoyi.com/uploads/content/2019/11/22/520/img_01-7-133x.png" srcset="https://api.otakoyi.com/uploads/content/2019/11/22/520/img_01-7-133x.png">
+                    <img data-lazy="https://api.otakoyi.com/uploads/content/2019/11/22/1280/img_01-7-133x.png" alt="" src="https://api.otakoyi.com/uploads/content/2019/11/22/1280/img_01-7-133x.png" class="load">
+                  </picture>
+                </div>
+              </a>
+              <div class="blog-item-control-wrap">
+                <ul class="blog-item-tags">
+                  <li class="blog-item-tag">
+                    <a href="/blog/tags/design" class="blog-item-link">Design</a>
+                  </li>
+                </ul>
+                <span class="blog-item-time">7 min read</span>
+              </div>
+              <a href="/blog/the-psychology-of-color-infographics" class="blog-item-main-link heading-m">
+                <span>The Psychology Of Color: Infographics</span>
+              </a>
+            </article>
+          </li>
+          <li data-image-inside="loaded" class="blog-item-wrap new ob is-visible" data-observe="" data-visible="">
+            <article class="blog-item">
+              <a href="/blog/yes-no-maybe" class="blog-item-image-abs">
+                <div class="blog-item-thumb">
+                  <img src="https://api.otakoyi.com/uploads/content/2019/11/22/thumb/img_01-12-151x.png" alt="">
+                </div>
+                <div class="blog-item-image">
+                  <picture>
+                    <source media="(max-width: 520px)" data-lazy="https://api.otakoyi.com/uploads/content/2019/11/22/520/img_01-12-151x.png" srcset="https://api.otakoyi.com/uploads/content/2019/11/22/520/img_01-12-151x.png">
+                    <img data-lazy="https://api.otakoyi.com/uploads/content/2019/11/22/1280/img_01-12-151x.png" alt="" src="https://api.otakoyi.com/uploads/content/2019/11/22/1280/img_01-12-151x.png" class="load">
+                  </picture>
+                </div>
+              </a>
+              <div class="blog-item-control-wrap">
+                <ul class="blog-item-tags">
+                  <li class="blog-item-tag">
+                    <a href="/blog/tags/management" class="blog-item-link">Management</a>
+                  </li>
+                </ul>
+                <span class="blog-item-time">4 min read</span>
+              </div>
+              <a href="/blog/yes-no-maybe" class="blog-item-main-link heading-m">
+                <span>Yes, No, Maybe</span>
+              </a>
+            </article>
+          </li>
+          <li data-image-inside="loaded" class="blog-item-wrap new ob is-visible" data-observe="" data-visible="">
+            <article class="blog-item">
+              <a href="/blog/how-to-delete-millions-of-files-from-a-folder" class="blog-item-image-abs">
+                <div class="blog-item-thumb">
+                  <img src="https://api.otakoyi.com/uploads/content/2019/11/22/thumb/img_01-11-1-1-142x.png" alt=""></div>
+                <div class="blog-item-image">
+                  <picture>
+                    <source media="(max-width: 520px)" data-lazy="https://api.otakoyi.com/uploads/content/2019/11/22/520/img_01-11-1-1-142x.png" srcset="https://api.otakoyi.com/uploads/content/2019/11/22/520/img_01-11-1-1-142x.png">
+                    <img data-lazy="https://api.otakoyi.com/uploads/content/2019/11/22/1280/img_01-11-1-1-142x.png" alt="" src="https://api.otakoyi.com/uploads/content/2019/11/22/1280/img_01-11-1-1-142x.png" class="load">
+                  </picture>
+                </div>
+              </a>
+              <div class="blog-item-control-wrap">
+                <ul class="blog-item-tags">
+                  <li class="blog-item-tag">
+                    <a href="/blog/tags/development" class="blog-item-link">Development</a>
+                  </li>
+                </ul>
+                <span class="blog-item-time">3 min read</span>
+              </div>
+              <a href="/blog/how-to-delete-millions-of-files-from-a-folder" class="blog-item-main-link heading-m">
+                <span>How to Delete Millions of Files from a Folder</span>
+              </a>
+            </article>
+          </li>
+          <li data-image-inside="loaded" class="blog-item-wrap new ob is-visible" data-observe="" data-visible="">
+            <article class="blog-item">
+              <a href="/blog/a-condom-and-a-technical-specification" class="blog-item-image-abs">
+                <div class="blog-item-thumb">
+                  <img src="https://api.otakoyi.com/uploads/content/2019/11/22/thumb/img_01-8-152x.png" alt=""></div>
+                <div class="blog-item-image">
+                  <picture>
+                    <source media="(max-width: 520px)" data-lazy="https://api.otakoyi.com/uploads/content/2019/11/22/520/img_01-8-152x.png" srcset="https://api.otakoyi.com/uploads/content/2019/11/22/520/img_01-8-152x.png">
+                    <img data-lazy="https://api.otakoyi.com/uploads/content/2019/11/22/1280/img_01-8-152x.png" alt="" src="https://api.otakoyi.com/uploads/content/2019/11/22/1280/img_01-8-152x.png" class="load">
+                  </picture>
+                </div>
+              </a>
+              <div class="blog-item-control-wrap">
+                <ul class="blog-item-tags">
+                  <li class="blog-item-tag">
+                    <a href="/blog/tags/management" class="blog-item-link">Management</a>
+                  </li>
+                </ul>
+                <span class="blog-item-time">5 min read</span>
+              </div>
+              <a href="/blog/a-condom-and-a-technical-specification" class="blog-item-main-link heading-m">
+                <span>A Condom and a Technical Specification</span></a></article></li><li data-image-inside="loaded" class="blog-item-wrap new ob is-visible" data-observe="" data-visible=""><article class="blog-item"><a href="/blog/eight-rules-of-excellent-ux-design" class="blog-item-image-abs"><div class="blog-item-thumb"><img src="https://api.otakoyi.com/uploads/content/2019/11/22/thumb/img_01-10-125x.png" alt=""></div> <div class="blog-item-image"><picture><source media="(max-width: 520px)" data-lazy="https://api.otakoyi.com/uploads/content/2019/11/22/520/img_01-10-125x.png" srcset="https://api.otakoyi.com/uploads/content/2019/11/22/520/img_01-10-125x.png"> <img data-lazy="https://api.otakoyi.com/uploads/content/2019/11/22/1280/img_01-10-125x.png" alt="" src="https://api.otakoyi.com/uploads/content/2019/11/22/1280/img_01-10-125x.png" class="load"></picture></div></a> <div class="blog-item-control-wrap"><ul class="blog-item-tags"><li class="blog-item-tag"><a href="/blog/tags/design" class="blog-item-link">Design</a></li></ul> <span class="blog-item-time">8 min read</span></div> <a href="/blog/eight-rules-of-excellent-ux-design" class="blog-item-main-link heading-m"><span>Eight Rules of Excellent UX Design </span></a></article></li><li data-image-inside="loaded" class="blog-item-wrap new ob is-visible" data-observe="" data-visible=""><article class="blog-item"><a href="/blog/question-of-price" class="blog-item-image-abs"><div class="blog-item-thumb"><img src="https://api.otakoyi.com/uploads/content/2019/11/22/thumb/img_01-9-153x.png" alt=""></div> <div class="blog-item-image"><picture><source media="(max-width: 520px)" data-lazy="https://api.otakoyi.com/uploads/content/2019/11/22/520/img_01-9-153x.png" srcset="https://api.otakoyi.com/uploads/content/2019/11/22/520/img_01-9-153x.png"> <img data-lazy="https://api.otakoyi.com/uploads/content/2019/11/22/1280/img_01-9-153x.png" alt="" src="https://api.otakoyi.com/uploads/content/2019/11/22/1280/img_01-9-153x.png" class="load"></picture></div></a> <div class="blog-item-control-wrap"><ul class="blog-item-tags"><li class="blog-item-tag"><a href="/blog/tags/management" class="blog-item-link">Management</a></li></ul> <span class="blog-item-time">5 min read</span></div> <a href="/blog/question-of-price" class="blog-item-main-link heading-m"><span>Question of Price</span></a></article></li></ul> <div class="blog-list__paginate" data-callback="loadMore"></div>
+      </div>
+    </section>
+    <section class="blog-right-section">
+      <div class="blog-search">
+        <label class="blog-search-label">
+          <input placeholder="Search" type="text" class="blog-search-input"></label>
+        <div class="blog-search-list-wrap"><span class="blog-search-title">You must type more then 2 characters</span> <!---->
+        </div>
+      </div>
+      <div class="blog-tags"><span class="blog-tags-title text-s">Tags</span>
+        <ul class="blog-tags-list">
+          <li class="blog-tags-item">
+            <a href="/blog/tags/development" class="blog-tags-link"><span>Development</span></a>
+            <img width="20" height="20" src="/svg/other/close.svg" alt="" class="blog-tags-close">
+          </li>
+          <li class="blog-tags-item">
+            <a href="/blog/tags/management" class="blog-tags-link"><span>Management</span></a>
+            <img width="20" height="20" src="/svg/other/close.svg" alt="" class="blog-tags-close">
+          </li>
+          <li class="blog-tags-item">
+            <a href="/blog/tags/design" class="blog-tags-link"><span>Design</span></a>
+            <img width="20" height="20" src="/svg/other/close.svg" alt="" class="blog-tags-close">
+          </li>
+          <li class="blog-tags-item">
+            <a href="/blog/tags/mobile" class="blog-tags-link"><span>Mobile</span></a>
+            <img width="20" height="20" src="/svg/other/close.svg" alt="" class="blog-tags-close">
+          </li>
+        </ul>
+      </div>
+      <div class="blog-pop"><span class="blog-pop-title text-s">Popular Articles</span>
+        <ul class="blog-pop-list">
+          <li class="blog-pop__item">
+            <a href="/blog/fixed-price-vs-time-materials-when-you-should-choose-them" class="blog-pop-link heading-s">Fixed Price VS Time &amp; Materials — When You Should Choose Them?</a>
+          </li>
+          <li class="blog-pop__item">
+            <a href="/blog/what-technologies-are-preferred-by-the-worlds-famous-organizations" class="blog-pop-link heading-s">What Technologies Are Preferred By the World’s Famous Organizations?</a>
+          </li>
+          <li class="blog-pop__item">
+            <a href="/blog/how-to-setup-ssl-in-varnish-cache" class="blog-pop-link heading-s">How to Setup SSL in Varnish Cache</a>
+          </li>
+        </ul>
+      </div>
+      <div></div>
+    </section>
+  </div>
+</section>
+
+
+<section class="action-section">
+  <div class="container">
+    <div class="row action-d">
+      <a class="action_b button-main " routerLink="contact">LET’S CONNECT</a>
+      <p>We are here to offer you our expertise and services that will help you achieve your business goals</p>
+      <b class="action_title">LOOKING FOR A RELIABLE PARTNER?</b>
+    </div>
+  </div>
+</section>
+
+ <script src="{% static 'js/jquery/jquery-2.1.4.min.js' %}"></script>
+  <script src="{% static 'js/bootstrap/js/bootstrap.min.js' %}"></script>
+
+  <script src="{% static 'js/bootstrap/js/common.js' %}"></script>
+
+<script type="text/javascript">
+    $('#top_menu1').removeClass('nuxt-link-active');
+    $('#top_menu2').removeClass('nuxt-link-active');
+    $('#top_menu3').removeClass('nuxt-link-active');
+    $('#top_menu4').removeClass('nuxt-link-active');
+    $('#top_menu6').removeClass('nuxt-link-active');
+    $('#top_menu7').removeClass('nuxt-link-active');
+    $('#top_menu5').addClass('nuxt-link-active');
+
+</script>
+
+{% endblock %}

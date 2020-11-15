@@ -1,0 +1,78 @@
+{% extends 'main/menu.html' %}
+{% load static %}
+{% load i18n %}
+
+{% block title %}Cases{% endblock %}
+
+{% block content %}
+<link rel="stylesheet" href="{% static 'css/main.css' %}">
+
+<link rel="stylesheet" href="{% static 'css/cases.component.css' %}">
+
+
+
+<style type="text/css">
+
+  .header svg{
+    fill:#000;
+    stroke:#000;
+    color:#000;
+  }
+  .header .main-nav__item{
+    fill:#000;
+    stroke:#000;
+    color:#000;
+  }
+  .main-nav__link--circ{
+    filter: invert(0);
+  }
+</style>
+
+<section class="cases-content-section bow">
+  <div class="container">
+    <div class="wrap">
+      <div class="title h2 col-12">CASE STUDIES</div>
+      <p class="title-p">We have a proven track record of building high quality solutions for customers all over the world.</p>
+      <div class="cases-main__list"><div class="cases-main__item ob is-visible" data-observe="" data-visible=""><div class="case-item"><a href="/cases/okko" class="case-item__wrap"><div class="case-item__img"><img src="https://api.otakoyi.com/uploads/content/2020/05/05/source/okko-195x.png?1592803026301" alt=""></div> <div class="case-item__text"><h3 class="case-item__title heading-3">OKKO</h3> <div class="case-item__label">CORPORATE PLATFORM</div> <span class="case-item__z b-more case-item__b-more">
+              More
+              <span class="h-more-circle"></span></span></div></a></div></div><div class="cases-main__item ob is-visible" data-observe="" data-visible=""><div class="case-item"><a href="/cases/customer-engagement-platform" class="case-item__wrap"><div class="case-item__img"><img src="https://api.otakoyi.com/uploads/content/2020/04/29/source/marlboro-193x.png?1592803026301" alt=""></div> <div class="case-item__text"><h3 class="case-item__title heading-3">Customer Engagement Platform</h3> <div class="case-item__label">BRAND BOOSTER</div> <span class="case-item__z b-more case-item__b-more">
+              More
+              <span class="h-more-circle"></span></span></div></a></div></div><div class="cases-main__item ob is-visible" data-observe="" data-visible=""><div class="case-item"><a href="/cases/social-support-app" class="case-item__wrap"><div class="case-item__img"><img src="https://api.otakoyi.com/uploads/content/2020/04/15/source/app-190x.jpg?1592803026301" alt=""></div> <div class="case-item__text"><h3 class="case-item__title heading-3">Social Support App</h3> <div class="case-item__label">Social care assistant</div> <span class="case-item__z b-more case-item__b-more">
+              More
+              <span class="h-more-circle"></span></span></div></a></div></div><div class="cases-main__item ob is-visible" data-observe="" data-visible=""><div class="case-item"><a href="/cases/enlead" class="case-item__wrap"><div class="case-item__img"><img src="https://api.otakoyi.com/uploads/content/2020/03/19/source/enlead-91x.jpg?1592803026301" alt=""></div> <div class="case-item__text"><h3 class="case-item__title heading-3">Enlead</h3> <div class="case-item__label">Ed-tech startup</div> <span class="case-item__z b-more case-item__b-more">
+              More
+              <span class="h-more-circle"></span></span></div></a></div></div><div class="cases-main__item ob is-visible" data-observe="" data-visible=""><div class="case-item"><a href="/cases/ico-market" class="case-item__wrap"><div class="case-item__img"><img src="https://api.otakoyi.com/uploads/content/2020/04/28/source/ico-test-27x.jpg?1592803026302" alt=""></div> <div class="case-item__text"><h3 class="case-item__title heading-3">ICO market</h3> <div class="case-item__label">Cryptocurrency marketplace</div> <span class="case-item__z b-more case-item__b-more">
+              More
+              <span class="h-more-circle"></span></span></div></a></div></div><div class="cases-main__item ob is-visible" data-observe="" data-visible=""><div class="case-item"><a href="/cases/roshen" class="case-item__wrap"><div class="case-item__img"><img src="https://api.otakoyi.com/uploads/content/2020/03/31/source/roshen-17x.jpg?1592803026302" alt=""></div> <div class="case-item__text"><h3 class="case-item__title heading-3">Roshen</h3> <div class="case-item__label">Corporate platform</div> <span class="case-item__z b-more case-item__b-more">
+              More
+              <span class="h-more-circle"></span></span></div></a></div></div></div>
+    </div>
+  </div>
+</section>
+<section class="action-section">
+  <div class="container">
+    <div class="row action-d">
+      <a class="action_b button-main " routerLink="contact">LET’S CONNECT</a>
+      <p>We are here to offer you our expertise and services that will help you achieve your business goals</p>
+      <b class="action_title">LOOKING FOR A RELIABLE PARTNER?</b>
+    </div>
+  </div>
+</section>
+
+ <script src="{% static 'js/jquery/jquery-2.1.4.min.js' %}"></script>
+  <script src="{% static 'js/bootstrap/js/bootstrap.min.js' %}"></script>
+
+  <script src="{% static 'js/bootstrap/js/common.js' %}"></script>
+
+<script type="text/javascript">
+    $('#top_menu1').removeClass('nuxt-link-active');
+    $('#top_menu2').removeClass('nuxt-link-active');
+    $('#top_menu3').removeClass('nuxt-link-active');
+    $('#top_menu5').removeClass('nuxt-link-active');
+    $('#top_menu6').removeClass('nuxt-link-active');
+    $('#top_menu7').removeClass('nuxt-link-active');
+    $('#top_menu4').addClass('nuxt-link-active');
+
+</script>
+
+{% endblock %}

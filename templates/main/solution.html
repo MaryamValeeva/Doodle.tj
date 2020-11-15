@@ -1,0 +1,220 @@
+{% extends 'main/menu.html' %}
+{% load static %}
+{% load i18n %}
+
+{% block title %}Solutions{% endblock %}
+{% block content %}
+
+<link rel="stylesheet" href="{% static 'css/main.css' %}">
+<link rel="stylesheet" href="{% static 'css/solution.component.css' %}">
+
+
+
+
+<section class="solution-banner-section header-section">
+  <div class="container h-100">
+    <div class="row align-items-center h-100">
+      <div class="col-12 bunner-title p-0">
+        <h1 class="mt-1 mr-0">SOLUTIONS</h1>
+        <p class="text-p ">Our experienced engineers and top designers are at your service whenever you might need support with any type of project complexity!</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="solution-sol-section bow p-calc">
+  <div class="container">
+    <div class="row">
+      <div class="title h2 col-12">WE CAN HELP YOU WITH</div>
+      <p class="title-p">Perfect solutions for any projects and business ideas!</p>
+      <ul class="service-list ">
+        <li class="list-item_d col-lg-4">
+          <a routerLink="Solution/Outsource">
+            <div class="social-z social-img">
+              <svg viewBox="0 0 67 62" fill="none" xmlns="http://www.w3.org/2000/svg" class="sols-img"><path d="M55.1 20.9v.5c0 1.1-.1 2.2-.3 3.3 0 .2-.1.4-.1.6v.2c0 .2-.1.3-.1.5-.1.2-.1.5-.2.7-.1.4-.2.8-.4 1.2-.1.2-.1.4-.2.7l-.2.5c-.1.1-.1.3-.2.4-.1.2-.2.4-.3.7-.4.8-.8 1.5-1.2 2.2-.2.3-.5.7-.7 1-.1.1-.2.2-.2.3-.1.1-.2.3-.3.4-.8.9-1.6 1.8-2.5 2.6-.2.2-.4.3-.6.5l-1.2.9c-.2.1-.4.2-.5.4-.2.1-.3.2-.5.3-.6-6.6-3.9-12.7-9.1-16.8-.6-.5-1.2-.9-1.9-1.3-3.8-2.4-8.3-3.7-12.8-3.7h-1.5c-.4 0-.7 0-1.1.1h-.2c-.4 0-.9.1-1.3.2s-.8.1-1.2.2c-.2 0-.4.1-.6.2-.3.1-.6.1-.9.2-.4.1-.8.2-1.1.3h-.1C14.7 8 23.6 0 34.2 0c11.5 0 20.9 9.3 20.9 20.9z" fill="#000" class="animate"></path><path d="M42.3 43.5v.1l1.7-.8c-.6.3-1.2.5-1.7.7z" fill="#fff"></path><path d="M29.6 58.8c.3.3.7.6 1.1.9-2.9 1.4-6 2.2-9.2 2.2C9.9 61.9.6 52.5.6 40.9c0-8 4.7-15.5 11.9-18.9 2.8-1.4 5.9-2 9-2h1.3c.3 0 .6.1.9.1h.2c.4 0 .7.1 1.1.2h.2c.4.1.7.1 1.1.2.4.1.8.2 1.1.3.4.1.8.2 1.1.4.4.1.7.3 1.1.4.4.2.7.3 1.1.5-5 3.9-8.2 9.6-8.9 15.9-.1.8-.2 1.6-.2 2.5V42.5c0 .3 0 .5.1.8 0 .2 0 .3.1.5 0 .2 0 .4.1.6.3 2.1.9 4.1 1.7 6 .2.4.3.7.5 1.1l.6 1.2.6.9c.5.9 1.1 1.7 1.8 2.5.3.3.5.6.8.9.3.3.6.7.9 1 .1.2.4.5.8.8z" class=" fin"></path><path d="M66.4 40.8c0 11.5-9.4 21-20.9 21-4 0-7.9-1.1-11.2-3.3-.3-.2-.5-.3-.8-.5-.1-.1-.2-.2-.4-.2-.6-.4-1.1-.8-1.6-1.3l-.4-.3c-.3-.3-.6-.5-.8-.8-.2-.2-.3-.4-.5-.5-.4-.4-.7-.8-1-1.2-.2-.2-.4-.5-.6-.8-.1-.1-.2-.3-.3-.4-.1-.2-.3-.4-.4-.6l-.1-.1c-.1-.2-.3-.5-.4-.8v-.1c-.1-.2-.2-.3-.2-.5l-.3-.6c-.1-.1-.1-.2-.2-.3-.1-.3-.2-.5-.4-.8-.3-.8-.6-1.5-.8-2.3-.1-.3-.2-.7-.2-1-.2-.8-.3-1.6-.4-2.4 3 1.3 6.2 2 9.5 2 2.8 0 5.5-.5 8.1-1.4.6-.2 1.1-.4 1.7-.7.2-.1.4-.2.5-.2l1.2-.6c.1 0 .2-.1.3-.2.4-.2.7-.4 1.1-.7l.1-.1c.3-.2.7-.5 1-.7.1 0 .1-.1.2-.2.4-.3.8-.6 1.1-.9.4-.3.7-.6 1.1-1 .4-.3.7-.7 1-1.1 1.3-1.4 2.5-3 3.4-4.7.1-.2.2-.5.4-.7.1-.2.2-.5.4-.7.1-.2.2-.5.3-.7.1-.3.2-.5.3-.8.1-.2.2-.5.3-.8.1-.3.2-.5.2-.8.1-.3.1-.5.2-.8.1-.3.2-.5.2-.8.1-.3.1-.5.2-.8.1-.3.1-.5.1-.8 0-.2.1-.5.1-.8 5.7 3.9 8.9 10.2 8.9 16.8z" fill="#000" class="animate"></path></svg>
+            </div>
+            <div class="link-title">
+              Outsourcing
+            </div>
+            <p>Superior software products quality and fair prices - that’s what makes us different from our competitors.</p>
+          </a>
+        </li>
+        <li class="list-item_d col-lg-4">
+          <a routerLink="Solution/dedicated-team">
+            <div class="social-z social-img">
+              <svg viewBox="0 0 68 62" fill="none" xmlns="http://www.w3.org/2000/svg" class="sols-img"><path d="M30.8 17.1H.9L15.8 1l15 16.1zM67.6 17.1H37.7L52.7 1l14.9 16.1z" fill="#000" class="animate"></path><path d="M49.2.3l-15 16.1L19.3.3h29.9zM32.7 20.1v41.1L.5 20.1h32.2z" fill="#FCDC00" class=" fin"></path><path d="M68 20.1L35.7 61.2V20.1H68z" fill="#000" class="animate"></path></svg>            </div>
+            <div class="link-title">
+              Dedicated team
+            </div>
+            <p>Our custom software development company can help you create or extend your team with an all-inclusive rate. No hassle, no hidden fees, only results.</p>
+          </a>
+        </li>
+        <li class="list-item_d col-lg-4">
+          <a routerLink="Solution/minimum-visual-project">
+            <div class="social-z social-img">
+              <svg viewBox="0 0 55 62" fill="none" xmlns="http://www.w3.org/2000/svg" class="sols-img"><path d="M53.2 14.7L27.7 29.4l-25.5-16L27.7 0l25.5 14.7z" class="animate"></path><path d="M26.2 32v29.4L.7 45.3V16l25.5 16z" fill="#000" class="animate"></path><path d="M54.7 17.3v29.5L29.2 61.5V32.1l25.5-14.8z" fill="#000" class=" fin"></path></svg>            </div>
+            <div class="link-title">
+              MVP
+            </div>
+            <p>You have an idea but not sure how to start? With our experience of working with startups, we know how to help!</p>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+<section class="solution-tech-section header-section">
+  <div class="container">
+    <div class="row">
+      <h2 class="title heading-t">OTHER SOLUTIONS</h2> <!---->
+      <ul class="ob__scoped red-list-d"><!----><!----><!----><!---->
+        <li class="red-item-d d4 ob is-visible">
+          <div class="red-link-d">
+            <div class="heading-m">
+              <div class="red-title-d">Product development</div>
+            </div>
+            <p class="red-intro-d text-s">High-quality products and fair prices — that’s what makes us different from our competitors.</p> <!---->
+          </div>
+        </li>
+        <li class="red-item-d d5 ob is-visible">
+          <div class="red-link-d"><div class="heading-m">
+            <div class="red-title-d">R&D</div>
+          </div>
+            <p class="red-intro-d text-s">You have an idea but not sure how you can implement it? We have first-hand experience of working with startups and we are ready to prove that to you!</p> <!---->
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+<section class="solution-progress-section bow">
+  <div class="container">
+      <div class="title h2 col-12">OUR APPROACH</div>
+      <p class="title-p">Software development life cycle aims to produce a high-quality  system that meets customer expectations and is all about Build Automation, Manual & Automated Testing, and Deployment <br> Capabilities. Below are the stages that clearly demonstrate our approach to SDLC.
+      </p>
+      <ul class="ob__scoped s-appr__list">
+        <li class="s-appr__item ob is-visible" data-observe="" data-visible="">
+          <div class="s-appr__item-wrap">
+            <svg width="60" height="60" viewBox="0 0 120 120" class="s-appr__border">
+              <circle cx="60" cy="60" r="58" stroke-dasharray="0 14" stroke-linecap="round" fill="transparent" class="s-appr__path"></circle>
+            </svg>
+            <svg width="20" viewBox="0 0 40 120" class="s-appr__line">
+              <line x1="20" y1="10" x2="20" y2="200" stroke-dasharray="0 15" stroke-linecap="round" class="s-appr__path"></line>
+            </svg>
+            <div class="s-appr__title">planning</div>
+            <span class="s-appr__index">1</span>
+          </div>
+        </li>
+        <li class="s-appr__item ob is-visible" data-observe="" data-visible="">
+          <div class="s-appr__item-wrap">
+            <svg width="60" height="60" viewBox="0 0 120 120" class="s-appr__border">
+              <circle cx="60" cy="60" r="58" stroke-dasharray="0 14" stroke-linecap="round" fill="transparent" class="s-appr__path"></circle>
+            </svg>
+            <svg width="20" viewBox="0 0 40 120" class="s-appr__line">
+              <line x1="20" y1="10" x2="20" y2="200" stroke-dasharray="0 15" stroke-linecap="round" class="s-appr__path"></line>
+            </svg>
+            <div class="s-appr__title">analysis</div>
+            <span class="s-appr__index">2</span>
+          </div>
+        </li>
+        <li class="s-appr__item ob is-visible" data-observe="" data-visible="">
+          <div class="s-appr__item-wrap">
+            <svg width="60" height="60" viewBox="0 0 120 120" class="s-appr__border">
+              <circle cx="60" cy="60" r="58" stroke-dasharray="0 14" stroke-linecap="round" fill="transparent" class="s-appr__path"></circle>
+            </svg>
+            <svg width="20" viewBox="0 0 40 120" class="s-appr__line">
+              <line x1="20" y1="10" x2="20" y2="200" stroke-dasharray="0 15" stroke-linecap="round" class="s-appr__path"></line>
+            </svg>
+            <div class="s-appr__title">design</div>
+            <span class="s-appr__index">3</span>
+          </div>
+        </li>
+        <li class="s-appr__item ob is-visible" data-observe="" data-visible="">
+          <div class="s-appr__item-wrap">
+            <svg width="60" height="60" viewBox="0 0 120 120" class="s-appr__border">
+              <circle cx="60" cy="60" r="58" stroke-dasharray="0 14" stroke-linecap="round" fill="transparent" class="s-appr__path"></circle>
+            </svg>
+            <svg width="20" viewBox="0 0 40 120" class="s-appr__line">
+              <line x1="20" y1="10" x2="20" y2="200" stroke-dasharray="0 15" stroke-linecap="round" class="s-appr__path"></line>
+            </svg>
+            <div class="s-appr__title">implementation</div>
+            <span class="s-appr__index">4</span>
+          </div>
+        </li>
+        <li class="s-appr__item ob is-visible" data-observe="" data-visible="">
+          <div class="s-appr__item-wrap">
+            <svg width="60" height="60" viewBox="0 0 120 120" class="s-appr__border">
+              <circle cx="60" cy="60" r="58" stroke-dasharray="0 14" stroke-linecap="round" fill="transparent" class="s-appr__path"></circle>
+            </svg>
+            <svg width="20" viewBox="0 0 40 120" class="s-appr__line">
+              <line x1="20" y1="10" x2="20" y2="200" stroke-dasharray="0 15" stroke-linecap="round" class="s-appr__path"></line>
+            </svg>
+            <div class="s-appr__title">testing</div>
+            <span class="s-appr__index">5</span>
+          </div>
+        </li>
+        <li class="s-appr__item ob is-visible" data-observe="" data-visible="">
+          <div class="s-appr__item-wrap">
+            <svg width="60" height="60" viewBox="0 0 120 120" class="s-appr__border">
+              <circle cx="60" cy="60" r="58" stroke-dasharray="0 14" stroke-linecap="round" fill="transparent" class="s-appr__path"></circle>
+            </svg>
+            <svg width="20" viewBox="0 0 40 120" class="s-appr__line">
+              <line x1="20" y1="10" x2="20" y2="200" stroke-dasharray="0 15" stroke-linecap="round" class="s-appr__path"></line>
+            </svg>
+            <div class="s-appr__title">launch</div>
+            <span class="s-appr__index">6</span>
+          </div>
+        </li>
+      </ul>
+    </div>
+</section>
+<section class="solution-mod-section bow">
+  <div class="container">
+    <div class="row">
+      <ul class="service-list ">
+        <li class="list-item_d col-lg-6">
+          <a routerLink="/Service">
+            <div class="link-title">
+              OTHER SERVICES
+            </div>
+            <p>Creative designs and user-friendly interfaces can contribute to your business success in web and mobile.</p>
+          </a>
+        </li>
+        <li class="list-item_d col-lg-6">
+          <a routerLink="/about">
+            <div class="link-title">
+              MORE ABOUT DOODLE
+            </div>
+            <p>We are professionals with our own story. Let's get acquainted before we start working together on your business idea.</p>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+<hr>
+<section class="action-section">
+  <div class="container">
+    <div class="row action-d footer">
+      <a class="action_b button-main" routerLink="contact">LET’S TALK</a>
+      <p>We are ready to offer the most optimal solution in order for you to achieve your business or project goals</p>
+      <b class="action_title ">READY TO GET STARTED?</b>
+    </div>
+  </div>
+</section>
+
+ <script src="{% static 'js/jquery/jquery-2.1.4.min.js' %}"></script>
+  <script src="{% static 'js/bootstrap/js/bootstrap.min.js' %}"></script>
+
+  <script src="{% static 'js/bootstrap/js/common.js' %}"></script>
+
+<script type="text/javascript">
+    $('#top_menu1').removeClass('nuxt-link-active');
+    $('#top_menu3').removeClass('nuxt-link-active');
+    $('#top_menu4').removeClass('nuxt-link-active');
+    $('#top_menu5').removeClass('nuxt-link-active');
+    $('#top_menu6').removeClass('nuxt-link-active');
+    $('#top_menu7').removeClass('nuxt-link-active');
+    $('#top_menu2').addClass('nuxt-link-active');
+
+</script>
+{% endblock %}

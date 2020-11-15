@@ -1,0 +1,184 @@
+{% extends 'main/menu.html' %}
+{% load static %}
+
+{% load i18n %}
+
+{% block title %}Main{% endblock %}
+{% block content %}
+<link rel="stylesheet" href="{% static 'css/main.css' %}">
+<link rel="stylesheet" href="{% static 'css/main.component.css' %}">
+
+<section class="main-header-section header-section">
+  <div class="container h-100">
+    <div class="row align-items-center h-100">
+      <div class="col-12 bunner-title p-0">
+        <h1 class="mt-1 mr-0">{% autoescape off %} {{main.main_words}} {% endautoescape %}</h1>
+        <p class="text-p ">{{main.sub_words}}</p>
+        <button class=" mt-5 button-bunner"><a routerLink="about">DISCOVER</a></button>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="main-service-section bow">
+  <div class="container">
+    <div class="row">
+      <div class="title h2 col-12">Service</div>
+      <p class="title-p">Our top-notch Ukrainian engineers undergo a rigorous selection process to provide
+        first-class custom software development services
+      </p>
+      <ul class="service-list ">
+        {% for dev in development %}
+        <li class="list-item_d col-lg-4">
+          <a routerLink="Service/web-development">
+            <div class="social-z social-img">
+              {% autoescape off %} 
+                {{ dev.svg }}
+              {% endautoescape %}
+            </div>
+            <div class="link-title">
+              
+                  {{ dev.name }}
+              
+            </div>
+            <p>{{ dev.text }}</p>
+           
+          </a>
+        </li>
+        {% endfor %}
+          
+      </ul>
+    </div>
+  </div>
+</section>
+<section class="main-action-section bow">
+  <div class="container">
+    <div class="row action-d">
+      <a class="service_action_b button-main " routerLink="Service">Show more</a>
+      <b class="service_action_title">Looking for other services?</b>
+    </div>
+  </div>
+</section>
+<section class="main-technologies-section">
+  <div class="container">
+    <div class="row">
+      <div class="title h2 col-12">TECHNOLOGIES</div>
+      <p class="title-p">We offer only well-recognized and time-tested technologies to support any of your business goals
+      </p>
+      <ul class="tech-list">
+        <li class="tech-list-item"><a class="tech-list-item_link">
+          <svg _ngcontent-vwt-c50="" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="Layer_2" version="1.1" viewBox="0 0 600 600" xml:space="preserve" class="tech-list-img" style="enable-background: new 0 0 600 600;"><style _ngcontent-vwt-c50="" type="text/css">.st0{fill:#fff;}</style><circle _ngcontent-vwt-c50="" cx="299.5" cy="299.6" r="50.2" class="st0"></circle><g _ngcontent-vwt-c50=""><path _ngcontent-vwt-c50="" d="M299.5,414.6c-70.5,0-132.1-8.3-178.2-24.1c-29.9-10.2-55.3-23.8-73.4-39.3c-19.2-16.4-29.4-34.3-29.4-51.6   c0-33.2,36.4-65.7,97.5-86.9c50-17.4,115.2-27.1,183.4-27.1c67,0,131.3,9.4,181,26.6c29.1,10,53.6,23,71,37.4   c18.9,15.8,28.9,33.1,28.9,50c0,34.5-40.7,69.4-106.3,91.1C427.6,406.1,365.6,414.6,299.5,414.6z M299.5,209.6   c-64.7,0-128.7,9.4-175.5,25.7c-56.2,19.6-81.4,46.4-81.4,64.3c0,18.6,27.1,47.9,86.5,68.2c43.6,14.9,102.6,22.8,170.4,22.8   c63.6,0,122.9-8,167-22.7c61.7-20.5,89.9-49.8,89.9-68.3c0-9.5-7.2-20.7-20.3-31.6c-15.1-12.6-37.1-24.1-63.4-33.2   C425.4,218.6,363.9,209.6,299.5,209.6z" class="st0"></path></g><g _ngcontent-vwt-c50=""><path _ngcontent-vwt-c50="" d="M185.6,549.8c-10.2,0-19.2-2.2-26.8-6.6c-28.7-16.6-38.7-64.4-26.6-127.9c9.9-52.1,34.1-113.3,68.2-172.4   c33.5-58,73.7-109,113.4-143.5c23.2-20.2,46.7-35,67.9-42.8c23.1-8.5,43.1-8.5,57.7-0.1c29.9,17.2,39.8,70,25.8,137.6   c-9.9,48-33.5,105.9-66.5,163.2c-35.2,61-73.2,110.2-109.9,142.3c-23.8,20.8-48.3,36-70.7,43.9   C206.4,547.7,195.4,549.8,185.6,549.8z M210.7,248.9l10.4,6c-32.3,56-56.2,116.1-65.4,164.9c-11.1,58.5-0.4,93.7,15,102.6   c3.8,2.2,8.8,3.4,14.9,3.4c19.9,0,51.2-12.6,87.4-44.2c34.7-30.3,71-77.5,104.9-136.2c31.8-55.1,54.4-110.5,63.8-156   c13.1-63.7,1.8-102.7-14.3-112c-8.2-4.7-21.5-4.1-37.5,1.8c-18.5,6.8-39.4,20.1-60.4,38.4c-37.7,32.8-76.2,81.6-108.4,137.4   L210.7,248.9z" class="st0"></path></g><g _ngcontent-vwt-c50=""><path _ngcontent-vwt-c50="" d="M413.4,550.1c-27.2,0-61.7-16.4-97.7-47.4c-40.2-34.6-81.1-86.1-115.3-145.2v0c-33.6-58-57.6-118.3-67.7-170   c-5.9-30.2-7-57.9-3.2-80.2c4.2-24.3,14.1-41.6,28.8-50.1c29.8-17.3,80.5,0.5,132.1,46.4c36.6,32.5,75,81.9,108.1,139.1   c35.3,61,59,118.5,68.4,166.3c6.1,31,7.1,59.8,2.8,83.2c-4.6,24.9-15,42.6-30,51.3C432.2,547.9,423.3,550.1,413.4,550.1z    M221.2,345.5c32.4,56,72.6,106.7,110.2,139c45.1,38.8,80.9,47.2,96.4,38.2c16.1-9.3,27.9-47.4,15.7-109   c-9-45.2-31.7-100.2-65.7-158.9c-31.9-55.1-68.6-102.4-103.3-133.2C225.9,78.4,186.5,68.7,170.4,78c-8.2,4.7-14.3,16.6-17.2,33.4   c-3.3,19.4-2.3,44.2,3.1,71.5C165.9,232,188.9,289.7,221.2,345.5L221.2,345.5z" class="st0"></path></g></svg>
+          <div class="tech-item-title title-btn">React</div>
+        </a>
+        </li>
+        <li class="tech-list-item"><a class="tech-list-item_link">
+          <svg _ngcontent-wuh-c50="" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="256px" height="221px" viewBox="0 0 256 221" version="1.1" preserveAspectRatio="xMidYMid" class="tech-list-img"><g _ngcontent-wuh-c50=""><path _ngcontent-wuh-c50="" d="M204.8,0 L256,0 L128,220.8 L0,0 L50.56,0 L97.92,0 L128,51.2 L157.44,0 L204.8,0 Z" fill="transparent"></path><path _ngcontent-wuh-c50="" d="M0,0 L128,220.8 L256,0 L204.8,0 L128,132.48 L50.56,0 L0,0 Z" fill="#fff"></path><path _ngcontent-wuh-c50="" d="M50.56,0 L128,133.12 L204.8,0 L157.44,0 L128,51.2 L97.92,0 L50.56,0 Z" fill="#fff"></path></g></svg>
+          <div class="tech-item-title title-btn">Vue</div>
+        </a>
+        </li>
+        <li class="tech-list-item"><a class="tech-list-item_link">
+          <svg _ngcontent-sbk-c50="" preserveAspectRatio="xMinYMin meet" viewBox="44 65 120 120" class="tech-list-img"><path _ngcontent-sbk-c50="" fill="#fff" d="M99.75 67.469c-28.032 0-26.281 12.156-26.281 12.156l.031 12.594h26.75V96H62.875s-17.938-2.034-17.938 26.25 15.657 27.281 15.657 27.281h9.343v-13.125s-.503-15.656 15.407-15.656h26.531s14.906.241 14.906-14.406V82.125s2.263-14.656-27.031-14.656zM85 75.938a4.808 4.808 0 014.813 4.812A4.808 4.808 0 0185 85.563a4.808 4.808 0 01-4.813-4.813A4.808 4.808 0 0185 75.937z" class="svg-brand"></path><path _ngcontent-sbk-c50="" fill="#fff" d="M100.546 177.315c28.032 0 26.281-12.156 26.281-12.156l-.03-12.594h-26.75v-3.781h37.374s17.938 2.034 17.938-26.25c0-28.285-15.657-27.282-15.657-27.282h-9.343v13.125s.503 15.657-15.407 15.657h-26.53s-14.907-.241-14.907 14.406v24.219s-2.263 14.656 27.031 14.656zm14.75-8.469c-2.661 0 5.188-2.151-4.812-4.812a4.808 4.808 0 014.812-4.813 4.808 4.808 0 014.813 4.813 4.808 4.808 0 01-4.813 4.812z" class="svg-brand"></path></svg>
+          <div class="tech-item-title title-btn">Python</div>
+        </a>
+        </li>
+        <li class="tech-list-item"><a class="tech-list-item_link">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 84.1 57.6" class="tech-list-img"><path fill="#fff" d="M83.8 26.9c-.6-.6-8.3-10.3-9.6-11.9-1.4-1.6-2-1.3-2.9-1.2s-10.6 1.8-11.7 1.9c-1.1.2-1.8.6-1.1 1.6.6.9 7 9.9 8.4 12l-25.5 6.1L21.2 1.5c-.8-1.2-1-1.6-2.8-1.5C16.6.1 2.5 1.3 1.5 1.3c-1 .1-2.1.5-1.1 2.9S17.4 41 17.8 42c.4 1 1.6 2.6 4.3 2 2.8-.7 12.4-3.2 17.7-4.6 2.8 5 8.4 15.2 9.5 16.7 1.4 2 2.4 1.6 4.5 1 1.7-.5 26.2-9.3 27.3-9.8 1.1-.5 1.8-.8 1-1.9-.6-.8-7-9.5-10.4-14 2.3-.6 10.6-2.8 11.5-3.1 1-.3 1.2-.8.6-1.4zm-46.3 9.5c-.3.1-14.6 3.5-15.3 3.7-.8.2-.8.1-.8-.2-.2-.3-17-35.1-17.3-35.5-.2-.4-.2-.8 0-.8S17.6 2.4 18 2.4c.5 0 .4.1.6.4 0 0 18.7 32.3 19 32.8.4.5.2.7-.1.8zm40.2 7.5c.2.4.5.6-.3.8-.7.3-24.1 8.2-24.6 8.4-.5.2-.8.3-1.4-.6s-8.2-14-8.2-14L68.1 32c.6-.2.8-.3 1.2.3.4.7 8.2 11.3 8.4 11.6zm1.6-17.6c-.6.1-9.7 2.4-9.7 2.4l-7.5-10.2c-.2-.3-.4-.6.1-.7.5-.1 9-1.6 9.4-1.7.4-.1.7-.2 1.2.5.5.6 6.9 8.8 7.2 9.1.3.3-.1.5-.7.6z" class="svg-brand"></path></svg>
+          <div class="tech-item-title title-btn">Laravel</div>
+        </a>
+        </li>
+        <li class="tech-list-item"><a class="tech-list-item_link">
+          <svg _ngcontent-lax-c50="" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="256px" height="289px" viewBox="0 0 256 289" version="1.1" preserveAspectRatio="xMidYMid" class="tech-list-img"><g _ngcontent-lax-c50=""><path _ngcontent-lax-c50="" d="M127.999999,288.463771 C124.024844,288.463771 120.314699,287.403728 116.869564,285.548656 L81.6231884,264.612838 C76.32298,261.697724 78.9730854,260.637682 80.5631458,260.107661 C87.7184259,257.72257 89.0434775,257.192547 96.4637688,252.952381 C97.2587979,252.422361 98.3188405,252.687372 99.1138718,253.217392 L126.144927,269.383024 C127.20497,269.913045 128.530021,269.913045 129.325053,269.383024 L235.064182,208.165634 C236.124225,207.635611 236.654245,206.575571 236.654245,205.250519 L236.654245,83.0807467 C236.654245,81.7556929 236.124225,80.6956526 235.064182,80.1656324 L129.325053,19.2132506 C128.26501,18.6832305 126.939959,18.6832305 126.144927,19.2132506 L20.4057954,80.1656324 C19.3457551,80.6956526 18.8157349,82.0207041 18.8157349,83.0807467 L18.8157349,205.250519 C18.8157349,206.31056 19.3457551,207.635611 20.4057954,208.165634 L49.2919247,224.861286 C64.9275364,232.811595 74.7329196,223.536234 74.7329196,214.260871 L74.7329196,93.681159 C74.7329196,92.0910985 76.0579711,90.5010358 77.9130428,90.5010358 L91.4285716,90.5010358 C93.0186343,90.5010358 94.6086948,91.8260873 94.6086948,93.681159 L94.6086948,214.260871 C94.6086948,235.196689 83.2132512,247.387164 63.3374737,247.387164 C57.2422362,247.387164 52.4720502,247.387164 38.9565214,240.761906 L11.1304347,224.861286 C4.24016581,220.886129 5.68434189e-14,213.46584 5.68434189e-14,205.515528 L5.68434189e-14,83.3457557 C5.68434189e-14,75.3954465 4.24016581,67.9751552 11.1304347,64.0000006 L116.869564,2.78260752 C123.494824,-0.927535841 132.505176,-0.927535841 139.130436,2.78260752 L244.869565,64.0000006 C251.759834,67.9751552 256,75.3954465 256,83.3457557 L256,205.515528 C256,213.46584 251.759834,220.886129 244.869565,224.861286 L139.130436,286.078676 C135.685299,287.668739 131.710145,288.463771 127.999999,288.463771 L127.999999,288.463771 Z M160.596274,204.455488 C114.219461,204.455488 104.679089,183.254659 104.679089,165.233955 C104.679089,163.643893 106.004141,162.053832 107.859212,162.053832 L121.639752,162.053832 C123.229813,162.053832 124.554864,163.113872 124.554864,164.703935 C126.674947,178.749484 132.770187,185.639753 160.861283,185.639753 C183.122154,185.639753 192.662526,180.604556 192.662526,168.67909 C192.662526,161.788821 190.012423,156.753624 155.296065,153.308489 C126.409938,150.393375 108.389235,144.033126 108.389235,120.977226 C108.389235,99.5113875 126.409938,86.7908901 156.621119,86.7908901 C190.542443,86.7908901 207.238095,98.4513472 209.358178,123.89234 C209.358178,124.687371 209.093167,125.482403 208.563147,126.277434 C208.033127,126.807454 207.238095,127.337474 206.443064,127.337474 L192.662526,127.337474 C191.337475,127.337474 190.012423,126.277434 189.747412,124.952382 C186.567289,110.376813 178.351966,105.606625 156.621119,105.606625 C132.240165,105.606625 129.325053,114.086957 129.325053,120.447205 C129.325053,128.132506 132.770187,130.5176 165.631471,134.757766 C198.227744,138.997931 213.598344,145.093169 213.598344,167.884058 C213.333333,191.20497 194.252589,204.455488 160.596274,204.455488 L160.596274,204.455488 Z" fill="#fff"></path></g></svg>
+          <div class="tech-item-title title-btn">node.js</div>
+        </a>
+        </li>
+        <li class="tech-list-item"><a class="tech-list-item_link">
+          <svg version="1.1" id="svg2" xml:space="preserve" width="489.7601" height="238.85815" class="tech-list-img" viewBox="0 0 489.76011 238.85816"><metadata id="metadata8"></metadata><defs id="defs6"><clipPath clipPathUnits="userSpaceOnUse" id="clipPath18"><path d="M 0,0 H 595.276 V 595.276 H 0 Z" id="path16" /></clipPath></defs><g id="g10" transform="matrix(1.3333333,0,0,-1.3333333,53.68649,897.18964)"><g id="g12" transform="matrix(5.8427196,0,0,5.8427196,-1583.8366,-2391.086)"><g id="g14" clip-path="url(#clipPath18)"><g id="g20" transform="translate(296.8092,497.8276)"><path d="m 0,0 c -1.215,0.081 -2.616,0.294 -3.721,0.614 -0.207,0.06 -1.064,0.375 -1.282,0.475 -3.847,1.782 -6.527,5.672 -6.527,10.185 0,6.19 5.036,11.232 11.23,11.232 6.139,0 11.141,-4.956 11.227,-11.076 h 4.057 C 14.898,19.786 8.077,26.558 -0.3,26.558 c -8.427,0 -15.286,-6.855 -15.286,-15.284 0,-5.811 3.268,-10.865 8.053,-13.447 0.864,-0.457 2.104,-0.928 2.525,-1.057 1.364,-0.406 3.038,-0.676 4.528,-0.789 0.506,-0.038 2.273,-0.058 2.788,-0.06 h 27.938 v 4.041 H 2.355 C 1.984,-0.038 0.363,-0.024 0,0 m 2.355,6.345 v 0 c -0.295,0 -1.838,0.01 -2.123,0.034 -0.483,0.041 -1.183,0.113 -1.633,0.216 -0.508,0.136 -0.985,0.316 -1.2,0.434 -1.507,0.815 -2.534,2.409 -2.534,4.245 0,2.671 2.163,4.837 4.835,4.837 2.616,0 4.743,-2.081 4.828,-4.681 h 3.898 c -0.082,4.75 -3.954,8.578 -8.726,8.578 -4.825,0 -8.736,-3.91 -8.736,-8.734 0,-3.402 1.95,-6.34 4.79,-7.779 C -3.809,3.239 -2.987,2.971 -2.753,2.91 -1.951,2.699 -0.874,2.555 0,2.491 0.323,2.464 1.905,2.452 2.239,2.45 V 2.444 H 30.245 V 6.345 Z M -18.086,-4.064 h -4.084 v 26.561 h -5.968 v 4.085 h 10.052 z m -14.536,24.52 v -3.928 h 4.484 V -4.064 h 3.924 v 24.52 z" style="fill:#FFD700;fill-opacity:1;fill-rule:nonzero;stroke:none" id="path22" /></g><g id="g24" transform="translate(319.8388,524.1243)"><path d="m 0,0 c -1.471,0 -2.691,-1.173 -2.691,-2.645 0,-1.472 1.22,-2.692 2.691,-2.692 1.516,0 2.689,1.22 2.689,2.692 C 2.689,-1.173 1.516,0 0,0 m 0,-4.903 c -1.215,0 -2.262,0.955 -2.262,2.258 0,1.237 1.047,2.216 2.262,2.216 1.214,0 2.256,-0.979 2.256,-2.216 0,-1.303 -1.042,-2.258 -2.256,-2.258" style="fill:#FFD700;fill-opacity:1;fill-rule:nonzero;stroke:none" id="path26" /></g><g id="g28" transform="translate(320.8634,520.7545)"><path d="m 0,0 c 0,0.297 -0.044,0.573 -0.384,0.682 0.426,0.148 0.468,0.427 0.468,0.596 0,0.683 -0.62,0.77 -0.875,0.77 h -1.173 v -2.645 h 0.489 v 1.085 h 0.385 c 0.554,0 0.6,-0.255 0.6,-0.488 0,-0.451 0,-0.536 0.106,-0.597 h 0.49 C 0,-0.49 0.042,-0.407 0,0 m -0.898,0.874 h -0.577 v 0.833 h 0.494 c 0.342,0 0.574,-0.108 0.574,-0.429 0,-0.169 -0.083,-0.404 -0.491,-0.404" style="fill:#FFD700;fill-opacity:1;fill-rule:nonzero;stroke:none" id="path30" /></g></g></g></g></svg>
+          <div class="tech-item-title title-btn">1c</div>
+        </a>
+        </li>
+        <li class="tech-list-item tech-gl">
+          <a href="t" routerLink="Technologies" class="tech-list-item_link"><span class="more_link">more</span><span _ngcontent-ilu-c53="" class="h-more-circle tech-list-img"></span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+<section class="main-solution-section bow p-calc">
+  <div class="container">
+    <div class="row">
+      <div class="title h2 col-12">Solution</div>
+      <p class="title-p">We offer our clients only the most ingenious and efficient software solutions that help them achieve their business goals</p>
+      <ul class="service-list ">
+        <li class="list-item_d col-lg-4">
+          <a routerLink="Solution/Outsource">
+            <div class="social-z social-img">
+              <svg viewBox="0 0 67 62" fill="none" xmlns="http://www.w3.org/2000/svg" class="sols-img"><path d="M55.1 20.9v.5c0 1.1-.1 2.2-.3 3.3 0 .2-.1.4-.1.6v.2c0 .2-.1.3-.1.5-.1.2-.1.5-.2.7-.1.4-.2.8-.4 1.2-.1.2-.1.4-.2.7l-.2.5c-.1.1-.1.3-.2.4-.1.2-.2.4-.3.7-.4.8-.8 1.5-1.2 2.2-.2.3-.5.7-.7 1-.1.1-.2.2-.2.3-.1.1-.2.3-.3.4-.8.9-1.6 1.8-2.5 2.6-.2.2-.4.3-.6.5l-1.2.9c-.2.1-.4.2-.5.4-.2.1-.3.2-.5.3-.6-6.6-3.9-12.7-9.1-16.8-.6-.5-1.2-.9-1.9-1.3-3.8-2.4-8.3-3.7-12.8-3.7h-1.5c-.4 0-.7 0-1.1.1h-.2c-.4 0-.9.1-1.3.2s-.8.1-1.2.2c-.2 0-.4.1-.6.2-.3.1-.6.1-.9.2-.4.1-.8.2-1.1.3h-.1C14.7 8 23.6 0 34.2 0c11.5 0 20.9 9.3 20.9 20.9z" fill="#000" class="animate"></path><path d="M42.3 43.5v.1l1.7-.8c-.6.3-1.2.5-1.7.7z" fill="#fff"></path><path d="M29.6 58.8c.3.3.7.6 1.1.9-2.9 1.4-6 2.2-9.2 2.2C9.9 61.9.6 52.5.6 40.9c0-8 4.7-15.5 11.9-18.9 2.8-1.4 5.9-2 9-2h1.3c.3 0 .6.1.9.1h.2c.4 0 .7.1 1.1.2h.2c.4.1.7.1 1.1.2.4.1.8.2 1.1.3.4.1.8.2 1.1.4.4.1.7.3 1.1.4.4.2.7.3 1.1.5-5 3.9-8.2 9.6-8.9 15.9-.1.8-.2 1.6-.2 2.5V42.5c0 .3 0 .5.1.8 0 .2 0 .3.1.5 0 .2 0 .4.1.6.3 2.1.9 4.1 1.7 6 .2.4.3.7.5 1.1l.6 1.2.6.9c.5.9 1.1 1.7 1.8 2.5.3.3.5.6.8.9.3.3.6.7.9 1 .1.2.4.5.8.8z" class=" fin"></path><path d="M66.4 40.8c0 11.5-9.4 21-20.9 21-4 0-7.9-1.1-11.2-3.3-.3-.2-.5-.3-.8-.5-.1-.1-.2-.2-.4-.2-.6-.4-1.1-.8-1.6-1.3l-.4-.3c-.3-.3-.6-.5-.8-.8-.2-.2-.3-.4-.5-.5-.4-.4-.7-.8-1-1.2-.2-.2-.4-.5-.6-.8-.1-.1-.2-.3-.3-.4-.1-.2-.3-.4-.4-.6l-.1-.1c-.1-.2-.3-.5-.4-.8v-.1c-.1-.2-.2-.3-.2-.5l-.3-.6c-.1-.1-.1-.2-.2-.3-.1-.3-.2-.5-.4-.8-.3-.8-.6-1.5-.8-2.3-.1-.3-.2-.7-.2-1-.2-.8-.3-1.6-.4-2.4 3 1.3 6.2 2 9.5 2 2.8 0 5.5-.5 8.1-1.4.6-.2 1.1-.4 1.7-.7.2-.1.4-.2.5-.2l1.2-.6c.1 0 .2-.1.3-.2.4-.2.7-.4 1.1-.7l.1-.1c.3-.2.7-.5 1-.7.1 0 .1-.1.2-.2.4-.3.8-.6 1.1-.9.4-.3.7-.6 1.1-1 .4-.3.7-.7 1-1.1 1.3-1.4 2.5-3 3.4-4.7.1-.2.2-.5.4-.7.1-.2.2-.5.4-.7.1-.2.2-.5.3-.7.1-.3.2-.5.3-.8.1-.2.2-.5.3-.8.1-.3.2-.5.2-.8.1-.3.1-.5.2-.8.1-.3.2-.5.2-.8.1-.3.1-.5.2-.8.1-.3.1-.5.1-.8 0-.2.1-.5.1-.8 5.7 3.9 8.9 10.2 8.9 16.8z" fill="#000" class="animate"></path></svg>
+            </div>
+            <div class="link-title">
+              Outsourcing
+            </div>
+            <p>Superior software products quality and fair prices - that’s what makes us different from our competitors.</p>
+          </a>
+        </li>
+        <li class="list-item_d col-lg-4">
+          <a routerLink="Solution/dedicated-team">
+            <div class="social-z social-img">
+              <svg viewBox="0 0 68 62" fill="none" xmlns="http://www.w3.org/2000/svg" class="sols-img"><path d="M30.8 17.1H.9L15.8 1l15 16.1zM67.6 17.1H37.7L52.7 1l14.9 16.1z" fill="#000" class="animate"></path><path d="M49.2.3l-15 16.1L19.3.3h29.9zM32.7 20.1v41.1L.5 20.1h32.2z" fill="#FCDC00" class=" fin"></path><path d="M68 20.1L35.7 61.2V20.1H68z" fill="#000" class="animate"></path></svg>            </div>
+            <div class="link-title">
+              Dedicated team
+            </div>
+            <p>Our custom software development company can help you create or extend your team with an all-inclusive rate. No hassle, no hidden fees, only results.</p>
+          </a>
+        </li>
+        <li class="list-item_d col-lg-4">
+          <a routerLink="Solution/minimum-visual-project">
+            <div class="social-z social-img">
+              <svg viewBox="0 0 55 62" fill="none" xmlns="http://www.w3.org/2000/svg" class="sols-img"><path d="M53.2 14.7L27.7 29.4l-25.5-16L27.7 0l25.5 14.7z" class="animate"></path><path d="M26.2 32v29.4L.7 45.3V16l25.5 16z" fill="#000" class="animate"></path><path d="M54.7 17.3v29.5L29.2 61.5V32.1l25.5-14.8z" fill="#000" class=" fin"></path></svg>            </div>
+            <div class="link-title">
+              MVP
+            </div>
+            <p>You have an idea but not sure how to start? With our experience of working with startups, we know how to help!</p>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+<section class="main-action-section bow">
+  <div class="container">
+    <div class="row action-d">
+      <a class="service_action_b button-main " routerLink="Solution">Show more</a>
+      <b class="service_action_title">Interested in other solutions?</b>
+    </div>
+  </div>
+</section>
+<!-- <section class="main-client-section bow">
+  <div class="container">
+    <div class="row">
+      <ul class="main-clients-list">
+        <li class="main-clients-item"></li>
+        <li class="main-clients-item"></li>
+        <li class="main-clients-item"></li>
+        <li class="main-clients-item"></li>
+        <li class="main-clients-item"></li>
+        <li class="main-clients-item"></li>
+        <li class="main-clients-item"></li>
+        <li class="main-clients-item"></li>
+        <li class="main-clients-item"></li>
+        <li class="main-clients-item"></li>
+      </ul>
+    </div>
+  </div>
+</section> -->
+<section class="action-section">
+  <div class="container">
+    <div class="row action-d footer">
+      <a class="action_b button-main " routerLink="contact">LET’S CONNECT</a>
+      <p class="we_are">We are here to offer you our expertise and services that will help you achieve your business goals</p>
+      <b class="action_title">LOOKING FOR A RELIABLE PARTNER?</b>
+    </div>
+  </div>
+</section>
+
+
+{% endblock %}

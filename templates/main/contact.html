@@ -1,0 +1,659 @@
+{% extends 'main/menu.html' %}
+{% load static %}
+{% load i18n %}
+
+{% block title %}Contact us{% endblock %}
+{% block content %}
+<link rel="stylesheet" href="{% static 'css/main.css' %}">
+<link rel="stylesheet" href="{% static 'css/contact.component.css' %}">
+
+<style type="text/css">
+
+  .header svg{
+    fill:#000;
+    stroke:#000;
+    color:#000;
+  }
+  .header .main-nav__item{
+    fill:#000;
+    stroke:#000;
+    color:#000;
+  }
+  .main-nav__link--circ{
+    filter: invert(0);
+  }
+</style>
+
+<section id="form" class="contact-d ob is-visible bow" data-observe="" data-visible="">
+  <div class="wrap contact__box-d"><aside class="aside-d ob is-visible" data-observe="" data-visible="">
+    <h1 class="aside-title-d heading-l">Let’s get in touch!</h1>
+    <p class="aside-desc-d text-v">Want to discuss your product or partnership? <br> We’re always ready to help.</p>
+    <div class="aside-contacts-d">
+      <div class="contacts-item">
+        <div class="contacts-item_name">call us</div>
+        <a href="tel:+992 92 733 44 51" class="contacts-item-link heading-m">+992 92 733 44 51</a>
+      </div>
+      <div class="contacts-item">
+        <div class="contacts-item_name">Email</div>
+        <a href="mailto:info@doodle.tj" class="contacts-item-link mail-link heading-m"><span>info@doodle.tj</span></a>
+      </div>
+    </div>
+  </aside>
+    <div class="contact-form-d ob is-visible" data-observe="" data-visible="">
+      <div class="contact-form-wrap-d"><label class="contact-label-d contact-label__fc-d">
+        <input type="text" value="" class="d-contact-input">
+        <span class="contact-label-name-d text-m required">Name</span>
+        <!----> <span id="form-name" class="d-contact-id"></span>
+      </label>
+        <label class="contact-label-d contact-label__fc-d">
+          <input type="email" value="" class="d-contact-input">
+          <span class="contact-label-name-d text-m required">Email</span> <!---->
+          <span id="form-mail" class="d-contact-id"></span>
+        </label> <label class="contact-label-d contact-label__fc-d success">
+          <input type="text" value="" class="d-contact-input">
+          <span class="contact-label-name-d text-m">Your budget</span>
+          <!----> <span id="form-budget" class="d-contact-id"></span>
+        </label> <div class="contact-d-wrapper-d">
+          <select class="contact-select-d">
+            <option disabled="disabled" selected="selected">
+              Country code
+            </option> <option>
+              93 - Afghanistan
+            </option><option>
+              358 - Åland Islands
+            </option><option>
+              355 - Albania
+            </option><option>
+              213 - Algeria
+            </option><option>
+              1684 - American Samoa
+            </option><option>
+              376 - Andorra
+            </option><option>
+              244 - Angola
+            </option><option>
+              1264 - Anguilla
+            </option><option>
+              672 - Antarctica
+            </option><option>
+              1268 - Antigua and Barbuda
+            </option><option>
+              54 - Argentina
+            </option><option>
+              374 - Armenia
+            </option><option>
+              297 - Aruba
+            </option><option>
+              61 - Australia
+            </option><option>
+              43 - Austria
+            </option><option>
+              994 - Azerbaijan
+            </option><option>
+              1242 - Bahamas
+            </option><option>
+              973 - Bahrain
+            </option><option>
+              880 - Bangladesh
+            </option><option>
+              1246 - Barbados
+            </option><option>
+              375 - Belarus
+            </option><option>
+              32 - Belgium
+            </option><option>
+              501 - Belize
+            </option><option>
+              229 - Benin
+            </option><option>
+              1441 - Bermuda
+            </option><option>
+              975 - Bhutan
+            </option><option>
+              591 - Bolivia (Plurinational State of)
+            </option><option>
+              5997 - Bonaire, Sint Eustatius and Saba
+            </option><option>
+              387 - Bosnia and Herzegovina
+            </option><option>
+              267 - Botswana
+            </option><option>
+              55 - Brazil
+            </option><option>
+              246 - British Indian Ocean Territory
+            </option><option>
+              1284 - Virgin Islands (British)
+            </option><option>
+              1340 - Virgin Islands (U.S.)
+            </option><option>
+              673 - Brunei Darussalam
+            </option><option>
+              359 - Bulgaria
+            </option><option>
+              226 - Burkina Faso
+            </option><option>
+              257 - Burundi
+            </option><option>
+              855 - Cambodia
+            </option><option>
+              237 - Cameroon
+            </option><option>
+              1 - Canada
+            </option><option>
+              238 - Cabo Verde
+            </option><option>
+              1345 - Cayman Islands
+            </option><option>
+              236 - Central African Republic
+            </option><option>
+              235 - Chad
+            </option><option>
+              56 - Chile
+            </option><option>
+              86 - China
+            </option><option>
+              61 - Christmas Island
+            </option><option>
+              61 - Cocos (Keeling) Islands
+            </option><option>
+              57 - Colombia
+            </option><option>
+              269 - Comoros
+            </option><option>
+              242 - Congo
+            </option><option>
+              243 - Congo (Democratic Republic of the)
+            </option><option>
+              682 - Cook Islands
+            </option><option>
+              506 - Costa Rica
+            </option><option>
+              385 - Croatia
+            </option><option>
+              53 - Cuba
+            </option><option>
+              599 - Curaçao
+            </option><option>
+              357 - Cyprus
+            </option><option>
+              420 - Czech Republic
+            </option><option>
+              45 - Denmark
+            </option><option>
+              253 - Djibouti
+            </option><option>
+              1767 - Dominica
+            </option><option>
+              1809 - Dominican Republic
+            </option><option>
+              593 - Ecuador
+            </option><option>
+              20 - Egypt
+            </option><option>
+              503 - El Salvador
+            </option><option>
+              240 - Equatorial Guinea
+            </option><option>
+              291 - Eritrea
+            </option><option>
+              372 - Estonia
+            </option><option>
+              251 - Ethiopia
+            </option><option>
+              500 - Falkland Islands (Malvinas)
+            </option><option>
+              298 - Faroe Islands
+            </option><option>
+              679 - Fiji
+            </option><option>
+              358 - Finland
+            </option><option>
+              33 - France
+            </option><option>
+              594 - French Guiana
+            </option><option>
+              689 - French Polynesia
+            </option><option>
+              241 - Gabon
+            </option><option>
+              220 - Gambia
+            </option><option>
+              995 - Georgia
+            </option><option>
+              49 - Germany
+            </option><option>
+              233 - Ghana
+            </option><option>
+              350 - Gibraltar
+            </option><option>
+              30 - Greece
+            </option><option>
+              299 - Greenland
+            </option><option>
+              1473 - Grenada
+            </option><option>
+              590 - Guadeloupe
+            </option><option>
+              1671 - Guam
+            </option><option>
+              502 - Guatemala
+            </option><option>
+              44 - Guernsey
+            </option><option>
+              224 - Guinea
+            </option><option>
+              245 - Guinea-Bissau
+            </option><option>
+              592 - Guyana
+            </option><option>
+              509 - Haiti
+            </option><option>
+              379 - Holy See
+            </option><option>
+              504 - Honduras
+            </option><option>
+              852 - Hong Kong
+            </option><option>
+              36 - Hungary
+            </option><option>
+              354 - Iceland
+            </option><option>
+              91 - India
+            </option><option>
+              62 - Indonesia
+            </option><option>
+              225 - Côte d'Ivoire
+            </option><option>
+              98 - Iran (Islamic Republic of)
+            </option><option>
+              964 - Iraq
+            </option><option>
+              353 - Ireland
+            </option><option>
+              44 - Isle of Man
+            </option><option>
+              972 - Israel
+            </option><option>
+              39 - Italy
+            </option><option>
+              1876 - Jamaica
+            </option><option>
+              81 - Japan
+            </option><option>
+              44 - Jersey
+            </option><option>
+              962 - Jordan
+            </option><option>
+              76 - Kazakhstan
+            </option><option>
+              254 - Kenya
+            </option><option>
+              686 - Kiribati
+            </option><option>
+              965 - Kuwait
+            </option><option>
+              996 - Kyrgyzstan
+            </option><option>
+              856 - Lao People's Democratic Republic
+            </option><option>
+              371 - Latvia
+            </option><option>
+              961 - Lebanon
+            </option><option>
+              266 - Lesotho
+            </option><option>
+              231 - Liberia
+            </option><option>
+              218 - Libya
+            </option><option>
+              423 - Liechtenstein
+            </option><option>
+              370 - Lithuania
+            </option><option>
+              352 - Luxembourg
+            </option><option>
+              853 - Macao
+            </option><option>
+              389 - Macedonia (the former Yugoslav Republic of)
+            </option><option>
+              261 - Madagascar
+            </option><option>
+              265 - Malawi
+            </option><option>
+              60 - Malaysia
+            </option><option>
+              960 - Maldives
+            </option><option>
+              223 - Mali
+            </option><option>
+              356 - Malta
+            </option><option>
+              692 - Marshall Islands
+            </option><option>
+              596 - Martinique
+            </option><option>
+              222 - Mauritania
+            </option><option>
+              230 - Mauritius
+            </option><option>
+              262 - Mayotte
+            </option><option>
+              52 - Mexico
+            </option><option>
+              691 - Micronesia (Federated States of)
+            </option><option>
+              373 - Moldova (Republic of)
+            </option><option>
+              377 - Monaco
+            </option><option>
+              976 - Mongolia
+            </option><option>
+              382 - Montenegro
+            </option><option>
+              1664 - Montserrat
+            </option><option>
+              212 - Morocco
+            </option><option>
+              258 - Mozambique
+            </option><option>
+              95 - Myanmar
+            </option><option>
+              264 - Namibia
+            </option><option>
+              674 - Nauru
+            </option><option>
+              977 - Nepal
+            </option><option>
+              31 - Netherlands
+            </option><option>
+              687 - New Caledonia
+            </option><option>
+              64 - New Zealand
+            </option><option>
+              505 - Nicaragua
+            </option><option>
+              227 - Niger
+            </option><option>
+              234 - Nigeria
+            </option><option>
+              683 - Niue
+            </option><option>
+              672 - Norfolk Island
+            </option><option>
+              850 - Korea (Democratic People's Republic of)
+            </option><option>
+              1670 - Northern Mariana Islands
+            </option><option>
+              47 - Norway
+            </option><option>
+              968 - Oman
+            </option><option>
+              92 - Pakistan
+            </option><option>
+              680 - Palau
+            </option><option>
+              970 - Palestine, State of
+            </option><option>
+              507 - Panama
+            </option><option>
+              675 - Papua New Guinea
+            </option><option>
+              595 - Paraguay
+            </option><option>
+              51 - Peru
+            </option><option>
+              63 - Philippines
+            </option><option>
+              64 - Pitcairn
+            </option><option>
+              48 - Poland
+            </option><option>
+              351 - Portugal
+            </option><option>
+              1787 - Puerto Rico
+            </option><option>
+              974 - Qatar
+            </option><option>
+              383 - Republic of Kosovo
+            </option><option>
+              262 - Réunion
+            </option><option>
+              40 - Romania
+            </option><option>
+              7 - Russian Federation
+            </option><option>
+              250 - Rwanda
+            </option><option>
+              590 - Saint Barthélemy
+            </option><option>
+              290 - Saint Helena, Ascension and Tristan da Cunha
+            </option><option>
+              1869 - Saint Kitts and Nevis
+            </option><option>
+              1758 - Saint Lucia
+            </option><option>
+              590 - Saint Martin (French part)
+            </option><option>
+              508 - Saint Pierre and Miquelon
+            </option><option>
+              1784 - Saint Vincent and the Grenadines
+            </option><option>
+              685 - Samoa
+            </option><option>
+              378 - San Marino
+            </option><option>
+              239 - Sao Tome and Principe
+            </option><option>
+              966 - Saudi Arabia
+            </option><option>
+              221 - Senegal
+            </option><option>
+              381 - Serbia
+            </option><option>
+              248 - Seychelles
+            </option><option>
+              232 - Sierra Leone
+            </option><option>
+              65 - Singapore
+            </option><option>
+              1721 - Sint Maarten (Dutch part)
+            </option><option>
+              421 - Slovakia
+            </option><option>
+              386 - Slovenia
+            </option><option>
+              677 - Solomon Islands
+            </option><option>
+              252 - Somalia
+            </option><option>
+              27 - South Africa
+            </option><option>
+              500 - South Georgia and the South Sandwich Islands
+            </option><option>
+              82 - Korea (Republic of)
+            </option><option>
+              211 - South Sudan
+            </option><option>
+              34 - Spain
+            </option><option>
+              94 - Sri Lanka
+            </option><option>
+              249 - Sudan
+            </option><option>
+              597 - Suriname
+            </option><option>
+              4779 - Svalbard and Jan Mayen
+            </option><option>
+              268 - Swaziland
+            </option><option>
+              46 - Sweden
+            </option><option>
+              41 - Switzerland
+            </option><option>
+              963 - Syrian Arab Republic
+            </option><option>
+              886 - Taiwan
+            </option><option>
+              992 - Tajikistan
+            </option><option>
+              255 - Tanzania, United Republic of
+            </option><option>
+              66 - Thailand
+            </option><option>
+              670 - Timor-Leste
+            </option><option>
+              228 - Togo
+            </option><option>
+              690 - Tokelau
+            </option><option>
+              676 - Tonga
+            </option><option>
+              1868 - Trinidad and Tobago
+            </option><option>
+              216 - Tunisia
+            </option><option>
+              90 - Turkey
+            </option><option>
+              993 - Turkmenistan
+            </option><option>
+              1649 - Turks and Caicos Islands
+            </option><option>
+              688 - Tuvalu
+            </option><option>
+              256 - Uganda
+            </option><option>
+              380 - Ukraine
+            </option><option>
+              971 - United Arab Emirates
+            </option><option>
+              44 - United Kingdom of Great Britain and Northern Ireland
+            </option><option>
+              1 - United States of America
+            </option><option>
+              598 - Uruguay
+            </option><option>
+              998 - Uzbekistan
+            </option><option>
+              678 - Vanuatu
+            </option><option>
+              58 - Venezuela (Bolivarian Republic of)
+            </option><option>
+              84 - Viet Nam
+            </option><option>
+              681 - Wallis and Futuna
+            </option><option>
+              212 - Western Sahara
+            </option><option>
+              967 - Yemen
+            </option><option>
+              260 - Zambia
+            </option><option>
+              263 - Zimbabwe
+            </option>
+          </select> <label class="contact-label-d contact-label__fc-d">
+          <input pattern="^\d{4}-\d{3}-\d{4}$" maxlength="20" type="tel" value="" class="d-contact-input">
+          <span class="contact-label-name-d text-m">Phone number
+  <!----></span>
+          <span id="form-phone" class="d-contact-id"></span>
+        </label>
+          <div class="contact-tel-flag-d">
+            <img width="24" height="24" src="" alt="" class="contact-tel-img-d">
+            <span class="contact-tel-name-d"></span>
+          </div>
+          <!----></div>
+        <label class="contact-label-d contact-label__fc-d contact-label-textarea-d">
+          <textarea value="" class="d-contact-input s-contact__textarea" style="height: 61px;"></textarea>
+          <span class="contact-label-name-d text-m required">Message or question</span>
+          <!----> <span id="form-mess" class="d-contact-id"></span>
+          <label class="contact-label-d contact-file-input_d">
+            <input type="file" multiple="multiple" class="d-contact-input test-input">
+            <button class="contact-file-btn-d">
+              <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg" class="ico"><path d="M10.835 4.11c2.241-2.242 5.929-2.29 8.112-.107 2.184 2.183 2.135 5.871-.107 8.113l-7.845 7.846c-1.644 1.643-4.3 1.678-5.9.077-1.602-1.601-1.567-4.256.077-5.9l6.352-6.351c1.046-1.046 2.668-1.068 3.687-.049 1.019 1.02.998 2.642-.048 3.688L9.558 17.03l-1.091-1.092 5.604-5.604c.448-.448.456-1.038.02-1.475-.437-.437-1.027-.429-1.476.02l-6.351 6.35c-1.046 1.047-1.068 2.67-.049 3.688 1.02 1.02 2.642.998 3.688-.048l7.846-7.846c1.644-1.644 1.679-4.299.077-5.9-1.6-1.601-4.256-1.566-5.9.077l-7.098 7.1-1.092-1.093 7.098-7.098z" fill="#000"></path></svg>
+            </button>
+          </label>
+        </label>
+        <div class="contact__wrapper-list-d">
+          <ul class="contact-files-list-d"></ul>
+        </div>
+        <!----> <label class="contact-label-d d-contact-label_checkbox s-contact__label-checkbox--mb">
+          <input type="checkbox" class="d-contact-input">
+          <span class="d-contact_checkbox">
+            <svg width="11" height="10" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg" class="d-contact_checkbox-ico"><path d="M3.891 8.134l-2.169-2.32L.53 7.09l2.863 3.06.003-.003.523.559L12 2.065l-1.216-1.3-6.893 7.369z" fill="#c62828"></path>
+            </svg>
+          </span>
+          <span class="d-contact-checkbox-txt text-s">Send me NDA</span>
+          <span id="form-nda" class="d-contact-id"></span>
+        </label>
+        <label class="contact-label-d d-contact-label_checkbox">
+          <input type="checkbox" class="d-contact-input">
+          <span class="d-contact_checkbox">
+            <svg width="11" height="10" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg" class="d-contact_checkbox-ico"><path d="M3.891 8.134l-2.169-2.32L.53 7.09l2.863 3.06.003-.003.523.559L12 2.065l-1.216-1.3-6.893 7.369z" fill="#c62828"></path>
+            </svg>
+          </span>
+          <span class="d-contact-checkbox-txt text-s">I give consent to the processing of my personal data given in the above contact form for the purposes of answering my inquiry and any further correspondence.</span>
+          <span id="form-personal-data" class="d-contact-id"></span>
+          <span id="form-confirm" class="d-contact-id"></span>
+        </label>
+        <button class="d-b-main">send message</button>
+        <svg width="25" viewBox="0 0 50 50" class="s-contact__progress" style="display:none;margin: 0 auto"><path fill="#000" d="M25.251,6.461c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615V6.461z" transform="rotate(92.8248 25 25)"><animateTransform attributeType="xml" attributeName="transform" type="rotate" from="0 25 25" to="360 25 25" dur="0.6s" repeatCount="indefinite"></animateTransform></path>
+        </svg>
+      </div>
+      <div class="contact-form-wrap-d s-contact__form-wrap--mod">
+        <h3 class="s-contact__thanks-head heading-3">Success!<br>Thanks for your message.</h3>
+        <p class="s-contact__thanks-txt text-m">
+  While we are processing your request, don’t hesitate and follow us on social networks!
+  <span class="s-contact__thanks-link" style="display: none;">Send more letter</span>
+        </p>
+        <ul class="social social__list contact">
+          <li class="social__item">
+            <a target="_blank" href="https://facebook.com/otakoyi" title="Facebook" class="social__link">
+              <svg viewBox="-9 -6 25 25" xmlns="http://www.w3.org/2000/svg" class="social__svg"><path d="M6.736.003L5.057 0C3.171 0 1.952 1.256 1.952 3.2v1.474H.264A.265.265 0 000 4.94v2.137c0 .146.118.265.264.265h1.688v5.393c0 .146.118.265.264.265H4.42a.265.265 0 00.264-.265V7.342h1.974a.264.264 0 00.264-.265V4.94a.266.266 0 00-.264-.266H4.683v-1.25c0-.601.142-.906.922-.906h1.131A.265.265 0 007 2.251V.268a.265.265 0 00-.264-.265z"></path>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a target="_blank" href="https://www.instagram.com/otakoyi" title="Instagram" class="social__link">
+              <svg viewBox="-6 -6 24 24" xmlns="http://www.w3.org/2000/svg" class="social__svg social__svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M9.37 12H2.63A2.63 2.63 0 010 9.37V2.63A2.6 2.6 0 012.63 0h6.74A2.63 2.63 0 0112 2.63v6.74A2.6 2.6 0 019.37 12zM6 8.723a2.723 2.723 0 100-5.446 2.723 2.723 0 000 5.446zm4.477-6.461a.83.83 0 11-1.662 0 .83.83 0 011.662 0z"></path>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a target="_blank" href="https://www.linkedin.com/company/otakoyi" title="LinkedIn" class="social__link">
+              <svg viewBox="-7 -5 25 25" xmlns="http://www.w3.org/2000/svg" class="social__svg"><path d="M12 7.357V12H9.428V7.668c0-1.088-.372-1.83-1.303-1.83-.71 0-1.134.5-1.32.984-.067.173-.085.414-.085.656V12H4.147s.035-7.337 0-8.097H6.72v1.148l-.017.026h.017v-.026c.342-.551.952-1.338 2.318-1.338C10.731 3.713 12 4.87 12 7.357zM1.456 0C.576 0 0 .604 0 1.399c0 .777.559 1.4 1.422 1.4h.017c.897 0 1.455-.623 1.455-1.4C2.877.604 2.336 0 1.456 0zM.153 12h2.572V3.903H.153V12z"></path>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a target="_blank" href="https://www.behance.net/OTAKOYI" title="Behance" class="social__link">
+              <svg viewBox="-6 -8 25 25" xmlns="http://www.w3.org/2000/svg" class="social__svg"><path d="M12.314 1.2H8.897V.353h3.417v.849zM6.623 4.68c.22.342.33.757.33 1.243 0 .504-.124.955-.376 1.354A2.347 2.347 0 015.019 8.37a5.92 5.92 0 01-1.198.114H0V0h4.097C5.13.017 5.862.316 6.295.904c.26.36.388.793.388 1.295 0 .519-.13.934-.392 1.25-.146.176-.361.337-.646.482.431.158.759.407.978.75zM1.957 3.346h1.795c.369 0 .667-.07.897-.21.23-.14.344-.39.344-.746 0-.395-.152-.657-.456-.783-.261-.088-.595-.133-1.001-.133h-1.58v1.872zm3.209 2.457c0-.44-.18-.745-.54-.909-.2-.093-.485-.14-.848-.143H1.957v2.26H3.75c.368 0 .653-.048.859-.148.37-.185.557-.537.557-1.06zm8.415-1.38c.042.278.06.68.053 1.207H9.209c.024.61.235 1.038.635 1.282.241.153.534.228.876.228.361 0 .655-.091.882-.279.123-.1.232-.24.326-.417h1.622c-.042.361-.238.727-.589 1.099-.543.59-1.306.887-2.285.887-.81 0-1.522-.25-2.141-.748-.617-.5-.927-1.31-.927-2.434 0-1.055.278-1.862.837-2.423.56-.563 1.283-.843 2.174-.843.528 0 1.004.094 1.429.284.423.19.773.489 1.049.9a3 3 0 01.485 1.257zm-1.596.158c-.03-.422-.17-.742-.425-.96-.251-.22-.566-.33-.941-.33-.409 0-.724.118-.948.35-.226.23-.366.543-.424.94h2.738z"></path>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a target="_blank" href="https://dribbble.com/OTAKOYI" title="Dribbble" class="social__link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="2500" height="2500" viewBox="-290 -290 1600 1600" class="social__svg"><path d="M0 500c0-90.667 22.334-174.333 67-251 44.667-76.667 105.334-137.333 182-182C325.667 22.333 409.334 0 500 0c90.667 0 174.334 22.333 251 67 76.667 44.667 137.334 105.333 182 182 44.667 76.667 67 160.333 67 251s-22.333 174.333-67 251c-44.666 76.667-105.333 137.333-182 182-76.666 44.667-160.333 67-251 67-90.666 0-174.333-22.333-251-67-76.666-44.667-137.333-105.333-182-182C22.334 674.333 0 590.667 0 500zm83 0c0 104 35 195.667 105 275 32-62.667 82.667-122.333 152-179 69.334-56.667 137-92.333 203-107-10-23.333-19.666-44.333-29-63-114.666 36.667-238.666 55-372 55-26 0-45.333-.333-58-1 0 2.667-.166 6-.5 10-.333 4-.5 7.333-.5 10zm13-103c14.667 1.333 36.334 2 65 2 111.334 0 217-15 317-45-50.666-90-106.333-165-167-225-52.666 26.667-97.833 63.667-135.5 111-37.666 47.333-64.166 99.667-79.5 157zm149 432c75.334 58.667 160.334 88 255 88 49.334 0 98.334-9.333 147-28-13.333-114-39.333-224.333-78-331-61.333 13.333-123.166 47-185.5 101C321.167 713 275 769.667 245 829zM398 97c58.667 60.667 113 136.333 163 227 90.667-38 159-86.333 205-145-77.333-64-166-96-266-96-34 0-68 4.667-102 14zm199 298c10 21.333 21.334 48.333 34 81 49.334-4.667 103-7 161-7 41.334 0 82.334 1 123 3-5.333-90.667-38-171.333-98-242-43.333 64.667-116.666 119.667-220 165zm59 151c34 98.667 57 200 69 304 52.667-34 95.667-77.667 129-131 33.334-53.333 53.334-111 60-173-48.666-3.333-93-5-133-5-36.666 0-78.333 1.667-125 5z"></path>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script src="{% static 'js/jquery/jquery-2.1.4.min.js' %}"></script>
+  <script src="{% static 'js/bootstrap/js/bootstrap.min.js' %}"></script>
+
+  <script src="{% static 'js/bootstrap/js/common.js' %}"></script>
+
+<script type="text/javascript">
+    $('#top_menu1').removeClass('nuxt-link-active');
+    $('#top_menu2').removeClass('nuxt-link-active');
+    $('#top_menu3').removeClass('nuxt-link-active');
+    $('#top_menu5').removeClass('nuxt-link-active');
+    $('#top_menu6').removeClass('nuxt-link-active');
+    $('#top_menu7').removeClass('nuxt-link-active');
+    $('#top_menu4').addClass('nuxt-link-active');
+
+</script>
+{% endblock %}
