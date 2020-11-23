@@ -15,4 +15,5 @@ urlpatterns = [
     path('base2', views.show_base2, name='show_base2'),
     path('menu', views.show_menu, name='show_menu'),
     path('menu_dop', views.show_menu_dop, name='show_menu_dop'),
+    path('footer', views.show_footer, name='show_footer'),
 ]

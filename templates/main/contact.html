@@ -6,23 +6,26 @@
 {% block content %}
 <link rel="stylesheet" href="{% static 'css/main.css' %}">
 <link rel="stylesheet" href="{% static 'css/contact.component.css' %}">
+<script src="{% static 'js/jquery/jquery-2.1.4.min.js' %}"></script>
+<script src="{% static 'js/bootstrap/js/bootstrap.min.js' %}"></script>
+<script src="{% static 'js/bootstrap/js/common.js' %}"></script>
 
 <style type="text/css">
 
   .header svg{
-    fill:#000;
-    stroke:#000;
-    color:#000;
+    fill:#c62828;
   }
   .header .main-nav__item{
     fill:#000;
-    stroke:#000;
+    
     color:#000;
   }
   .main-nav__link--circ{
     filter: invert(0);
   }
 </style>
+
+
 
 <section id="form" class="contact-d ob is-visible bow" data-observe="" data-visible="">
   <div class="wrap contact__box-d"><aside class="aside-d ob is-visible" data-observe="" data-visible="">
@@ -55,7 +58,7 @@
           <!----> <span id="form-budget" class="d-contact-id"></span>
         </label> <div class="contact-d-wrapper-d">
           <select class="contact-select-d">
-            <option disabled="disabled" selected="selected">
+            <option class="code" disabled="disabled" selected="selected">
               Country code
             </option> <option>
               93 - Afghanistan
@@ -557,17 +560,17 @@
           <span id="form-phone" class="d-contact-id"></span>
         </label>
           <div class="contact-tel-flag-d">
-            <img width="24" height="24" src="" alt="" class="contact-tel-img-d">
+            <!-- <img width="24" height="24" src="{% static 'css/assets/arrow-down.svg' %}" alt="" class="contact-tel-img-d"> -->
             <span class="contact-tel-name-d"></span>
           </div>
           <!----></div>
         <label class="contact-label-d contact-label__fc-d contact-label-textarea-d">
-          <textarea value="" class="d-contact-input s-contact__textarea" style="height: 61px;"></textarea>
+          <textarea value="" class="d-contact-input s-contact__textarea"></textarea>
           <span class="contact-label-name-d text-m required">Message or question</span>
           <!----> <span id="form-mess" class="d-contact-id"></span>
           <label class="contact-label-d contact-file-input_d">
             <input type="file" multiple="multiple" class="d-contact-input test-input">
-            <button class="contact-file-btn-d">
+            <button class="contact-file-btn-d" >
               <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg" class="ico"><path d="M10.835 4.11c2.241-2.242 5.929-2.29 8.112-.107 2.184 2.183 2.135 5.871-.107 8.113l-7.845 7.846c-1.644 1.643-4.3 1.678-5.9.077-1.602-1.601-1.567-4.256.077-5.9l6.352-6.351c1.046-1.046 2.668-1.068 3.687-.049 1.019 1.02.998 2.642-.048 3.688L9.558 17.03l-1.091-1.092 5.604-5.604c.448-.448.456-1.038.02-1.475-.437-.437-1.027-.429-1.476.02l-6.351 6.35c-1.046 1.047-1.068 2.67-.049 3.688 1.02 1.02 2.642.998 3.688-.048l7.846-7.846c1.644-1.644 1.679-4.299.077-5.9-1.6-1.601-4.256-1.566-5.9.077l-7.098 7.1-1.092-1.093 7.098-7.098z" fill="#000"></path></svg>
             </button>
           </label>
@@ -652,8 +655,38 @@
     $('#top_menu3').removeClass('nuxt-link-active');
     $('#top_menu5').removeClass('nuxt-link-active');
     $('#top_menu6').removeClass('nuxt-link-active');
-    $('#top_menu7').removeClass('nuxt-link-active');
-    $('#top_menu4').addClass('nuxt-link-active');
+    $('#top_menu4').removeClass('nuxt-link-active');
+    $('#top_menu7').addClass('nuxt-link-active');
 
 </script>
+
+<script type="text/javascript">
+    if(/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)){
+      $('#__header').addClass('fixed');
+      $('#__header').addClass('down');
+      $('#__header').addClass('headerMod');
+
+  }
+</script>
+
+<script type="text/javascript">
+
+    $(document).scroll(function() {
+
+  var scrollTop = $(window).scrollTop();
+        if (scrollTop >= 70 ) {
+            $('#__header').addClass('fixed');
+            $('#__header').addClass('down');
+            $('#__header').addClass('headerMod');
+            $('#logo_pl').addClass('black');
+            $('#logo_pl').removeClass('white_logo');
+        }
+        
+  });
+
+
+
+
+</script>
+
 {% endblock %}

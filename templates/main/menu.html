@@ -1,6 +1,8 @@
+{% extends 'main/footer.html' %}
 {% load static %}
 {% load i18n %}
 
+{% block menu %}
 <link rel="stylesheet" href="{% static 'css/style_2.css' %}">
 
 <link rel="stylesheet" href="{% static 'css/dop_style.css' %}">
@@ -300,7 +302,7 @@
           <span class="main-nav__link--goal">
           Contact us
           </span> 
-          <span class="b-more__circle"></span>
+          <!-- <span class="b-more__circle"></span> -->
         </a> <!---->
       </li>
     </ul>
@@ -484,36 +486,7 @@
 
 
 
-  <script type="text/javascript">
 
-    $(document).scroll(function() {
-
-  var scrollTop = $(window).scrollTop();
-        if (scrollTop >= 70 ) {
-            $('#__header').addClass('fixed');
-            $('#__header').addClass('down');
-            $('#__header').addClass('headerMod');
-            $('#logo_pl').addClass('black');
-            $('#logo_pl').removeClass('white_logo');
-        }
-        else{
-            $('#__header').removeClass('down');
-            $('#__header').removeClass('fixed');
-            $('#__header').removeClass('headerMod');
-            $('#logo_pl').removeClass('black');
-            $('#logo_pl').addClass('white_logo');
-        }
-  });
-
-
-      
-
-
-
-
-
-
-</script>
 
 <script type="text/javascript">
 
@@ -548,34 +521,11 @@
 
 </script>
 
-<!-- <script src="{% static 'js/0.js' %}" defer=""></script>
-<script src="{% static 'js/105.js' %}" defer=""></script>
-<script src="{% static 'js/30.js' %}" defer=""></script>
-<script src="{% static 'js/33.js' %}" defer=""></script>
-<script src="{% static 'js/37.js' %}" defer=""></script>
-<script src="{% static 'js/43.js' %}" defer=""></script>
-<script src="{% static 'js/48.js' %}" defer=""></script>
-<script src="{% static 'js/49.js' %}" defer=""></script>
-<script src="{% static 'js/50.js' %}" defer=""></script>
-<script src="{% static 'js/55.js' %}" defer=""></script>
-<script src="{% static 'js/56.js' %}" defer=""></script>
-<script src="{% static 'js/57.js' %}" defer=""></script>
-<script src="{% static 'js/58.js' %}" defer=""></script>
-<script src="{% static 'js/6.js' %}" defer=""></script>
-<script src="{% static 'js/60.js' %}" defer=""></script>
-<script src="{% static 'js/62.js' %}" defer=""></script>
-<script src="{% static 'js/7.js' %}" defer=""></script>
-<script src="{% static 'js/78.js' %}" defer=""></script>
-<script src="{% static 'js/94.js' %}" defer=""></script>
-<script src="{% static 'js/96.js' %}" defer=""></script> 
-<script src="{% static 'js/analytics.js' %}" defer=""></script>
-<script src="{% static 'js/app.js' %}" defer=""></script> 
-<script src="{% static 'js/fbevents.js' %}" defer=""></script>
-<script src="{% static 'js/gtm.js' %}" defer=""></script>-->
-	
+
 
 </html>
 
 
 
 
+{% endblock %}

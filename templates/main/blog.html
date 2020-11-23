@@ -1,23 +1,25 @@
 {% extends 'main/menu.html' %}
+
 {% load static %}
 {% load i18n %}
 
 
 {% block title %}Blog{% endblock %}
 {% block content %}
-<link rel="stylesheet" href="{% static 'css/main.css' %}">
+
 <link rel="stylesheet" href="{% static 'css/blog.component.css' %}">
+<script src="{% static 'js/jquery/jquery-2.1.4.min.js' %}"></script>
+<script src="{% static 'js/bootstrap/js/bootstrap.min.js' %}"></script>
+<script src="{% static 'js/bootstrap/js/common.js' %}"></script>
 
 <style type="text/css">
 
   .header svg{
-    fill:#000;
-    stroke:#000;
-    color:#000;
+    fill:#c62828;
+    
   }
   .header .main-nav__item{
-    fill:#000;
-    stroke:#000;
+    fill:#000;    
     color:#000;
   }
   .main-nav__link--circ{
@@ -25,30 +27,74 @@
   }
 </style>
 
+  
 
 <section class="blog-title-section bow">
-  <br> <br> <br> <br>
   <div class="container">
-    <div class="row">
+    <div class="row top">
       <h1 class="blog-title_heading">Thoughts &amp; Ideas</h1>
     </div>
   </div>
 </section>
 <section class="bow">
-  <div class="wrap blog-cat__wrap ">
 
-    <section class="blog-left-section">
+  <div class="blog-right-section top">
+      <div class="blog-search">
+        <label class="blog-search-label">
+          <input placeholder="Search" type="text" class="blog-search-input"></label>
+        <div class="blog-search-list-wrap"><span class="blog-search-title">You must type more then 2 characters</span> 
+        </div>
+      </div>
+      <div class="blog-tags"><span class="blog-tags-title text-s">Tags</span>
+        <ul class="blog-tags-list">
+          <li class="blog-tags-item">
+            <a href="/blog/tags/development" class="blog-tags-link"><span>Development</span></a>
+            <img width="20" height="20" src="/svg/other/close.svg" alt="" class="blog-tags-close">
+          </li>
+          <li class="blog-tags-item">
+            <a href="/blog/tags/management" class="blog-tags-link"><span>Management</span></a>
+            <img width="20" height="20" src="/svg/other/close.svg" alt="" class="blog-tags-close">
+          </li>
+          <li class="blog-tags-item">
+            <a href="/blog/tags/design" class="blog-tags-link"><span>Design</span></a>
+            <img width="20" height="20" src="/svg/other/close.svg" alt="" class="blog-tags-close">
+          </li>
+          <li class="blog-tags-item">
+            <a href="/blog/tags/mobile" class="blog-tags-link"><span>Mobile</span></a>
+            <img width="20" height="20" src="/svg/other/close.svg" alt="" class="blog-tags-close">
+          </li>
+        </ul>
+      </div>
+      <div class="blog-pop"><span class="blog-pop-title text-s">Popular Articles</span>
+        <ul class="blog-pop-list">
+          <li class="blog-pop__item">
+            <a href="/blog/fixed-price-vs-time-materials-when-you-should-choose-them" class="blog-pop-link heading-s">Fixed Price VS Time &amp; Materials — When You Should Choose Them?</a>
+          </li>
+          <li class="blog-pop__item">
+            <a href="/blog/what-technologies-are-preferred-by-the-worlds-famous-organizations" class="blog-pop-link heading-s">What Technologies Are Preferred By the World’s Famous Organizations?</a>
+          </li>
+          <li class="blog-pop__item">
+            <a href="/blog/how-to-setup-ssl-in-varnish-cache" class="blog-pop-link heading-s">How to Setup SSL in Varnish Cache</a>
+          </li>
+        </ul>
+      </div>
+      <div></div>
+    </div> 
+  <div class="wrap blog-cat__wrap "> 
+
+
+    <div class="blog-left-section">
       <div class="blog-list-wrap">
         <ul class="blog-list">
           <li data-image-inside="loaded" class="blog-item-wrap ob is-visible" data-observe="" data-visible="">
             <article class="blog-item"><a href="/blog/how-to-choose-a-web-design-company" class="blog-item-image-abs">
               <div class="blog-item-thumb">
-                <img src="https://api.otakoyi.com/uploads/content/2020/06/16/thumb/how-to-choose-a-web-design-company-200x.png" alt="">
+                <img src="{% static 'images/software_developer-222x.png' %}" alt="">
               </div>
               <div class="blog-item-image">
                 <picture>
                   <source media="(max-width: 520px)" data-lazy="https://api.otakoyi.com/uploads/content/2020/06/16/520/how-to-choose-a-web-design-company-200x.png" srcset="https://api.otakoyi.com/uploads/content/2020/06/16/520/how-to-choose-a-web-design-company-200x.png">
-                  <img data-lazy="https://api.otakoyi.com/uploads/content/2020/06/16/1280/how-to-choose-a-web-design-company-200x.png" alt="" src="https://api.otakoyi.com/uploads/content/2020/06/16/1280/how-to-choose-a-web-design-company-200x.png" class="load">
+                  <img data-lazy="https://api.otakoyi.com/uploads/content/2020/06/16/1280/how-to-choose-a-web-design-company-200x.png" alt="" src="{% static 'images/software_developer-222x.png' %}" class="load">
                 </picture>
               </div>
             </a>
@@ -69,12 +115,12 @@
             <article class="blog-item">
               <a href="/blog/what-is-it-outsourcing-best-practices-benefits-types" class="blog-item-image-abs">
                 <div class="blog-item-thumb">
-                  <img src="https://api.otakoyi.com/uploads/content/2020/06/04/thumb/what-is-it-outsourcing__01-199x.png" alt="">
+                  <img src="{% static 'images/soft-skills-pm-221x.jpg' %}" alt="">
                 </div>
                 <div class="blog-item-image">
                   <picture>
                     <source media="(max-width: 520px)" data-lazy="https://api.otakoyi.com/uploads/content/2020/06/04/520/what-is-it-outsourcing__01-199x.png" srcset="https://api.otakoyi.com/uploads/content/2020/06/04/520/what-is-it-outsourcing__01-199x.png">
-                    <img data-lazy="https://api.otakoyi.com/uploads/content/2020/06/04/1280/what-is-it-outsourcing__01-199x.png" alt="" src="https://api.otakoyi.com/uploads/content/2020/06/04/1280/what-is-it-outsourcing__01-199x.png" class="load">
+                    <img data-lazy="https://api.otakoyi.com/uploads/content/2020/06/04/1280/what-is-it-outsourcing__01-199x.png" alt="" src="{% static 'images/soft-skills-pm-221x.jpg' %}" class="load">
                   </picture>
                 </div>
               </a>
@@ -98,7 +144,7 @@
                 <div class="blog-item-image">
                   <picture>
                     <source media="(max-width: 520px)" data-lazy="https://api.otakoyi.com/uploads/content/2020/05/26/520/dedicated-team-modeljpg-198x.jpg" srcset="https://api.otakoyi.com/uploads/content/2020/05/26/520/dedicated-team-modeljpg-198x.jpg">
-                    <img data-lazy="https://api.otakoyi.com/uploads/content/2020/05/26/1280/dedicated-team-modeljpg-198x.jpg" alt="" src="https://api.otakoyi.com/uploads/content/2020/05/26/1280/dedicated-team-modeljpg-198x.jpg" class="load"></picture>
+                    <img data-lazy="https://api.otakoyi.com/uploads/content/2020/05/26/1280/dedicated-team-modeljpg-198x.jpg" alt="" src="{% static 'images/software_developer-222x.png' %}" class="load"></picture>
                 </div>
               </a>
               <div class="blog-item-control-wrap">
@@ -125,7 +171,7 @@
                 <div class="blog-item-image">
                   <picture>
                     <source media="(max-width: 520px)" data-lazy="https://api.otakoyi.com/uploads/content/2020/05/13/520/ui-ux_trends_2020-196x.jpg" srcset="https://api.otakoyi.com/uploads/content/2020/05/13/520/ui-ux_trends_2020-196x.jpg">
-                    <img data-lazy="https://api.otakoyi.com/uploads/content/2020/05/13/1280/ui-ux_trends_2020-196x.jpg" alt="" src="https://api.otakoyi.com/uploads/content/2020/05/13/1280/ui-ux_trends_2020-196x.jpg" class="load"></picture>
+                    <img data-lazy="https://api.otakoyi.com/uploads/content/2020/05/13/1280/ui-ux_trends_2020-196x.jpg" alt="" src="{% static 'images/soft-skills-pm-221x.jpg' %}" class="load"></picture>
                 </div>
               </a>
               <div class="blog-item-control-wrap">
@@ -148,7 +194,7 @@
                   <img src="https://api.otakoyi.com/uploads/content/2020/04/23/thumb/pwa-192x.png" alt=""></div>
                 <div class="blog-item-image"><picture>
                   <source media="(max-width: 520px)" data-lazy="https://api.otakoyi.com/uploads/content/2020/04/23/520/pwa-192x.png" srcset="https://api.otakoyi.com/uploads/content/2020/04/23/520/pwa-192x.png">
-                  <img data-lazy="https://api.otakoyi.com/uploads/content/2020/04/23/1280/pwa-192x.png" alt="" src="https://api.otakoyi.com/uploads/content/2020/04/23/1280/pwa-192x.png" class="load"></picture>
+                  <img data-lazy="https://api.otakoyi.com/uploads/content/2020/04/23/1280/pwa-192x.png" alt="" src="{% static 'images/software_developer-222x.png' %}" class="load"></picture>
                 </div>
               </a>
               <div class="blog-item-control-wrap">
@@ -175,7 +221,7 @@
                 <div class="blog-item-image">
                   <picture>
                     <source media="(max-width: 520px)" data-lazy="https://api.otakoyi.com/uploads/content/2020/06/11/520/fixed-price-vs-tm-187x.jpg" srcset="https://api.otakoyi.com/uploads/content/2020/06/11/520/fixed-price-vs-tm-187x.jpg">
-                    <img data-lazy="https://api.otakoyi.com/uploads/content/2020/06/11/1280/fixed-price-vs-tm-187x.jpg" alt="" src="https://api.otakoyi.com/uploads/content/2020/06/11/1280/fixed-price-vs-tm-187x.jpg" class="load"></picture>
+                    <img data-lazy="https://api.otakoyi.com/uploads/content/2020/06/11/1280/fixed-price-vs-tm-187x.jpg" alt="" src="{% static 'images/soft-skills-pm-221x.jpg' %}" class="load"></picture>
                 </div>
               </a>
               <div class="blog-item-control-wrap">
@@ -636,12 +682,14 @@
               <a href="/blog/a-condom-and-a-technical-specification" class="blog-item-main-link heading-m">
                 <span>A Condom and a Technical Specification</span></a></article></li><li data-image-inside="loaded" class="blog-item-wrap new ob is-visible" data-observe="" data-visible=""><article class="blog-item"><a href="/blog/eight-rules-of-excellent-ux-design" class="blog-item-image-abs"><div class="blog-item-thumb"><img src="https://api.otakoyi.com/uploads/content/2019/11/22/thumb/img_01-10-125x.png" alt=""></div> <div class="blog-item-image"><picture><source media="(max-width: 520px)" data-lazy="https://api.otakoyi.com/uploads/content/2019/11/22/520/img_01-10-125x.png" srcset="https://api.otakoyi.com/uploads/content/2019/11/22/520/img_01-10-125x.png"> <img data-lazy="https://api.otakoyi.com/uploads/content/2019/11/22/1280/img_01-10-125x.png" alt="" src="https://api.otakoyi.com/uploads/content/2019/11/22/1280/img_01-10-125x.png" class="load"></picture></div></a> <div class="blog-item-control-wrap"><ul class="blog-item-tags"><li class="blog-item-tag"><a href="/blog/tags/design" class="blog-item-link">Design</a></li></ul> <span class="blog-item-time">8 min read</span></div> <a href="/blog/eight-rules-of-excellent-ux-design" class="blog-item-main-link heading-m"><span>Eight Rules of Excellent UX Design </span></a></article></li><li data-image-inside="loaded" class="blog-item-wrap new ob is-visible" data-observe="" data-visible=""><article class="blog-item"><a href="/blog/question-of-price" class="blog-item-image-abs"><div class="blog-item-thumb"><img src="https://api.otakoyi.com/uploads/content/2019/11/22/thumb/img_01-9-153x.png" alt=""></div> <div class="blog-item-image"><picture><source media="(max-width: 520px)" data-lazy="https://api.otakoyi.com/uploads/content/2019/11/22/520/img_01-9-153x.png" srcset="https://api.otakoyi.com/uploads/content/2019/11/22/520/img_01-9-153x.png"> <img data-lazy="https://api.otakoyi.com/uploads/content/2019/11/22/1280/img_01-9-153x.png" alt="" src="https://api.otakoyi.com/uploads/content/2019/11/22/1280/img_01-9-153x.png" class="load"></picture></div></a> <div class="blog-item-control-wrap"><ul class="blog-item-tags"><li class="blog-item-tag"><a href="/blog/tags/management" class="blog-item-link">Management</a></li></ul> <span class="blog-item-time">5 min read</span></div> <a href="/blog/question-of-price" class="blog-item-main-link heading-m"><span>Question of Price</span></a></article></li></ul> <div class="blog-list__paginate" data-callback="loadMore"></div>
       </div>
-    </section>
+    </div>
+
+
     <section class="blog-right-section">
       <div class="blog-search">
         <label class="blog-search-label">
           <input placeholder="Search" type="text" class="blog-search-input"></label>
-        <div class="blog-search-list-wrap"><span class="blog-search-title">You must type more then 2 characters</span> <!---->
+        <div class="blog-search-list-wrap"><span class="blog-search-title">You must type more then 2 characters</span> 
         </div>
       </div>
       <div class="blog-tags"><span class="blog-tags-title text-s">Tags</span>
@@ -683,8 +731,9 @@
 </section>
 
 
+
 <section class="action-section">
-  <div class="container">
+  <div class="container footer">
     <div class="row action-d">
       <a class="action_b button-main " routerLink="contact">LET’S CONNECT</a>
       <p>We are here to offer you our expertise and services that will help you achieve your business goals</p>
@@ -706,6 +755,33 @@
     $('#top_menu6').removeClass('nuxt-link-active');
     $('#top_menu7').removeClass('nuxt-link-active');
     $('#top_menu5').addClass('nuxt-link-active');
+
+</script>
+
+<script type="text/javascript">
+    if(/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)){
+      $('#__header').addClass('fixed');
+      $('#__header').addClass('down');
+      $('#__header').addClass('headerMod');
+
+  }
+</script> 
+
+<script type="text/javascript">
+
+    $(document).scroll(function() {
+
+  var scrollTop = $(window).scrollTop();
+        if (scrollTop >= 70 ) {
+            $('#__header').addClass('fixed');
+            $('#__header').addClass('down');
+            $('#__header').addClass('headerMod');
+            $('#logo_pl').addClass('black');
+            $('#logo_pl').removeClass('white_logo');
+        }
+        
+  });
+
 
 </script>
 

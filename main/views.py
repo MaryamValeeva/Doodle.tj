@@ -5,32 +5,55 @@ from .models import Dolzhnost, People, About, OurPhotos, FrameworkCategories, Te
 def show_main(request):
     main=Main.objects.all()[0]    
     develop=Development.objects.all()
-    return render(request, 'main/main.html', {"main":main, "development":develop})
+    categories=FrameworkCategories.objects.all()
+    technologies=Technologies.objects.all()
+
+    return render(request, 'main/main.html', {"main":main, "development":develop, "technologies":technologies, "categories": categories})
 
 def show_about(request):
     dol=Dolzhnost.objects.all()
     peo=People.objects.all()
     about=About.objects.all()[0]
     ourPh=OurPhotos.objects.all()
-    return render(request, 'main/about.html', {"about":about, "dolzhnost":dol, "people":peo, "OurPhotos":ourPh})
+    categories=FrameworkCategories.objects.all()
+    technologies=Technologies.objects.all()
+
+    return render(request, 'main/about.html', {"about":about, "dolzhnost":dol, "people":peo, "OurPhotos":ourPh, "technologies":technologies, "categories": categories})
 
 def show_blog(request):
-    return render(request, 'main/blog.html', {})
+    categories=FrameworkCategories.objects.all()
+    technologies=Technologies.objects.all()
+
+    return render(request, 'main/blog.html', {"technologies":technologies, "categories": categories})
 
 def show_cases(request):
-    return render(request, 'main/cases.html', {})
+    categories=FrameworkCategories.objects.all()
+    technologies=Technologies.objects.all()
+
+    return render(request, 'main/cases.html', {"technologies":technologies, "categories": categories})
 
 def show_contact(request):
-    return render(request, 'main/contact.html', {})
+    categories=FrameworkCategories.objects.all()
+    technologies=Technologies.objects.all()
+
+    return render(request, 'main/contact.html', {"technologies":technologies, "categories": categories})
 
 def show_not_found(request):
     return render(request, 'main/not_found.html', {})
 
 def show_service(request):
-    return render(request, 'main/service.html', {})
+    categories=FrameworkCategories.objects.all()
+    technologies=Technologies.objects.all()
+
+    return render(request, 'main/service.html', {"technologies":technologies, "categories": categories})
+    
 
 def show_solution(request):
-    return render(request, 'main/solution.html', {})
+    categories=FrameworkCategories.objects.all()
+    technologies=Technologies.objects.all()
+
+    return render(request, 'main/solution.html', {"technologies":technologies, "categories": categories})
+
 
 def show_technologies(request):
     categories=FrameworkCategories.objects.all()
@@ -39,13 +62,22 @@ def show_technologies(request):
     return render(request, 'main/technologies.html', {"technologies":technologies, "categories": categories})
 
 def show_base(request):
-    return render(request, 'main/base.html', {})
+    categories=FrameworkCategories.objects.all()
+    technologies=Technologies.objects.all()
+
+    return render(request, 'main/base.html', {"technologies":technologies, "categories": categories})
 
 def show_base2(request):
     return render(request, 'main/base2.html', {})
 
 def show_menu(request):
-    return render(request, 'main/menu.html', {})
+    categories=FrameworkCategories.objects.all()
+    technologies=Technologies.objects.all()
+
+    return render(request, 'main/menu.html', {"technologies":technologies, "categories": categories})
+
+def show_footer(request):
+    return render(request, 'main/footer.html', {})
 
 def show_menu_dop(request):
     return render(request, 'main/menu_dop.html', {})

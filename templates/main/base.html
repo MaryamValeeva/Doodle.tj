@@ -5,7 +5,33 @@
 <link rel="stylesheet" href="{% static 'css/main.css' %}">
 
 <link rel="stylesheet" href="{% static 'css/app.component.css' %}">
+<script src="{% static 'js/jquery/jquery-2.1.4.min.js' %}"></script>
+<script src="{% static 'js/bootstrap/js/bootstrap.min.js' %}"></script>
+<script src="{% static 'js/bootstrap/js/common.js' %}"></script>
 
+  <script type="text/javascript">
+
+    $(document).scroll(function() {
+
+  var scrollTop = $(window).scrollTop();
+        if (scrollTop >= 70 ) {
+            $('#__header').addClass('fixed');
+            $('#__header').addClass('down');
+            $('#__header').addClass('headerMod');
+            $('#logo_pl').addClass('black');
+            $('#logo_pl').removeClass('white_logo');
+        }
+        else{
+            $('#__header').removeClass('down');
+            $('#__header').removeClass('fixed');
+            $('#__header').removeClass('headerMod');
+            $('#logo_pl').removeClass('black');
+            $('#logo_pl').addClass('white_logo');
+        }
+  });
+
+
+</script>
 
 
 <header>
