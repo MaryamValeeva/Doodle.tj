@@ -2,18 +2,18 @@
 {% load static %}
 {% load i18n %}
 
-{% block menu %}
-{% endblock%}
+
 
 
 <link rel="stylesheet" href="{% static 'css/footer.component.css' %}">
 
-<footer class="pt-3 pb-0">
-  <div class="container foot">
-    <div class="row">
-      <div class="col-lg-2 logo-place-f">
-        <a routerLink="">
-          <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="10cm" height="3.36601cm" version="1.0" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd"
+
+
+
+<footer class="footer">
+      <div class="wrap footer__wrap logo-place-f">
+        <a href="main" class="logo__link nuxt-link-active">
+          <svg xmlns="http://www.w3.org/2000/svg" class="logo" xml:space="preserve" width="10cm" height="3.36601cm" version="1.0" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd"
                viewBox="0 0 7671.58 2582.26">
            <g id="Слой_x0020_1">
             <metadata id="CorelCorpID_0Corel-Layer"/>
@@ -28,28 +28,267 @@
             </g>
            </g>
           </svg>
-        </a>
-      </div>
-
-      <div class="col-lg-8">
-
-        <ul  class="bottom-menu">
-          <li><a href="s" routerLink="Service">Service</a></li>
-          <li><a href="sol" routerLink="Solution">Solution</a></li>
-          <li><a href="t" routerLink="Technologies">Technologies</a></li>
-          <li><a href="b" routerLink="Blog">Blog</a></li>
-          <li><a href="a" routerLink="about">About Us</a></li>
-          <li><a href="co" routerLink="contact">Contact Us</a></li>
+        </a> 
+        <ul class="social social__list">
+          <li class="social__item">
+            <a target="_blank" href="#" title="Facebook" class="social__link">
+              <svg viewBox="-9 -6 25 25" xmlns="http://www.w3.org/2000/svg" class="social__svg">
+                <path d="M6.736.003L5.057 0C3.171 0 1.952 1.256 1.952 3.2v1.474H.264A.265.265 0 000 4.94v2.137c0 .146.118.265.264.265h1.688v5.393c0 .146.118.265.264.265H4.42a.265.265 0 00.264-.265V7.342h1.974a.264.264 0 00.264-.265V4.94a.266.266 0 00-.264-.266H4.683v-1.25c0-.601.142-.906.922-.906h1.131A.265.265 0 007 2.251V.268a.265.265 0 00-.264-.265z"></path>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a target="_blank" href="#" title="Instagram" class="social__link">
+              <svg viewBox="-6 -6 24 24" xmlns="http://www.w3.org/2000/svg" class="social__svg social__svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.37 12H2.63A2.63 2.63 0 010 9.37V2.63A2.6 2.6 0 012.63 0h6.74A2.63 2.63 0 0112 2.63v6.74A2.6 2.6 0 019.37 12zM6 8.723a2.723 2.723 0 100-5.446 2.723 2.723 0 000 5.446zm4.477-6.461a.83.83 0 11-1.662 0 .83.83 0 011.662 0z"></path>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a target="_blank" href="#" title="LinkedIn" class="social__link">
+              <svg viewBox="-7 -5 25 25" xmlns="http://www.w3.org/2000/svg" class="social__svg">
+                <path d="M12 7.357V12H9.428V7.668c0-1.088-.372-1.83-1.303-1.83-.71 0-1.134.5-1.32.984-.067.173-.085.414-.085.656V12H4.147s.035-7.337 0-8.097H6.72v1.148l-.017.026h.017v-.026c.342-.551.952-1.338 2.318-1.338C10.731 3.713 12 4.87 12 7.357zM1.456 0C.576 0 0 .604 0 1.399c0 .777.559 1.4 1.422 1.4h.017c.897 0 1.455-.623 1.455-1.4C2.877.604 2.336 0 1.456 0zM.153 12h2.572V3.903H.153V12z"></path>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a target="_blank" href="#" title="Behance" class="social__link">
+              <svg viewBox="-6 -8 25 25" xmlns="http://www.w3.org/2000/svg" class="social__svg">
+                <path d="M12.314 1.2H8.897V.353h3.417v.849zM6.623 4.68c.22.342.33.757.33 1.243 0 .504-.124.955-.376 1.354A2.347 2.347 0 015.019 8.37a5.92 5.92 0 01-1.198.114H0V0h4.097C5.13.017 5.862.316 6.295.904c.26.36.388.793.388 1.295 0 .519-.13.934-.392 1.25-.146.176-.361.337-.646.482.431.158.759.407.978.75zM1.957 3.346h1.795c.369 0 .667-.07.897-.21.23-.14.344-.39.344-.746 0-.395-.152-.657-.456-.783-.261-.088-.595-.133-1.001-.133h-1.58v1.872zm3.209 2.457c0-.44-.18-.745-.54-.909-.2-.093-.485-.14-.848-.143H1.957v2.26H3.75c.368 0 .653-.048.859-.148.37-.185.557-.537.557-1.06zm8.415-1.38c.042.278.06.68.053 1.207H9.209c.024.61.235 1.038.635 1.282.241.153.534.228.876.228.361 0 .655-.091.882-.279.123-.1.232-.24.326-.417h1.622c-.042.361-.238.727-.589 1.099-.543.59-1.306.887-2.285.887-.81 0-1.522-.25-2.141-.748-.617-.5-.927-1.31-.927-2.434 0-1.055.278-1.862.837-2.423.56-.563 1.283-.843 2.174-.843.528 0 1.004.094 1.429.284.423.19.773.489 1.049.9a3 3 0 01.485 1.257zm-1.596.158c-.03-.422-.17-.742-.425-.96-.251-.22-.566-.33-.941-.33-.409 0-.724.118-.948.35-.226.23-.366.543-.424.94h2.738z"></path>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a target="_blank" href="#" title="Dribbble" class="social__link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="2500" height="2500" viewBox="-290 -290 1600 1600" class="social__svg">
+                <path d="M0 500c0-90.667 22.334-174.333 67-251 44.667-76.667 105.334-137.333 182-182C325.667 22.333 409.334 0 500 0c90.667 0 174.334 22.333 251 67 76.667 44.667 137.334 105.333 182 182 44.667 76.667 67 160.333 67 251s-22.333 174.333-67 251c-44.666 76.667-105.333 137.333-182 182-76.666 44.667-160.333 67-251 67-90.666 0-174.333-22.333-251-67-76.666-44.667-137.333-105.333-182-182C22.334 674.333 0 590.667 0 500zm83 0c0 104 35 195.667 105 275 32-62.667 82.667-122.333 152-179 69.334-56.667 137-92.333 203-107-10-23.333-19.666-44.333-29-63-114.666 36.667-238.666 55-372 55-26 0-45.333-.333-58-1 0 2.667-.166 6-.5 10-.333 4-.5 7.333-.5 10zm13-103c14.667 1.333 36.334 2 65 2 111.334 0 217-15 317-45-50.666-90-106.333-165-167-225-52.666 26.667-97.833 63.667-135.5 111-37.666 47.333-64.166 99.667-79.5 157zm149 432c75.334 58.667 160.334 88 255 88 49.334 0 98.334-9.333 147-28-13.333-114-39.333-224.333-78-331-61.333 13.333-123.166 47-185.5 101C321.167 713 275 769.667 245 829zM398 97c58.667 60.667 113 136.333 163 227 90.667-38 159-86.333 205-145-77.333-64-166-96-266-96-34 0-68 4.667-102 14zm199 298c10 21.333 21.334 48.333 34 81 49.334-4.667 103-7 161-7 41.334 0 82.334 1 123 3-5.333-90.667-38-171.333-98-242-43.333 64.667-116.666 119.667-220 165zm59 151c34 98.667 57 200 69 304 52.667-34 95.667-77.667 129-131 33.334-53.333 53.334-111 60-173-48.666-3.333-93-5-133-5-36.666 0-78.333 1.667-125 5z"></path>
+              </svg>
+            </a>
+          </li>
         </ul>
-      </div>
-      <div class="col-lg-2 social-place">
+      </div> 
+      <div class="wrap footer__wrap-nav">
+        <div class="footer__nav-row">
+          <div class="footer__nav-column">
+            <div class="footer__nav-item" id="menu_1">
+              <a href="service" class="footer__nav-link">Services</a> 
+              <span class="main-nav__toggler" id="togg_1">
+                <img src="{% static 'css/assets/toggler.svg' %}" alt="">
+              </span> 
+              <div class="footer__nav-sub-list-box">
+                <ul class="footer__nav-sub-list">
+                  <li class="footer__nav-sub-item">
+                    <a href="#" class="footer__nav-sub-link">Web Development</a>
+                  </li>
+                  <li class="footer__nav-sub-item">
+                    <a href="#" class="footer__nav-sub-link">Mobile Development</a>
+                  </li>
+                  <li class="footer__nav-sub-item">
+                    <a href="#" class="footer__nav-sub-link">UI/UX Design</a>
+                  </li>
+                  <li class="footer__nav-sub-item">
+                    <a href="#" class="footer__nav-sub-link">Chatbots</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer__nav-column">
+            <div class="footer__nav-item" id="menu_2">
+              <a href="solution" class="footer__nav-link">Solutions</a> 
+              <span class="main-nav__toggler"  id="togg_2">
+                <img src="{% static 'css/assets/toggler.svg' %}" alt="">
+              </span> 
+              <div class="footer__nav-sub-list-box">
+                <ul class="footer__nav-sub-list">
+                  <li class="footer__nav-sub-item">
+                    <a href="#" class="footer__nav-sub-link">Outsourcing</a>
+                  </li>
+                  <li class="footer__nav-sub-item">
+                    <a href="#" class="footer__nav-sub-link">Dedicated team</a>
+                  </li>
+                  <li class="footer__nav-sub-item">
+                    <a href="#" class="footer__nav-sub-link">MVP</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer__nav-column mod">
+            <div class="footer__nav-item" id="menu_3">
+              <a href="technologies" class="footer__nav-link">Technologies</a> 
+              <span class="main-nav__toggler" id="togg_3">
+                <img src="{% static 'css/assets/toggler.svg' %}" alt="">
+              </span> 
+              <div class="footer__nav-sub-list-box">
+                <ul class="footer__nav-sub-list mod">
+                  <li class="footer__nav-sub-item">
+                    <a href="#" class="footer__nav-sub-link">React</a>
+                  </li>
+                  <li class="footer__nav-sub-item">
+                    <a href="#" class="footer__nav-sub-link">Vue</a>
+                  </li>
+                  <li class="footer__nav-sub-item">
+                    <a href="#" class="footer__nav-sub-link">Java Script</a>
+                  </li>
+                  <li class="footer__nav-sub-item">
+                    <a href="#" class="footer__nav-sub-link">PWA</a>
+                  </li>
+                  <li class="footer__nav-sub-item">
+                    <a href="#" class="footer__nav-sub-link">Gatsby</a>
+                  </li>
+                  <li class="footer__nav-sub-item">
+                    <a href="#" class="footer__nav-sub-link">Laravel</a>
+                  </li>
+                  <li class="footer__nav-sub-item">
+                    <a href="#" class="footer__nav-sub-link">Node.JS</a>
+                  </li>
+                  <li class="footer__nav-sub-item">
+                    <a href="#" class="footer__nav-sub-link">PHP</a>
+                  </li>
+                  <li class="footer__nav-sub-item">
+                    <a href="#" class="footer__nav-sub-link">Symfony</a>
+                  </li>
+                  <li class="footer__nav-sub-item">
+                    <a href="#" class="footer__nav-sub-link">MongoDB</a>
+                  </li>
+                  <li class="footer__nav-sub-item">
+                    <a href="#" class="footer__nav-sub-link">PostgreSQL</a>
+                  </li>
+                  <li class="footer__nav-sub-item">
+                    <a href="#" class="footer__nav-sub-link">React Native</a>
+                  </li>
+                  <li class="footer__nav-sub-item">
+                    <a href="#" class="footer__nav-sub-link">Flutter</a>
+                  </li>
+                  <li class="footer__nav-sub-item">
+                    <a href="#" class="footer__nav-sub-link">JAMstack</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer__nav-column">
+            <div class="footer__nav-item" id="menu_4">
+              <span class="footer__nav-link no-hover">Company</span> 
+              <span class="main-nav__toggler" id="togg_4">
+                <img src="{% static 'css/assets/toggler.svg' %}" alt="">
+              </span> 
+              <div class="footer__nav-sub-list-box">
+                <ul class="footer__nav-sub-list">
+                  <li class="footer__nav-sub-item">
+                    <a href="cases" class="footer__nav-sub-link">Cases</a>
+                  </li> 
+                  <li class="footer__nav-sub-item">
+                    <a href="blog" aria-current="page" class="footer__nav-sub-link nuxt-link-exact-active nuxt-link-active">Blog</a>
+                  </li> 
+                  <li class="footer__nav-sub-item">
+                    <a href="about" class="footer__nav-sub-link">About us</a>
+                  </li> 
+                  <li class="footer__nav-sub-item">
+                    <a href="contact" class="footer__nav-sub-link">Contact us</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div> 
+          <div class="footer__nav-column">
+            <div class="footer__clutch clutch-widget">
+              <a href="#" target="_blank" class="footer__clutch-link">
+                <img src="{% static 'css/assets/_clutch.svg' %}" alt=""> 
+                <span>20 REVIEWS</span>
+              </a> 
+              <a target="_blank" href="#" class="footer__gf-link footer__clutch-link">
+                <img src="{% static 'css/assets/gf.svg' %}" alt=""> 
+                <span>9 REVIEWS</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div> 
+      <div class="wrap footer__info">
+        <div class="footer__info-txt">
+          <p class="footer__info-copy">©Copyright 2020 DOODLETJ. All Rights Reserved</p> 
+          
+          <a href="#" class="footer__info-link mg mod-left">Privacy Policy</a>
+        </div> 
+        <div class="footer__info-txt">
+          <a href="#" class="footer__info-link">English</a> 
+          <a href="#" class="footer__info-link">Точики</a> 
+          <a href="#" class="footer__info-link mg">Русский</a>
+        </div>
+      </div> 
+      <!-- <div class="footer__up-wrap ob" data-observe="">
+        <button title="Go up" class="footer__up" id="button_up">
+          <svg xmlns="#" viewBox="0 0 31.479 31.479" class="">
+            <path d="M26.477 10.274a1.112 1.112 0 010 1.587 1.12 1.12 0 01-1.571 0l-8.047-8.047v26.555c0 .619-.492 1.111-1.111 1.111a1.118 1.118 0 01-1.127-1.111V3.813L6.59 11.86c-.444.429-1.159.429-1.587 0a1.112 1.112 0 010-1.587L14.955.321a1.12 1.12 0 011.571 0l9.951 9.953z"></path>
+          </svg> 
+          <span class="footer__up-back"></span>
+        </button>
+      </div> -->
+    </footer> 
 
-      </div>
-    </div>
-  </div>
-  <div class="container foot">
-    <div class="row footer-info">
-      <p>©Copyright 2020 DOODLETJ. All Rights Reserved</p>
-    </div>
-  </div>
-</footer>
+<script src="{% static 'js/jquery/jquery-2.1.4.min.js' %}"></script>
+
+<script src="{% static 'js/bootstrap/js/bootstrap.min.js' %}"></script>
+<script src="{% static 'js/bootstrap/js/common.js' %}"></script>
+
+<script type="text/javascript">
+  $(document).ready(function(){
+  $('#togg_1').click(function () {
+    $('#menu_1').toggleClass('toggleOpen');
+    $('#menu_2').removeClass('toggleOpen');
+    $('#menu_3').removeClass('toggleOpen');
+    $('#menu_4').removeClass('toggleOpen');
+    });
+  });
+
+  $(document).ready(function(){
+  $('#togg_2').click(function () {
+    $('#menu_2').toggleClass('toggleOpen');
+    $('#menu_1').removeClass('toggleOpen');
+    $('#menu_3').removeClass('toggleOpen');
+    $('#menu_4').removeClass('toggleOpen');
+    });
+  });
+
+  $(document).ready(function(){
+  $('#togg_3').click(function () {
+    $('#menu_3').toggleClass('toggleOpen');
+    $('#menu_1').removeClass('toggleOpen');
+    $('#menu_2').removeClass('toggleOpen');
+    $('#menu_4').removeClass('toggleOpen');
+    });
+  });
+
+  $(document).ready(function(){
+  $('#togg_4').click(function () {
+    $('#menu_4').toggleClass('toggleOpen');
+    $('#menu_1').removeClass('toggleOpen');
+    $('#menu_2').removeClass('toggleOpen');
+    $('#menu_3').removeClass('toggleOpen');
+    });
+  });
+</script>
+
+<!-- <script type="text/javascript">
+$(document).ready(function(){
+  
+    $(window).scroll(function(){
+
+        if ($(this).scrollTop() > 100) {
+            $('.footer__up-wrap').addClass('is-visible');
+        } else {
+            $('.footer__up-wrap').removeClass('is-visible');
+        }
+        });
+          
+        $('#button_up').click(function(){
+        $('body, html').animate({ scrollTop:0 }, 600);
+        return false;
+        
+    });
+   
+});
+</script> -->
+

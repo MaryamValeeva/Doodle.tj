@@ -39,7 +39,10 @@ def show_contact(request):
     return render(request, 'main/contact.html', {"technologies":technologies, "categories": categories})
 
 def show_not_found(request):
-    return render(request, 'main/not_found.html', {})
+    categories=FrameworkCategories.objects.all()
+    technologies=Technologies.objects.all()
+    
+    return render(request, 'main/not_found.html', {"technologies":technologies, "categories": categories})
 
 def show_service(request):
     categories=FrameworkCategories.objects.all()
@@ -66,9 +69,6 @@ def show_base(request):
     technologies=Technologies.objects.all()
 
     return render(request, 'main/base.html', {"technologies":technologies, "categories": categories})
-
-def show_base2(request):
-    return render(request, 'main/base2.html', {})
 
 def show_menu(request):
     categories=FrameworkCategories.objects.all()

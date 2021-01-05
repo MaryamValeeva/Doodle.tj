@@ -1,8 +1,8 @@
-{% extends 'main/footer.html' %}
+
 {% load static %}
 {% load i18n %}
 
-{% block menu %}
+
 
 
 <link rel="stylesheet" href="{% static 'css/dop_style.css' %}">
@@ -111,7 +111,7 @@
 							</ul>
 						</div>
 					</div> 
-          <a href="s" class="main-nav__link nuxt-link-exact-active nuxt-link-active" id="top_menu1">
+          <a href="service" class="main-nav__link nuxt-link-exact-active nuxt-link-active" id="top_menu1">
          
                 <span class="main-nav__link--goal">
                     Services
@@ -152,7 +152,7 @@
       					</div>
       				</div> 
       				
-               <a href="sol" class="main-nav__link " id="top_menu2">
+               <a href="solution" class="main-nav__link " id="top_menu2">
          
                 <span class="main-nav__link--goal">
                     Solutions
@@ -233,7 +233,7 @@
                     </ul>
                   </div>
                 </div> 
-                <a href="t" class="main-nav__link" id="top_menu3">
+                <a href="technologies" class="main-nav__link" id="top_menu3">
                     <span class="main-nav__link--goal">
                     Technologies
                      <img class="main-nav__link--circ arrow-down" src="{% static 'css/assets/arrow-down.svg' %}">
@@ -257,7 +257,7 @@
             </ul>
           </div>
         </div> 
-        <a href="ca" class="main-nav__link" id="top_menu4">
+        <a href="cases" class="main-nav__link" id="top_menu4">
           <span class="main-nav__link--goal">
           Cases
           </span> <!---->
@@ -274,7 +274,7 @@
             </ul>
           </div>
         </div> 
-        <a href="b" class="main-nav__link" id="top_menu5">
+        <a href="blog" class="main-nav__link" id="top_menu5">
           <span class="main-nav__link--goal">
           Blog
           </span> <!---->
@@ -291,20 +291,50 @@
             </ul>
           </div>
         </div> 
-        <a href="a" class="main-nav__link" id="top_menu6">
+        <a href="about" class="main-nav__link" id="top_menu6">
           <span class="main-nav__link--goal">
           About us
           </span> <!---->
         </a> <!---->
       </li>
+      
+      <li class="main-nav__item menu-nav__item-flag"><!----> 
+        <a href="#" class="main-nav__link" id="top_menu7">
+          <span class="main-nav__link--goal">
+            <img class="main-nav__link--circ flag" src="{% static 'css/assets/ru.svg' %}">
+          </span> 
+          <!-- <span class="b-more__circle"></span> -->
+        </a>
+        
+      </li>
+      <li class="main-nav__item menu-nav__item-flag"><!----> 
+        <a href="#" class="main-nav__link" id="top_menu7">
+          <span class="main-nav__link--goal">
+            <img class="main-nav__link--circ flag" src="{% static 'css/assets/tj.svg' %}">
+          </span> 
+          <!-- <span class="b-more__circle"></span> -->
+        </a> <!---->
+        
+      </li>
+
+      <li class="main-nav__item menu-nav__item-flag"><!----> 
+        <a href="#" class="main-nav__link" id="top_menu7">
+          <span class="main-nav__link--goal">
+            <img class="main-nav__link--circ flag" src="{% static 'css/assets/us.svg' %}">
+          </span> 
+          <!-- <span class="b-more__circle"></span> -->
+        </a> <!---->
+      </li>
+
       <li class="main-nav__item contact"><!----> 
-        <a href="co" class="main-nav__link" id="top_menu7">
+        <a href="contact" class="main-nav__link" id="top_menu7">
           <span class="main-nav__link--goal">
           Contact us
           </span> 
           <!-- <span class="b-more__circle"></span> -->
         </a> <!---->
       </li>
+
     </ul>
   </nav> 
   <button class="header__burger" id="burger"></button>
@@ -321,8 +351,10 @@
       {% endblock %}
     </div>
 
+    {% include 'main/footer.html' %}
+
 </body>
-<script type="text/javascript" id="">!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","");fbq("init","548131962240056");fbq("set","agent","tmgoogletagmanager","548131962240056");fbq("track","PageView");</script>
+
 <noscript><img height="1" width="1" style="display:none" src=""></noscript>
 <meta name="google-site-verification" content="wIfz23hiW6DzX3abM4PoFDQM9SXuMGg42NF7YOp1br0">
 
@@ -354,6 +386,8 @@
         $('#main-nav').removeClass('activated');
         
       });
+
+
 
       $('#logo_pl').hover(function(){
         $('#top_menu1_1').removeClass('active');
@@ -517,9 +551,9 @@
     });
   });
 
- 
-
 </script>
+
+
 
 
 
@@ -528,4 +562,3 @@
 
 
 
-{% endblock %}
